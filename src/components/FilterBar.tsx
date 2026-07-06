@@ -20,13 +20,14 @@ export function FilterBar({
 
   return (
     <div className="flex flex-wrap gap-2.5">
-      <Link href="/" className={pillClass(noFilters)}>
+      <Link href="/" scroll={false} className={pillClass(noFilters)}>
         All
       </Link>
       {CATEGORIES.map((cat) => (
         <Link
           key={cat}
           href={`/?category=${encodeURIComponent(cat)}`}
+          scroll={false}
           className={pillClass(activeCategory === cat)}
         >
           {cat}
@@ -34,11 +35,12 @@ export function FilterBar({
       ))}
       <Link
         href="/?status=closing-soon"
+        scroll={false}
         className={pillClass(activeStatus === "closing-soon")}
       >
         Closing soon
       </Link>
-      <Link href="/?student=true" className={pillClass(!!activeStudent)}>
+      <Link href="/?student=true" scroll={false} className={pillClass(!!activeStudent)}>
         Student
       </Link>
     </div>

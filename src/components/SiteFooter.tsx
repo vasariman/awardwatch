@@ -32,7 +32,7 @@ export function SiteFooter() {
             <div className="mb-1 font-sans text-[10px] font-bold uppercase tracking-[.08em] text-black/40">
               AwardWatch
             </div>
-            <Link href="#" className="font-sans text-[13px] font-semibold text-ink no-underline">
+            <Link href="/about" className="font-sans text-[13px] font-semibold text-ink no-underline">
               About
             </Link>
             <Link href="#" className="font-sans text-[13px] font-semibold text-ink no-underline">

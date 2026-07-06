@@ -17,7 +17,7 @@ export function SiteHeader() {
           Competitions
         </Link>
         <Link
-          href="#"
+          href="/about"
           className="hidden font-sans text-xs font-bold uppercase tracking-[.03em] text-black/45 no-underline sm:inline"
         >
           About
