@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AwardWatch
 
-## Getting Started
+A directory of design competition deadlines, built with Next.js (App Router) and Tailwind CSS.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Competitions live in [`data/competitions.json`](data/competitions.json) — a flat JSON array, no database. Each entry follows the `Competition` type in [`src/lib/types.ts`](src/lib/types.ts):
 
-## Learn More
+```
+title, organizer, deadline, category, targetAudience, studentTag,
+country, entryFee, registrationUrl, prizeMoney, resultDate,
+shortDescription, longDescription, submissionFormat, status, slug
+```
 
-To learn more about Next.js, take a look at the following resources:
+`status` (`open` / `closing-soon` / `expired`) is a maintained field, not computed at build time — when a competition's deadline passes, update its `status` rather than deleting the entry, so it stays archived and indexable at `/competitions/[slug]`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`category` must be one of the six fixed categories in `CATEGORIES` (`src/lib/types.ts`). `studentTag: true` marks entries that should also surface under the cross-cutting "Student" filter.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Pages
 
-## Deploy on Vercel
+- `/` — fullscreen hero slider (soonest non-expired deadlines) + a filterable grid of all competitions.
+- `/competitions/[slug]` — statically generated detail page per competition.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploying
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a standard Next.js app — deploy directly on [Vercel](https://vercel.com/new).
