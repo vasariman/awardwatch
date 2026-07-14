@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "audit:data": "node scripts/audit-competitions.mjs",
+    "research": "node scripts/research.mjs",
+    "merge": "node scripts/merge-competitions.mjs"
   },
   "dependencies": {
     "next": "16.2.10",

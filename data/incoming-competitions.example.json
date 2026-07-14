@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "example-design-award-2027",
+    "title": "Example Design Award 2027",
+    "organizer": "Example Design Foundation",
+    "deadline": "2027-03-15",
+    "category": "Product/Industrial Design",
+    "targetAudience": "open",
+    "studentTag": false,
+    "country": "Germany",
+    "entryFee": "€150",
+    "registrationUrl": "https://example.org/design-award",
+    "prizeMoney": "€10,000",
+    "resultDate": "2027-06-01",
+    "shortDescription": "A short, one- to two-sentence summary shown on cards and the hero slider.",
+    "longDescription": "A longer paragraph shown on the competition's detail page, with more background on the organizer, judging, and what winners receive.",
+    "submissionFormat": "Digital submission: images and a written project statement",
+    "status": "open"
+  }
+]

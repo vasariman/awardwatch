@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# research pipeline: regenerated scratch output, never the source of truth
+/data/research-output-preview.json
+
+# manual merge workflow: scratch input you paste candidates into, per-run
+/data/incoming-competitions.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
