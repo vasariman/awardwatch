@@ -69,7 +69,7 @@
     "shortDescription": "A New York-based multidisciplinary design award spanning architecture, product, packaging, and graphic design.",
     "longDescription": "The MUSE Design Awards evaluate entries across dozens of subcategories, from architectural design to packaging and conceptual work. Judging is handled by a panel of design, media, and marketing professionals, and results include tiered Platinum, Gold, and Silver recognition rather than a single winner per category.",
     "submissionFormat": "Digital submission: images, a written description, and category-specific supporting material",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "a-design-award-2026-27",
@@ -177,6 +177,42 @@
     "shortDescription": "A long-running Los Angeles-based award spanning architecture, interior, product, fashion, and graphic design.",
     "longDescription": "The International Design Awards recognize both professionals and students across five core disciplines: architecture, interior, product, fashion, and graphic design. Entries must have been completed within the last five years. Winners are graded Gold, Silver, or Bronze within each category, with top honorees also considered for Designer of the Year and Emerging Designer of the Year.",
     "submissionFormat": "Digital submission: images, technical details, and a project statement",
+    "status": "open"
+  },
+  {
+    "slug": "green-good-design-award-2027",
+    "title": "Green Good Design Award 2027",
+    "organizer": "The Chicago Athenaeum: Museum of Architecture and Design",
+    "deadline": "2027-01-15",
+    "category": "Sustainable Design",
+    "targetAudience": "open",
+    "studentTag": false,
+    "country": "United States",
+    "entryFee": "€375 per entry (+€25 if paying by bank transfer); +€100 late fee",
+    "registrationUrl": "https://gooddesignawards.org/about-green-good-design/",
+    "prizeMoney": "Trophy, exhibition, and international recognition (no cash prize)",
+    "resultDate": "2027-03-15",
+    "shortDescription": "An international award for products, graphics, and organizations with strong ecological and sustainability credentials, presented by The Chicago Athenaeum.",
+    "longDescription": "Part of the Good Design Award family administered by The Chicago Athenaeum and The European Centre for Architecture Art Design and Urban Studies, the Green Good Design Award recognizes work across six category groups: architecture, graphic design, organizations & people, product design, research & technology, and transportation. Winners are exhibited and published as part of the Good Design Awards program.",
+    "submissionFormat": "Online submission: 4-6 project images (JPG/PNG, 300dpi) plus a written project description (max 500 words)",
+    "status": "open"
+  },
+  {
+    "slug": "communication-arts-typography-competition-2027",
+    "title": "Communication Arts Typography Competition 2027",
+    "organizer": "Communication Arts",
+    "deadline": "2026-09-18",
+    "category": "Graphic Design",
+    "targetAudience": "open",
+    "studentTag": true,
+    "country": "United States",
+    "entryFee": "From $40 per entry (varies by category); +$10 late fee after Sept 4, 2026; student discount available",
+    "registrationUrl": "https://www.commarts.com/competition/2027-typography",
+    "prizeMoney": "Publication in the Communication Arts Typography Annual (no cash prize)",
+    "resultDate": "2027-01-15",
+    "shortDescription": "One of the most prestigious competitions for typographic excellence, covering hand-lettering, calligraphy, and type design.",
+    "longDescription": "Selected by a jury of distinguished designers and art directors, winning entries in the Communication Arts Typography Competition are published in the Typography Annual, included in the magazine's January/February issue and distributed worldwide. Entrants are notified within roughly two months of the deadline; entry fees vary by category with a discount for student submissions.",
+    "submissionFormat": "Digital upload of high-resolution images or PDF documents showing the typographic work in context",
     "status": "open"
   }
 ]
