@@ -8,6 +8,7 @@ import {
   getCompetitionBySlug,
 } from "@/lib/competitions";
 import { CategoryChip, StatusChip, StudentChip } from "@/components/Chips";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return getAllCompetitions().map((c) => ({ slug: c.slug }));
@@ -21,9 +22,27 @@ export async function generateMetadata({
   const { slug } = await params;
   const item = getCompetitionBySlug(slug);
   if (!item) return {};
+
+  const title = `${item.title} — Deadline ${formatDate(item.deadline)} | AwardWatch`;
+  const path = `/competitions/${item.slug}`;
+
   return {
-    title: `${item.title} — AwardWatch`,
+    title,
     description: item.shortDescription,
+    alternates: { canonical: path },
+    openGraph: {
+      type: "website",
+      url: path,
+      title,
+      description: item.shortDescription,
+      images: ["/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: item.shortDescription,
+      images: ["/opengraph-image"],
+    },
   };
 }
 
@@ -45,8 +64,33 @@ export default async function CompetitionDetailPage({
     { label: "Submission format", value: item.submissionFormat },
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: item.title,
+    description: item.shortDescription,
+    startDate: item.deadline,
+    endDate: item.deadline,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    location: {
+      "@type": "VirtualLocation",
+      url: item.registrationUrl,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: item.organizer,
+      url: item.registrationUrl,
+    },
+    url: `${SITE_URL}/competitions/${item.slug}`,
+  };
+
   return (
     <div className="border-t-2 border-ink bg-white px-6 pb-24 pt-0 md:pb-28">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <div className="mx-auto max-w-[820px] px-0 md:px-6">
         <Link
           href="/"

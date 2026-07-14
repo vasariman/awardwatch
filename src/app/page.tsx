@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { getAllCompetitions, getHeroCompetitions } from "@/lib/competitions";
 import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
 import { CompetitionGrid } from "@/components/CompetitionGrid";
+
+// Filter query params (?category=, ?status=, ?student=) always canonicalize
+// to the bare homepage so search engines don't index them as duplicates.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default async function HomePage({
   searchParams,
