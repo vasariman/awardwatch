@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FEATURES } from "@/lib/features";
 
 export function SiteFooter() {
   return (
@@ -35,11 +36,18 @@ export function SiteFooter() {
             <Link href="/about" className="font-sans text-[13px] font-semibold text-ink no-underline">
               About
             </Link>
-            <Link href="#" className="font-sans text-[13px] font-semibold text-ink no-underline">
-              Submit a listing
-            </Link>
-            <Link href="#" className="font-sans text-[13px] font-semibold text-ink no-underline">
-              Contact
+            {FEATURES.submitListing && (
+              <Link href="#" className="font-sans text-[13px] font-semibold text-ink no-underline">
+                Submit a listing
+              </Link>
+            )}
+            {FEATURES.contactLink && (
+              <Link href="#" className="font-sans text-[13px] font-semibold text-ink no-underline">
+                Contact
+              </Link>
+            )}
+            <Link href="/impressum" className="font-sans text-[13px] font-semibold text-ink no-underline">
+              Imprint
             </Link>
           </div>
         </div>

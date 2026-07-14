@@ -2,11 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { CATEGORIES } from "@/lib/types";
 import { getAllCompetitions } from "@/lib/competitions";
+import { FEATURES } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "About — AwardWatch",
   description:
     "AwardWatch is a directory of design competition deadlines across product, graphic, UX/UI, architecture, interior, and sustainable design.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
@@ -66,21 +68,23 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="mt-14 border-t-2 border-ink pt-10">
-          <h2 className="font-sans text-2xl font-black tracking-[-0.02em] text-ink md:text-3xl">
-            Submit a listing
-          </h2>
-          <p className="mt-5 font-sans text-base leading-relaxed text-black/70 md:text-lg">
-            Running a design competition and want it listed? Get in touch
-            and we&rsquo;ll add it.
-          </p>
-          <Link
-            href="#"
-            className="mt-8 inline-block bg-accent px-7 py-4 font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
-          >
-            Submit a listing →
-          </Link>
-        </div>
+        {FEATURES.submitListing && (
+          <div className="mt-14 border-t-2 border-ink pt-10">
+            <h2 className="font-sans text-2xl font-black tracking-[-0.02em] text-ink md:text-3xl">
+              Submit a listing
+            </h2>
+            <p className="mt-5 font-sans text-base leading-relaxed text-black/70 md:text-lg">
+              Running a design competition and want it listed? Get in touch
+              and we&rsquo;ll add it.
+            </p>
+            <Link
+              href="#"
+              className="mt-8 inline-block bg-accent px-7 py-4 font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
+            >
+              Submit a listing →
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

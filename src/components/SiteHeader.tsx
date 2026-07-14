@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FEATURES } from "@/lib/features";
 
 export function SiteHeader() {
   return (
@@ -22,12 +23,14 @@ export function SiteHeader() {
         >
           About
         </Link>
-        <Link
-          href="#"
-          className="bg-accent px-4 py-2.5 font-sans text-[11px] font-bold uppercase tracking-[.03em] text-white no-underline"
-        >
-          Submit a listing
-        </Link>
+        {FEATURES.submitListing && (
+          <Link
+            href="#"
+            className="bg-accent px-4 py-2.5 font-sans text-[11px] font-bold uppercase tracking-[.03em] text-white no-underline"
+          >
+            Submit a listing
+          </Link>
+        )}
       </nav>
     </header>
   );
