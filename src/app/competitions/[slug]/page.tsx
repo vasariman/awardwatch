@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -8,6 +9,7 @@ import {
   getCompetitionBySlug,
 } from "@/lib/competitions";
 import { CategoryChip, StatusChip, StudentChip } from "@/components/Chips";
+import { getCategoryImage } from "@/lib/categoryImages";
 import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -54,6 +56,8 @@ export default async function CompetitionDetailPage({
   const { slug } = await params;
   const item = getCompetitionBySlug(slug);
   if (!item) notFound();
+
+  const categoryImage = getCategoryImage(item.category);
 
   const stats = [
     { label: "Deadline", value: formatDate(item.deadline) },
@@ -113,10 +117,21 @@ export default async function CompetitionDetailPage({
           {item.organizer} — {item.country}
         </div>
 
-        <div className="mt-0 flex h-[220px] items-center justify-center bg-ink sm:h-[300px] md:h-[380px]">
-          <span className="px-6 text-center font-sans text-xs font-bold uppercase leading-relaxed tracking-[.1em] text-white/50">
-            [ Competition visual ]
-          </span>
+        <div className="relative mt-0 flex h-[220px] items-center justify-center overflow-hidden bg-ink sm:h-[300px] md:h-[380px]">
+          {categoryImage ? (
+            <Image
+              src={categoryImage}
+              alt={`${item.category} competition visual`}
+              fill
+              sizes="(min-width: 820px) 820px, 100vw"
+              className="object-cover"
+              priority
+            />
+          ) : (
+            <span className="px-6 text-center font-sans text-xs font-bold uppercase leading-relaxed tracking-[.1em] text-white/50">
+              [ Competition visual ]
+            </span>
+          )}
         </div>
 
         <p className="mt-10 font-sans text-lg font-semibold leading-relaxed text-ink md:mt-11 md:text-xl">

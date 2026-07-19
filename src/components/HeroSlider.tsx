@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Competition } from "@/lib/types";
 import { daysUntil, formatDate } from "@/lib/competitions";
+import { getCategoryImage } from "@/lib/categoryImages";
 import { CategoryChip, StatusChip } from "./Chips";
 
 const AUTOPLAY_MS = 6500;
@@ -83,53 +85,70 @@ export function HeroSlider({ items }: { items: Competition[] }) {
 
 function HeroSlide({ item, active }: { item: Competition; active: boolean }) {
   const days = daysUntil(item.deadline);
+  const image = getCategoryImage(item.category);
 
   return (
     <div
-      className={`absolute inset-0 flex flex-col justify-end px-6 pb-24 pt-16 transition-opacity duration-700 sm:pb-24 sm:pt-28 md:px-10 md:pb-28 ${
+      className={`absolute inset-0 transition-opacity duration-700 ${
         active ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
       aria-hidden={!active}
     >
-      <span
-        aria-hidden
-        className="pointer-events-none absolute -right-4 top-6 select-none whitespace-nowrap font-sans text-[22vw] font-black leading-none tracking-[-0.03em] text-white/[0.06] md:text-[14vw]"
-      >
-        {item.category.split("/")[0]}
-      </span>
+      {image ? (
+        <>
+          <Image
+            src={image}
+            alt=""
+            fill
+            priority={active}
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
+        </>
+      ) : (
+        <span
+          aria-hidden
+          className="pointer-events-none absolute -right-4 top-6 select-none whitespace-nowrap font-sans text-[22vw] font-black leading-none tracking-[-0.03em] text-white/[0.06] md:text-[14vw]"
+        >
+          {item.category.split("/")[0]}
+        </span>
+      )}
 
-      <div className="relative flex flex-col gap-5">
-        <div className="flex items-center gap-3">
-          <StatusChip status={item.status} />
-          <CategoryChip category={item.category} />
-        </div>
-
-        <h1 className="max-w-4xl font-sans text-[11vw] font-black leading-[0.95] tracking-[-0.03em] text-white sm:text-[8vw] md:text-[5.5vw]">
-          {item.title}
-        </h1>
-
-        <div className="font-sans text-sm font-bold text-white/70 md:text-base">
-          {item.organizer} — {item.country}
-        </div>
-
-        <div className="flex flex-wrap items-center gap-x-8 gap-y-3 pt-2">
-          <div className="font-mono text-xs uppercase tracking-[.08em] text-white/50">
-            Deadline&nbsp;
-            <span className="font-sans text-sm font-bold normal-case tracking-normal text-white">
-              {formatDate(item.deadline)}
-            </span>
-            {days >= 0 && item.status !== "expired" && (
-              <span className="ml-2 text-white/50">
-                ({days === 0 ? "today" : `${days}d left`})
-              </span>
-            )}
+      <div className="relative flex h-full flex-col justify-end px-6 pb-24 pt-16 sm:pb-24 sm:pt-28 md:px-10 md:pb-28">
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-3">
+            <StatusChip status={item.status} />
+            <CategoryChip category={item.category} />
           </div>
-          <Link
-            href={`/competitions/${item.slug}`}
-            className="inline-block bg-accent px-7 py-4 font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
-          >
-            View competition →
-          </Link>
+
+          <h1 className="max-w-4xl font-sans text-[11vw] font-black leading-[0.95] tracking-[-0.03em] text-white sm:text-[8vw] md:text-[5.5vw]">
+            {item.title}
+          </h1>
+
+          <div className="font-sans text-sm font-bold text-white/70 md:text-base">
+            {item.organizer} — {item.country}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 pt-2">
+            <div className="font-mono text-xs uppercase tracking-[.08em] text-white/50">
+              Deadline&nbsp;
+              <span className="font-sans text-sm font-bold normal-case tracking-normal text-white">
+                {formatDate(item.deadline)}
+              </span>
+              {days >= 0 && item.status !== "expired" && (
+                <span className="ml-2 text-white/50">
+                  ({days === 0 ? "today" : `${days}d left`})
+                </span>
+              )}
+            </div>
+            <Link
+              href={`/competitions/${item.slug}`}
+              className="inline-block bg-accent px-7 py-4 font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
+            >
+              View competition →
+            </Link>
+          </div>
         </div>
       </div>
     </div>
