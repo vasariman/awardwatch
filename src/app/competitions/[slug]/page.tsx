@@ -12,6 +12,12 @@ import { CategoryChip, StatusChip, StudentChip } from "@/components/Chips";
 import { getCategoryImage } from "@/lib/categoryImages";
 import { SITE_URL } from "@/lib/site";
 
+// Statically generated pages otherwise only refresh on a new deploy —
+// this lets Next.js regenerate each page in the background at most once
+// a day, so a competition's status (open/closing-soon/expired) stays
+// correct as time passes even without a redeploy.
+export const revalidate = 86400;
+
 export function generateStaticParams() {
   return getAllCompetitions().map((c) => ({ slug: c.slug }));
 }
