@@ -33,7 +33,7 @@
     "shortDescription": "An international student and recent-graduate award for engineering and product design that solves a real problem.",
     "longDescription": "Open to current and recent university students in engineering and design, the James Dyson Award rewards inventions that solve genuine, everyday problems. National winners are shortlisted before an international panel including James Dyson selects the global winner. The award emphasizes prototyping and iteration over polish.",
     "submissionFormat": "1–2 A3 boards, a short process video, and supporting sketches submitted online",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "german-design-award-2027",
@@ -213,6 +213,60 @@
     "shortDescription": "One of the most prestigious competitions for typographic excellence, covering hand-lettering, calligraphy, and type design.",
     "longDescription": "Selected by a jury of distinguished designers and art directors, winning entries in the Communication Arts Typography Competition are published in the Typography Annual, included in the magazine's January/February issue and distributed worldwide. Entrants are notified within roughly two months of the deadline; entry fees vary by category with a discount for student submissions.",
     "submissionFormat": "Digital upload of high-resolution images or PDF documents showing the typographic work in context",
+    "status": "open"
+  },
+  {
+    "slug": "european-product-design-award-2026",
+    "title": "European Product Design Award 2026",
+    "organizer": "Farmani Group",
+    "deadline": "2026-08-20",
+    "category": "Product/Industrial Design",
+    "targetAudience": "open",
+    "studentTag": true,
+    "country": "United States",
+    "entryFee": "€400 per entry (professional); students receive 50% off; 50% off each additional category when submitting the same design",
+    "registrationUrl": "https://www.productdesignaward.eu/",
+    "prizeMoney": "European Product Design Award Trophy for the European Product Designer of the Year and Discovery of the Year (student) titles; other winners receive certificates (no cash prize)",
+    "resultDate": "2026-10-18",
+    "shortDescription": "An international product design award from Farmani Group recognizing innovation across categories like automotive, consumer electronics, and eco design.",
+    "longDescription": "The European Product Design Award (EPDA) is organized by Farmani Group, the same organization behind the International Design Awards and Architecture MasterPrize. The competition draws entries from more than 58 countries across categories spanning automotive, consumer electronics, food and beverage, and eco design, judged by a jury of more than 30 international design leaders. The 2026 awards ceremony takes place in Venice.",
+    "submissionFormat": "Online submission: 6–10 project images (professional photography preferred) plus a written project description; a supporting PDF may also be uploaded. A physical product sample is not required.",
+    "status": "closing-soon"
+  },
+  {
+    "slug": "tokyo-tdc-2027",
+    "title": "Tokyo TDC 2027 Annual Awards",
+    "organizer": "Tokyo Type Directors Club",
+    "deadline": "2026-09-15",
+    "category": "Graphic Design",
+    "targetAudience": "open",
+    "studentTag": true,
+    "country": "Japan",
+    "entryFee": "From $35 per entry in early submission (categories 1-8) up to $110 in final submission for larger categories; student rates run $20–$70 depending on category and timing",
+    "registrationUrl": "https://tokyotypedirectorsclub.org/en/entry/",
+    "prizeMoney": "Grand Prize: ¥200,000; other Prize-winning works: ¥100,000 each",
+    "resultDate": "2027-05-27",
+    "shortDescription": "A prestigious international typography and graphic design competition from the Tokyo Type Directors Club, open to designers worldwide.",
+    "longDescription": "Tokyo TDC is one of the most respected typography and graphic design competitions internationally, evaluating work across multiple categories including typography, logotypes, packaging, and moving type. Entrants need not be professional type directors—applicants just need to have served as the type director on the submitted work—and a discounted student rate is available. Prize winners are notified in early December 2026, with results published online in mid-December 2026; the formal award ceremony (where prize money and diplomas are presented) and the accompanying exhibition run May 27 – July 8, 2027 at Ginza Graphic Gallery in Tokyo.",
+    "submissionFormat": "Digital submission via the Tokyo TDC entry platform; category-specific image counts or PDF page counts depending on entry type",
+    "status": "open"
+  },
+  {
+    "slug": "ux-design-awards-2027",
+    "title": "UX Design Awards 2027",
+    "organizer": "IDZ Designpartner Berlin GmbH",
+    "deadline": "2026-11-15",
+    "category": "UX/UI Design",
+    "targetAudience": "open",
+    "studentTag": true,
+    "country": "Germany",
+    "entryFee": "New Talent: €70 per submission; Product & Concept: €320 per submission (plus VAT); Nomination Package (Product & Concept): €2,250",
+    "registrationUrl": "https://ux-design-awards.com/enter",
+    "prizeMoney": "Nomination title, certificate, and trophy plus a PR/press campaign (no cash prize)",
+    "resultDate": "2027-03-03",
+    "shortDescription": "A biannual German award recognizing user-driven digital and physical products, concepts, and student projects in UX design.",
+    "longDescription": "The UX Design Awards, organized by IDZ Designpartner Berlin, evaluate submissions across three tracks: Product (market-ready or soon-to-launch offerings), Concept (startups, prototypes, and research projects), and New Talent (bachelor's and master's degree projects). Judging emphasizes user-driven design and meaningful problem-solving, with nominees notified in December 2026 and winners announced in March 2027.",
+    "submissionFormat": "Digital submission: 4 product images (JPEG, 3000×2000–4000×3000px), a project description (max. 500 characters), company/logo materials, plus optional promotional video and an R&D documentation PDF (max. ~10 pages) for jury review.",
     "status": "open"
   }
 ]
