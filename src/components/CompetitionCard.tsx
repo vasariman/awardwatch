@@ -9,8 +9,10 @@ export function CompetitionCard({ item }: { item: Competition }) {
   return (
     <Link
       href={`/competitions/${item.slug}`}
-      className={`group flex flex-col gap-5 border-2 border-ink bg-white p-6 no-underline transition-colors hover:bg-ink ${
-        item.status === "expired" ? "opacity-50 transition-opacity hover:opacity-100" : ""
+      className={`group flex flex-col gap-5 border-2 bg-white p-6 no-underline transition-all ${
+        item.status === "expired"
+          ? "border-black/25 opacity-35 grayscale hover:bg-neutral-500 hover:opacity-70"
+          : "border-ink hover:bg-ink"
       }`}
     >
       <div className="flex flex-wrap items-center gap-2">
