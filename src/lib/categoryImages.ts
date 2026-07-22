@@ -10,6 +10,9 @@ export const CATEGORY_IMAGES: Partial<Record<Category, string>> = {
   "Product/Industrial Design": "/categories/product-industrial-design.webp",
   Architecture: "/categories/architecture.webp",
   "Interior/Furniture Design": "/categories/interior-furniture-design.webp",
+  "UX/UI Design": "/categories/uiux-design.webp",
+  "Graphic Design": "/categories/graphic-design.webp",
+  "Sustainable Design": "/categories/sustainable-design.webp",
 };
 
 export function getCategoryImage(category: Category): string | null {
