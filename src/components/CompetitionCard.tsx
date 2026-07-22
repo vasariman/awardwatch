@@ -9,7 +9,9 @@ export function CompetitionCard({ item }: { item: Competition }) {
   return (
     <Link
       href={`/competitions/${item.slug}`}
-      className="group flex flex-col gap-5 border-2 border-ink bg-white p-6 no-underline transition-colors hover:bg-ink"
+      className={`group flex flex-col gap-5 border-2 border-ink bg-white p-6 no-underline transition-colors hover:bg-ink ${
+        item.status === "expired" ? "opacity-50 transition-opacity hover:opacity-100" : ""
+      }`}
     >
       <div className="flex flex-wrap items-center gap-2">
         <StatusChip status={item.status} />
