@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FEATURES } from "@/lib/features";
 
@@ -5,9 +6,13 @@ export function SiteFooter() {
   return (
     <footer className="border-t-2 border-ink px-6 py-12 md:px-10 md:py-14">
       <div className="flex flex-wrap justify-between gap-10">
-        <div className="font-sans text-lg font-black tracking-[-0.02em] text-ink">
-          AwardWatch
-        </div>
+        <Image
+          src="/logo.png"
+          alt="AwardWatch"
+          width={840}
+          height={947}
+          className="h-12 w-auto"
+        />
         <div className="flex flex-wrap gap-10 md:gap-12">
           <div className="flex flex-col gap-2.5">
             <div className="mb-1 font-sans text-[10px] font-bold uppercase tracking-[.08em] text-black/40">

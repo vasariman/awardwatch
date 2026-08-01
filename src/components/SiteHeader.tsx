@@ -1,14 +1,19 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FEATURES } from "@/lib/features";
 
 export function SiteHeader() {
   return (
-    <header className="flex items-center justify-between border-b-2 border-ink px-6 py-5 md:px-10">
-      <Link
-        href="/"
-        className="font-sans text-lg font-black tracking-[-0.02em] text-ink no-underline"
-      >
-        AwardWatch
+    <header className="flex items-center justify-between border-b-2 border-ink px-6 py-4 md:px-10">
+      <Link href="/" className="shrink-0">
+        <Image
+          src="/logo.png"
+          alt="AwardWatch"
+          width={840}
+          height={947}
+          priority
+          className="h-14 w-auto md:h-16"
+        />
       </Link>
       <nav className="flex items-center gap-4 md:gap-7">
         <Link
