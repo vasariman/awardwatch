@@ -17,7 +17,9 @@ export function CompetitionCard({ item }: { item: Competition }) {
     >
       <div className="flex flex-wrap items-center gap-2">
         <StatusChip status={item.status} />
-        <CategoryChip category={item.category} />
+        {item.categories.map((category) => (
+          <CategoryChip key={category} category={category} />
+        ))}
         {item.studentTag && <StudentChip />}
       </div>
 

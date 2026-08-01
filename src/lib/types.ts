@@ -15,7 +15,7 @@ export interface Competition {
   title: string;
   organizer: string;
   deadline: string;
-  category: Category;
+  categories: Category[];
   targetAudience: TargetAudience;
   studentTag: boolean;
   country: string;

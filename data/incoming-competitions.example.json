@@ -4,7 +4,7 @@
     "title": "Example Design Award 2027",
     "organizer": "Example Design Foundation",
     "deadline": "2027-03-15",
-    "category": "Product/Industrial Design",
+    "categories": ["Product/Industrial Design"],
     "targetAudience": "open",
     "studentTag": false,
     "country": "Germany",

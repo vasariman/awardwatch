@@ -21,7 +21,7 @@ const SCHEMA_TEXT = `[
     "title": "",
     "organizer": "",
     "deadline": "YYYY-MM-DD",
-    "category": "one of: ${CATEGORIES.join(" | ")}",
+    "categories": ["one or more of: ${CATEGORIES.join(" | ")}"],
     "targetAudience": "students | professionals | open",
     "studentTag": true | false,
     "country": "",
@@ -145,14 +145,16 @@ function sanitizeCandidate(raw, today) {
   const targetAudience = ["students", "professionals", "open"].includes(raw.targetAudience)
     ? raw.targetAudience
     : "open";
-  const category = CATEGORIES.includes(raw.category) ? raw.category : raw.category || null;
+  const categories = Array.isArray(raw.categories)
+    ? raw.categories.filter((c) => CATEGORIES.includes(c))
+    : [];
 
   return {
     slug: raw.slug ? slugify(raw.slug) : slugify(raw.title),
     title: raw.title,
     organizer: raw.organizer ?? null,
     deadline,
-    category,
+    categories,
     targetAudience,
     studentTag: typeof raw.studentTag === "boolean" ? raw.studentTag : targetAudience === "students",
     country: raw.country ?? null,

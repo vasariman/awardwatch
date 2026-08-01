@@ -63,7 +63,7 @@ export default async function CompetitionDetailPage({
   const item = getCompetitionBySlug(slug);
   if (!item) notFound();
 
-  const categoryImage = getCategoryImage(item.category);
+  const categoryImage = getCategoryImage(item.categories);
 
   const stats = [
     { label: "Deadline", value: formatDate(item.deadline) },
@@ -111,7 +111,9 @@ export default async function CompetitionDetailPage({
 
         <div className="mt-8 flex flex-wrap items-center gap-3 md:mt-10">
           <StatusChip status={item.status} />
-          <CategoryChip category={item.category} />
+          {item.categories.map((category) => (
+            <CategoryChip key={category} category={category} />
+          ))}
           {item.studentTag && <StudentChip />}
         </div>
 
@@ -127,7 +129,7 @@ export default async function CompetitionDetailPage({
           {categoryImage ? (
             <Image
               src={categoryImage}
-              alt={`${item.category} competition visual`}
+              alt={`${item.categories.join(" / ")} competition visual`}
               fill
               sizes="(min-width: 820px) 820px, 100vw"
               className="object-cover"

@@ -4,7 +4,9 @@
     "title": "iF Design Award 2027",
     "organizer": "iF International Forum Design GmbH",
     "deadline": "2026-11-04",
-    "category": "Product/Industrial Design",
+    "categories": [
+      "Product/Industrial Design"
+    ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "Germany",
@@ -22,7 +24,9 @@
     "title": "James Dyson Award 2026",
     "organizer": "James Dyson Foundation",
     "deadline": "2026-07-15",
-    "category": "Product/Industrial Design",
+    "categories": [
+      "Product/Industrial Design"
+    ],
     "targetAudience": "students",
     "studentTag": true,
     "country": "International",
@@ -40,7 +44,9 @@
     "title": "German Design Award 2027",
     "organizer": "German Design Council",
     "deadline": "2026-09-11",
-    "category": "Graphic Design",
+    "categories": [
+      "Graphic Design"
+    ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "Germany",
@@ -58,7 +64,9 @@
     "title": "MUSE Design Awards 2026 (Season 2)",
     "organizer": "International Awards Associate",
     "deadline": "2026-07-09",
-    "category": "Graphic Design",
+    "categories": [
+      "Graphic Design"
+    ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "United States",
@@ -76,7 +84,9 @@
     "title": "A' Design Award & Competition 2026–2027",
     "organizer": "A' Design Award & Competition (Como)",
     "deadline": "2026-09-30",
-    "category": "UX/UI Design",
+    "categories": [
+      "UX/UI Design"
+    ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "Italy",
@@ -94,7 +104,9 @@
     "title": "Architecture MasterPrize 2026",
     "organizer": "Farmani Group",
     "deadline": "2026-08-31",
-    "category": "Architecture",
+    "categories": [
+      "Architecture"
+    ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "United States",
@@ -112,7 +124,9 @@
     "title": "Interior Design Best of Year Awards 2026",
     "organizer": "SANDOW Design Group / Interior Design magazine",
     "deadline": "2026-09-18",
-    "category": "Interior/Furniture Design",
+    "categories": [
+      "Interior/Furniture Design"
+    ],
     "targetAudience": "professionals",
     "studentTag": false,
     "country": "United States",
@@ -130,7 +144,9 @@
     "title": "Bundespreis Ecodesign 2026",
     "organizer": "German Federal Ministry for the Environment / Umweltbundesamt",
     "deadline": "2026-04-02",
-    "category": "Sustainable Design",
+    "categories": [
+      "Sustainable Design"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "Germany",
@@ -148,7 +164,9 @@
     "title": "Green Product Award 2027",
     "organizer": "Green Product Award / Green Future Club",
     "deadline": "2026-09-17",
-    "category": "Sustainable Design",
+    "categories": [
+      "Sustainable Design"
+    ],
     "targetAudience": "professionals",
     "studentTag": false,
     "country": "Germany",
@@ -166,7 +184,9 @@
     "title": "International Design Awards (IDA) 2026",
     "organizer": "IDA / Farmani Group",
     "deadline": "2026-10-15",
-    "category": "Interior/Furniture Design",
+    "categories": [
+      "Interior/Furniture Design"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "United States",
@@ -184,7 +204,9 @@
     "title": "Green Good Design Award 2027",
     "organizer": "The Chicago Athenaeum: Museum of Architecture and Design",
     "deadline": "2027-01-15",
-    "category": "Sustainable Design",
+    "categories": [
+      "Sustainable Design"
+    ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "United States",
@@ -202,7 +224,9 @@
     "title": "Communication Arts Typography Competition 2027",
     "organizer": "Communication Arts",
     "deadline": "2026-09-18",
-    "category": "Graphic Design",
+    "categories": [
+      "Graphic Design"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "United States",
@@ -220,7 +244,9 @@
     "title": "European Product Design Award 2026",
     "organizer": "Farmani Group",
     "deadline": "2026-08-20",
-    "category": "Product/Industrial Design",
+    "categories": [
+      "Product/Industrial Design"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "United States",
@@ -238,7 +264,9 @@
     "title": "Tokyo TDC 2027 Annual Awards",
     "organizer": "Tokyo Type Directors Club",
     "deadline": "2026-09-15",
-    "category": "Graphic Design",
+    "categories": [
+      "Graphic Design"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "Japan",
@@ -256,7 +284,9 @@
     "title": "UX Design Awards 2027",
     "organizer": "IDZ Designpartner Berlin GmbH",
     "deadline": "2026-11-15",
-    "category": "UX/UI Design",
+    "categories": [
+      "UX/UI Design"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "Germany",
@@ -274,7 +304,9 @@
     "title": "Buildner's Unbuilt Award 2026",
     "organizer": "Buildner",
     "deadline": "2026-10-20",
-    "category": "Architecture",
+    "categories": [
+      "Architecture"
+    ],
     "targetAudience": "open",
     "studentTag": true,
     "country": "Latvia",
@@ -285,6 +317,46 @@
     "shortDescription": "An open international architecture prize for unbuilt (conceptual) projects, judged across small, medium, and large project scales with a dedicated student prize track.",
     "longDescription": "Organized by Buildner (formerly Bee Breeders), an established architecture-competition platform, the Unbuilt Award recognizes conceptual and unrealized architecture, interior, landscape, and furniture projects. Now in its third edition, entrants compete in Small, Medium, and Large categories, each with a €20,000 top prize, alongside honorable mentions, dedicated student prizes, and a best-presentation award, for a combined €100,000 prize fund. The competition is open to anyone regardless of professional qualification, entering individually or in teams of up to four.",
     "submissionFormat": "One anonymous A2 landscape panel (max 10MB) with visuals and explanatory text in English; video and animation are not permitted",
+    "status": "open"
+  },
+  {
+    "slug": "communication-arts-illustration-competition-2027",
+    "title": "Communication Arts 2027 Illustration Competition",
+    "organizer": "Communication Arts",
+    "deadline": "2027-01-08",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "studentTag": true,
+    "country": "International",
+    "entryFee": "Varies by category (published in the organizer's Category Fee schedule); student entries receive substantial discounts",
+    "registrationUrl": "https://commarts.secure-platform.com/a",
+    "prizeMoney": "No cash prize — winners receive a personalized aluminum Award of Excellence, worldwide publication in the Illustration Annual, and printed certificates",
+    "resultDate": "2027-03-22",
+    "shortDescription": "A long-running global illustration competition from Communication Arts magazine; winners are published in the print and digital Illustration Annual.",
+    "longDescription": "Open to illustrators worldwide, the Communication Arts Illustration Competition accepts any illustration first published or produced between January 2026 and January 2027 (AI text-to-image submissions are excluded). Winners receive a personalized aluminum Award of Excellence, worldwide publication in the Illustration Annual, and a feature on the Communication Arts website. Entry fees vary by category, with substantial discounts for student entrants.",
+    "submissionFormat": "Digital images as RGB JPG (max 2MB) or motion/animation as MOV, MP4, MPG, or GIF (max 500MB), submitted through the online competition system",
+    "status": "open"
+  },
+  {
+    "slug": "green-concept-award-2027",
+    "title": "Green Concept Award 2027",
+    "organizer": "Green Product Award / Green Future Club",
+    "deadline": "2027-01-17",
+    "categories": [
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "studentTag": true,
+    "country": "International",
+    "entryFee": "€450 (free for students and graduates within 6 months of graduation)",
+    "registrationUrl": "https://www.gp-award.com/en/auth/register",
+    "prizeMoney": "No cash prize — finalists receive digital certificates, personalized jury feedback, an online project gallery profile, and rights to use finalist/winner seals",
+    "resultDate": "2027-02-17",
+    "shortDescription": "Sibling award to the Green Product Award for early-stage sustainable design concepts and prototypes, with free entry for students.",
+    "longDescription": "The Green Concept Award, run by the Green Future Club alongside the established Green Product Award, recognizes sustainability-focused design concepts and prototypes across 14 categories. Applicants must provide verifiable sustainability evidence supported by documentation. Finalists receive digital certificates, personalized jury feedback, and an online profile in the project gallery; the awards ceremony takes place in Berlin.",
+    "submissionFormat": "Online submission via the gp-award.com portal with supporting sustainability documentation",
     "status": "open"
   }
 ]

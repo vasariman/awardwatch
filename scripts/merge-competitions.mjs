@@ -8,7 +8,7 @@
 //
 //   npm run merge
 //
-// Every candidate is validated (required fields, valid category/audience/
+// Every candidate is validated (required fields, valid categories/audience/
 // status enums, a real future deadline, a well-formed URL, and duplicate
 // checks against both competitions.json and the rest of the batch). Only
 // candidates with zero issues are appended to competitions.json — anything
@@ -83,8 +83,17 @@ function validateCandidate(candidate, today) {
     }
   }
 
-  if (!isEmpty(candidate.category) && !CATEGORIES.includes(candidate.category)) {
-    issues.push(`Invalid category: "${candidate.category}" (must be one of: ${CATEGORIES.join(", ")})`);
+  if (!isEmpty(candidate.categories)) {
+    if (!Array.isArray(candidate.categories)) {
+      issues.push(`"categories" must be an array, got: ${JSON.stringify(candidate.categories)}`);
+    } else {
+      const invalidCategories = candidate.categories.filter((c) => !CATEGORIES.includes(c));
+      if (invalidCategories.length > 0) {
+        issues.push(
+          `Invalid categories: ${invalidCategories.map((c) => `"${c}"`).join(", ")} (must be one of: ${CATEGORIES.join(", ")})`
+        );
+      }
+    }
   }
   if (!isEmpty(candidate.targetAudience) && !TARGET_AUDIENCES.includes(candidate.targetAudience)) {
     issues.push(`Invalid targetAudience: "${candidate.targetAudience}" (must be one of: ${TARGET_AUDIENCES.join(", ")})`);
@@ -259,7 +268,7 @@ function main() {
     console.log("None.");
   } else {
     for (const c of toMerge) {
-      console.log(`  - "${c.title}" (${c.slug}) — ${c.category}, deadline ${c.deadline}, status ${c.status}`);
+      console.log(`  - "${c.title}" (${c.slug}) — ${c.categories.join(", ")}, deadline ${c.deadline}, status ${c.status}`);
     }
   }
 

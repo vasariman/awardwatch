@@ -85,7 +85,7 @@ export function HeroSlider({ items }: { items: Competition[] }) {
 
 function HeroSlide({ item, active }: { item: Competition; active: boolean }) {
   const days = daysUntil(item.deadline);
-  const image = getCategoryImage(item.category);
+  const image = getCategoryImage(item.categories);
 
   return (
     <div
@@ -111,15 +111,17 @@ function HeroSlide({ item, active }: { item: Competition; active: boolean }) {
           aria-hidden
           className="pointer-events-none absolute -right-4 top-6 select-none whitespace-nowrap font-sans text-[22vw] font-black leading-none tracking-[-0.03em] text-white/[0.06] md:text-[14vw]"
         >
-          {item.category.split("/")[0]}
+          {item.categories[0].split("/")[0]}
         </span>
       )}
 
       <div className="relative flex h-full flex-col justify-end px-6 pb-24 pt-16 sm:pb-24 sm:pt-28 md:px-10 md:pb-28">
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <StatusChip status={item.status} />
-            <CategoryChip category={item.category} />
+            {item.categories.map((category) => (
+              <CategoryChip key={category} category={category} />
+            ))}
           </div>
 
           <h1 className="max-w-4xl font-sans text-[11vw] font-black leading-[0.95] tracking-[-0.03em] text-white sm:text-[8vw] md:text-[5.5vw]">

@@ -21,7 +21,7 @@ export const REQUIRED_FIELDS = [
   "title",
   "organizer",
   "deadline",
-  "category",
+  "categories",
   "targetAudience",
   "country",
   "entryFee",
@@ -53,6 +53,7 @@ export const STATUSES = ["open", "closing-soon", "expired"];
 const CLOSING_SOON_WINDOW_DAYS = 45;
 
 export function isEmpty(value) {
+  if (Array.isArray(value)) return value.length === 0;
   return value === undefined || value === null || value === "";
 }
 

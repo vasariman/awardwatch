@@ -134,7 +134,7 @@ function parseItem(itemXml, today) {
     title,
     organizer: auslober || null,
     deadline,
-    category: "Architecture", // BauNetz Wettbewerbe is an architecture-only feed
+    categories: ["Architecture"], // BauNetz Wettbewerbe is an architecture-only feed
     targetAudience,
     studentTag: targetAudience === "students",
     country: zulassungsbereich || ort || null,

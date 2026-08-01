@@ -15,6 +15,13 @@ export const CATEGORY_IMAGES: Partial<Record<Category, string>> = {
   "Sustainable Design": "/categories/sustainable-design.webp",
 };
 
-export function getCategoryImage(category: Category): string | null {
-  return CATEGORY_IMAGES[category] ?? null;
+// Competitions can span multiple categories; use the first one (in the
+// order the competition lists them) that has an image, so entries with
+// a mix of covered/uncovered categories still show something relevant.
+export function getCategoryImage(categories: Category[]): string | null {
+  for (const category of categories) {
+    const image = CATEGORY_IMAGES[category];
+    if (image) return image;
+  }
+  return null;
 }

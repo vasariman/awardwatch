@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Category } from "@/lib/types";
 import { getAllCompetitions, getHeroCompetitions } from "@/lib/competitions";
 import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
@@ -19,7 +20,7 @@ export default async function HomePage({
   const hero = getHeroCompetitions();
 
   let items = getAllCompetitions();
-  if (sp.category) items = items.filter((c) => c.category === sp.category);
+  if (sp.category) items = items.filter((c) => c.categories.includes(sp.category as Category));
   if (sp.status) items = items.filter((c) => c.status === sp.status);
   if (sp.student === "true") items = items.filter((c) => c.studentTag);
 
