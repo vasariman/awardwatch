@@ -54,6 +54,9 @@ export function SiteFooter() {
             <Link href="/impressum" className="font-sans text-[13px] font-semibold text-ink no-underline">
               Imprint
             </Link>
+            <Link href="/datenschutz" className="font-sans text-[13px] font-semibold text-ink no-underline">
+              Privacy
+            </Link>
           </div>
         </div>
       </div>
