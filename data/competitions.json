@@ -502,5 +502,109 @@
     "slug": "communication-arts-photography-competition-2027",
     "studentTag": true,
     "longDescription": "The Communication Arts Photography Competition is an annual international competition recognizing excellence in advertising, book, editorial, institutional, self-promotion, motion/cinematography, and unpublished photography, plus a dedicated Student Work category. Any photograph first published or produced between March 2026 and March 2027 is eligible, with entries accepted from any country; AI-generated submissions are excluded. The deadline for the 2027 competition is 12 March 2027 (midnight Pacific Time), with late entries accepted until 26 March 2027 for a $10 per-entry surcharge. There is no cash prize; winners receive a personalized solid aluminum Award of Excellence, a certificate, and publication in the Communication Arts Photography Annual (print and digital) along with online exposure. Only accepted entrants are notified, within about two months of the final deadline."
+  },
+  {
+    "title": "DNA Paris Design Awards 2027",
+    "organizer": "DNA Paris Design Awards",
+    "deadline": "2027-05-07",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design",
+      "Product/Industrial Design",
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "France",
+    "entryFee": "€350 per entry (Architecture, Interior, Product); €100 per entry (Graphic); €75 per entry for students in any category, with 50% off each additional category; 20% early-bird discount until Dec 18, 2026, 10% extended early-bird until Feb 19, 2027; +10% late fee for entries between the May 7 regular deadline and the May 21, 2027 final deadline",
+    "registrationUrl": "https://dna.paris/submit/register.php",
+    "prizeMoney": "DNA Award trophy; main category winners are named 'DNA Designer of the Year' (no cash prize)",
+    "resultDate": "2027-11-01",
+    "shortDescription": "A Paris-based multidisciplinary design award spanning architecture, interior, landscape, product, and graphic design, open to both professionals and students.",
+    "submissionFormat": "Online submission via the DNA Paris entry portal: project images and a written description, with category-specific supporting material",
+    "status": "open",
+    "slug": "dna-paris-design-award-2027",
+    "studentTag": true,
+    "longDescription": "The DNA Paris Design Awards recognize outstanding work across five main disciplines — architecture, interior design, landscape, product design, and graphic design — with separate, lower-cost entry tiers for student submissions. Entrants can apply for up to five sub-awards within their main category. Main category winners are named DNA Designer of the Year, and all winners are celebrated at an annual awards ceremony in Paris."
+  },
+  {
+    "title": "A' Sustainable Products, Projects and Green Design Award 2026",
+    "organizer": "A' Design Award & Competition (Como)",
+    "deadline": "2026-09-30",
+    "categories": [
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "country": "Italy",
+    "entryFee": "Registration is free; a nomination fee applies once shortlisted and scales by entry edition (Digital / Vision / Classic / Pro); exact 2026 amounts not published on the fee calculator page found this session",
+    "registrationUrl": "https://competition.adesignaward.com/award-category.php?ID=95",
+    "prizeMoney": "A' Design Prize package of PR, marketing, and publicity tools for professional-edition laureates, plus trophy and gala presentation (no cash prize)",
+    "resultDate": "2027-05-01",
+    "shortDescription": "A sustainability-focused track of the long-running A' Design Award, recognizing sustainable products, projects, and green design across a broad range of industries.",
+    "submissionFormat": "Online submission via the A' Design Award competition platform: images, technical details, and a written design statement",
+    "status": "open",
+    "slug": "a-sustainable-products-projects-green-design-award-2026",
+    "studentTag": false,
+    "longDescription": "Run by the same organization behind the flagship A' Design Award & Competition, the A' Sustainable Products, Projects and Green Design Award evaluates entries spanning eco-friendly furniture, sustainable architecture and interiors, renewable energy projects, green industrial design, and dozens of related categories. Professional-edition laureates receive the A' Design Prize, a package of PR, marketing, and publicity tools, and are celebrated at the annual gala presentation."
+  },
+  {
+    "title": "SDGs Design International Awards 2026",
+    "organizer": "SDGs Design International Awards Committee (Kyushu University, Japan & Dongseo University, Korea)",
+    "deadline": "2026-09-15",
+    "categories": [
+      "Sustainable Design"
+    ],
+    "targetAudience": "students",
+    "country": "Japan / South Korea",
+    "entryFee": "Free (no entry fee stated across the official pages found this session)",
+    "registrationUrl": "https://www.sdgs-design-awards.com/en",
+    "prizeMoney": "Gold Award: KRW 3,000,000 + certificate; Silver Award: KRW 2,000,000 + certificate; Bronze Award: KRW 1,000,000 + certificate; Honorable Mention and Special High School Award: e-certificate",
+    "resultDate": "2026-10-31",
+    "shortDescription": "A binational academic design competition from Kyushu University (Japan) and Dongseo University (Korea) for student ideas addressing the UN Sustainable Development Goals.",
+    "submissionFormat": "Word or PDF application form submitted by email to the organizing committee, per the format specified in the official call for entries",
+    "status": "closing-soon",
+    "slug": "sdgs-design-international-awards-2026",
+    "studentTag": true,
+    "longDescription": "The SDGs Design International Awards invite university, graduate school, vocational, and high school students worldwide — including those outside design programs — to propose creative design solutions to the UN Sustainable Development Goals. Entries fall under four themes: Resilient Cities and Communities, Sustainable Green Design and Climate Action, Blue Sustainability (Oceans and Water), and other related topics. The competition is jointly organized by the design faculties of Kyushu University and Dongseo University."
+  },
+  {
+    "title": "Pavilion Atlas 2026",
+    "organizer": "Buildner (in partnership with ArchDaily)",
+    "deadline": "2026-10-19",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "Latvia",
+    "entryFee": "€140 (architects/professionals/companies) or €120 (students) single registration fee, payable in full or via 3 monthly installments; registration open through Sep 16, 2026",
+    "registrationUrl": "https://architecturecompetitions.com/pavilionatlas/",
+    "prizeMoney": "€20,000 total: 1st €10,000, 2nd €5,000, 3rd €3,000, Student Award €1,000, Sustainability Award €1,000, plus 6 honorable mentions",
+    "resultDate": "2026-12-08",
+    "shortDescription": "An international conceptual pavilion design competition from Buildner and ArchDaily, open to architects, artists, and creatives of all backgrounds.",
+    "submissionFormat": "Digital submission of a conceptual pavilion design and supporting narrative, submitted in English via the Buildner platform",
+    "status": "open",
+    "slug": "buildner-pavilion-atlas-2026",
+    "studentTag": true,
+    "longDescription": "Pavilion Atlas, organized by Buildner in partnership with ArchDaily, invites entrants to design a conceptual pavilion for a country of their choice, conveying a spatial narrative about that place. Open to architects, artists, and creatives regardless of professional qualification, entries are judged with dedicated prizes for students and for sustainability-focused designs, alongside the main placings. All submissions must be in English."
+  },
+  {
+    "title": "Kingspan MICROHOME 2026",
+    "organizer": "Buildner (in partnership with Kingspan)",
+    "deadline": "2026-11-02",
+    "categories": [
+      "Architecture",
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "country": "Latvia",
+    "entryFee": "€140 (professional/enthusiast) or €120 (student) single registration fee plus 4.5% VAT, payable in full or via installments; registration open through Sep 30, 2026",
+    "registrationUrl": "https://architecturecompetitions.com/microhome2026/",
+    "prizeMoney": "€100,000 total prize fund: €55,000 in Buildner prizes (1st €30,000, 2nd €10,000, 3rd €5,000, plus Student and Sustainability Awards), plus a separate €30,000 Kingspan Award and three €5,000 Kingspan Compliments",
+    "resultDate": "2026-12-15",
+    "shortDescription": "A Buildner and Kingspan-sponsored international competition to design a sustainable, energy-efficient microhome under 25m², open to all backgrounds.",
+    "submissionFormat": "Four A2 presentation panels (suggested, not mandatory) submitted in English via the Buildner platform",
+    "status": "open",
+    "slug": "kingspan-microhome-2026",
+    "studentTag": true,
+    "longDescription": "Now in its 11th edition, Kingspan MICROHOME challenges architects, designers, and creative thinkers to develop a modular, self-sufficient, energy-efficient microhome with a maximum footprint of 25 square meters for a hypothetical young professional couple. The competition is open to entrants of any professional background and includes dedicated Buildner Student and Sustainability Awards alongside the main placings and the sponsor-funded Kingspan Award. All submissions must be in English."
   }
 ]
