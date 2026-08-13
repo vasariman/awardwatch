@@ -377,7 +377,7 @@
     "shortDescription": "Annual international awards recognizing outstanding interior design projects across residential, commercial, and public spaces, organized by World Interiors News.",
     "longDescription": "Now in its 14th year, the WIN Awards (World Interiors News Awards) celebrate innovative, visionary interior design work worldwide across 27 categories spanning residential, commercial, and public spaces. Entries are judged by an international jury of design professionals. The 2026 edition is open for submissions with a final deadline of August 6, 2026; winners are announced in November 2026 (exact date not yet published).",
     "submissionFormat": "Online submission via the WIN Awards portal (win-awards.evessiocloud.com): project details, design features, materials, and supporting images per category. Exact image/word-count specifications are provided in the site's downloadable Entry Kit.",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "london-design-awards-2026-season-2",
@@ -442,5 +442,65 @@
     "longDescription": "The AIA International Design Awards, run by the American Institute of Architects' International chapter, recognize built and unbuilt work by AIA-affiliated architects on projects located anywhere outside the US and its territories. The 2026 program spans seven categories: Architecture, Interior Architecture, Urban Design, Unbuilt Projects, Firm Award, Sustainable Future Award (developed with Dow), and Inclusive Design Excellence Award. Non-AIA members may enter but must complete an AIA membership application as part of submission. The 2026 submission deadline is Friday, August 14, 2026 at 5:00pm Eastern US time, with winners celebrated at the AIA International Conference in Cairo on November 14, 2026.",
     "submissionFormat": "Primary jury-review submission is a PDF (max 20 pages, max 10MB) with at least 3 project photographs plus floor plans, site plans, elevations, and sections. Separate high-resolution (300dpi+) images are required for exhibition/publication if the entry is selected.",
     "status": "closing-soon"
+  },
+  {
+    "title": "Red Dot Award: Product Design 2027",
+    "organizer": "Red Dot GmbH & Co. KG (Design Zentrum Nordrhein Westfalen)",
+    "deadline": "2027-01-15",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Germany",
+    "entryFee": "Tiered entry fee by registration phase (early bird / standard / late submission); exact 2027 amounts not yet published",
+    "registrationUrl": "https://www.red-dot.org/pd/participate",
+    "prizeMoney": "Red Dot trophy, quality label license, and international publicity (no cash prize for the main Product Design award)",
+    "resultDate": "2027-04-01",
+    "shortDescription": "One of the world's most prestigious product design competitions, recognizing outstanding product design across industries worldwide.",
+    "submissionFormat": "Online registration and entry via the My Red Dot portal, with a separate registration required for each entry",
+    "status": "open",
+    "slug": "red-dot-award-product-design-2027",
+    "studentTag": false,
+    "longDescription": "The Red Dot Award: Product Design is one of the largest and most renowned design competitions in the world, run by Design Zentrum Nordrhein Westfalen. Registration for the 2027 edition opens 14 September 2026 and runs through the late submission deadline of 15 January 2027, in early bird, standard, and late-submission phases with increasing fees. The award is open to manufacturers and designers worldwide whose products are made using an industrial production process and launched on the market between 1 January 2025 and 1 July 2027. Entrants register and submit via the My Red Dot online portal, with a separate registration required for each entry. Winners are notified by email at the beginning of April 2027, and the Red Dot: Best of the Best trophies are awarded at a gala evening at the Aalto Theatre in Essen, Germany, on 13 July 2027."
+  },
+  {
+    "title": "American Architecture Awards 2027",
+    "organizer": "The Chicago Athenaeum: Museum of Architecture and Design",
+    "deadline": "2027-02-01",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "$395 USD per entry online (plus $50 fee for bank transfer; $100 late fee applies after the deadline)",
+    "registrationUrl": "https://www.chi-athenaeum.org/application-american-architecture-awards-2025.html",
+    "prizeMoney": "No cash prize — winners are exhibited internationally and published in the Metropolitan Arts Press catalog",
+    "resultDate": "2027-11-20",
+    "shortDescription": "Annual program from The Chicago Athenaeum honoring outstanding American architecture, landscape architecture, and urban planning projects.",
+    "submissionFormat": "Online application via awardapplication.com: a 500-1000 word project description, 10-12 images (16:9 or 1:1, 300dpi, max 6MB each), and a single PDF (max 25MB) of floor plans, sections, and elevations",
+    "status": "open",
+    "slug": "american-architecture-awards-2027",
+    "studentTag": false,
+    "longDescription": "The American Architecture Awards, presented by The Chicago Athenaeum: Museum of Architecture and Design, recognize commercial, corporate, institutional, healthcare, transportation, educational, and residential buildings as well as urban planning projects, across more than 32 categories including specialized areas like energy buildings and restoration work. Eligible submissions must be the work of American architects, landscape architects, or urban planners (including international firms with U.S. offices) for projects built or unbuilt in the U.S., or by U.S. firms working abroad, since 1 January 2025. The submission deadline for the 2027 edition is 1 February 2027. Winning projects are exhibited internationally and published in the Metropolitan Arts Press catalog."
+  },
+  {
+    "title": "Communication Arts 2027 Photography Competition",
+    "organizer": "Communication Arts magazine",
+    "deadline": "2027-03-12",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Varies by category (published in the organizer's Category Fee schedule); $10 per-entry late fee for entries between March 12–26, 2027",
+    "registrationUrl": "https://www.commarts.com/competition/2027-photography",
+    "prizeMoney": "No cash prize — winners receive a personalized aluminum Award of Excellence, publication in the Communication Arts Photography Annual (print and digital), and a certificate",
+    "resultDate": "2027-05-12",
+    "shortDescription": "International photography competition from Communication Arts magazine, honoring outstanding work across advertising, editorial, and other categories.",
+    "submissionFormat": "Online submission: digital images as JPG/RGB (max 2MB) or motion entries as MOV/MP4/MPG (max 500MB)",
+    "status": "open",
+    "slug": "communication-arts-photography-competition-2027",
+    "studentTag": true,
+    "longDescription": "The Communication Arts Photography Competition is an annual international competition recognizing excellence in advertising, book, editorial, institutional, self-promotion, motion/cinematography, and unpublished photography, plus a dedicated Student Work category. Any photograph first published or produced between March 2026 and March 2027 is eligible, with entries accepted from any country; AI-generated submissions are excluded. The deadline for the 2027 competition is 12 March 2027 (midnight Pacific Time), with late entries accepted until 26 March 2027 for a $10 per-entry surcharge. There is no cash prize; winners receive a personalized solid aluminum Award of Excellence, a certificate, and publication in the Communication Arts Photography Annual (print and digital) along with online exposure. Only accepted entrants are notified, within about two months of the final deadline."
   }
 ]
