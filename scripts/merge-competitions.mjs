@@ -169,6 +169,18 @@ function findDuplicateIssue(candidate, index) {
   return null;
 }
 
+// Only these fields are ever written into competitions.json. This keeps
+// scratch-only bookkeeping some research runs attach to a candidate (e.g. a
+// "sourcingNotes" field flagging estimated values that still need
+// reconfirming) from leaking into the live data on a real merge.
+function pickSchemaFields(candidate) {
+  const picked = {};
+  for (const field of FULL_REQUIRED_FIELDS) {
+    if (field in candidate) picked[field] = candidate[field];
+  }
+  return picked;
+}
+
 function registerInIndex(candidate, index) {
   const url = isEmpty(candidate.registrationUrl) ? null : normalizeUrl(candidate.registrationUrl);
   const titleOrgKey = normalizeTitleOrganizer(candidate.title, candidate.organizer);
@@ -238,7 +250,7 @@ function main() {
     const label = `[${i}] "${candidate?.title || "(no title)"}"${candidate?.organizer ? ` (${candidate.organizer})` : ""}`;
 
     if (issues.length === 0) {
-      const normalized = { ...candidate, status: computeStatus(candidate.deadline, today) };
+      const normalized = { ...pickSchemaFields(candidate), status: computeStatus(candidate.deadline, today) };
       registerInIndex(normalized, index);
       results.push({ label, candidate: normalized, issues: [] });
     } else {
