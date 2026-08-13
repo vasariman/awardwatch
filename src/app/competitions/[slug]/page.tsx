@@ -7,6 +7,7 @@ import {
   formatDate,
   getAllCompetitions,
   getCompetitionBySlug,
+  getSuccessorCompetition,
 } from "@/lib/competitions";
 import { CategoryChip, StatusChip, StudentChip } from "@/components/Chips";
 import { getCategoryImage } from "@/lib/categoryImages";
@@ -63,6 +64,7 @@ export default async function CompetitionDetailPage({
   const item = getCompetitionBySlug(slug);
   if (!item) notFound();
 
+  const successor = item.status === "expired" ? getSuccessorCompetition(item) : undefined;
   const categoryImage = getCategoryImage(item.categories);
 
   const stats = [
@@ -124,6 +126,28 @@ export default async function CompetitionDetailPage({
         <div className="mt-4 border-b-2 border-ink pb-7 font-sans text-base font-bold text-black/60">
           {item.organizer} — {item.country}
         </div>
+
+        {successor && (
+          <div className="mt-8 flex flex-col gap-4 border-2 border-accent bg-accent/5 p-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <div className="font-sans text-[10px] font-bold uppercase tracking-[.06em] text-accent">
+                This edition has closed
+              </div>
+              <div className="mt-1.5 font-sans text-xl font-black leading-snug text-ink">
+                {successor.title} is now open
+              </div>
+              <div className="mt-1 font-sans text-sm font-bold text-black/60">
+                Deadline {formatDate(successor.deadline)}
+              </div>
+            </div>
+            <Link
+              href={`/competitions/${successor.slug}`}
+              className="inline-block shrink-0 bg-accent px-6 py-4 text-center font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
+            >
+              View current edition →
+            </Link>
+          </div>
+        )}
 
         <div className="relative mt-0 flex h-[220px] items-center justify-center overflow-hidden bg-ink sm:h-[300px] md:h-[380px]">
           {categoryImage ? (

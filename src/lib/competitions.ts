@@ -48,6 +48,39 @@ export function getHeroCompetitions(count = 5): Competition[] {
     .slice(0, count);
 }
 
+// Strips the edition year (or year range, e.g. "2026–2027") and a trailing
+// "(Season N)" marker from a title, so different editions of the same
+// competition compare equal — e.g. "James Dyson Award 2026" and
+// "James Dyson Award 2027" both normalize to "james dyson award".
+function normalizeEditionTitle(title: string): string {
+  return title
+    .replace(/\(season\s*\d+\)/gi, "")
+    .replace(/\b(19|20)\d{2}(\s*[–-]\s*(?:19|20)?\d{2})?\b/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+// For an expired competition, finds the next non-expired edition of the
+// same competition (same organizer, same title once the year is stripped),
+// so an old detail page can point readers to where the deadline moved.
+// Returns undefined until that next edition has actually been researched
+// and added to competitions.json.
+export function getSuccessorCompetition(item: Competition): Competition | undefined {
+  const base = normalizeEditionTitle(item.title);
+  if (!base) return undefined;
+
+  const candidates = getAllCompetitions().filter(
+    (c) =>
+      c.slug !== item.slug &&
+      c.organizer === item.organizer &&
+      c.status !== "expired" &&
+      normalizeEditionTitle(c.title) === base
+  );
+
+  return candidates.sort((a, b) => a.deadline.localeCompare(b.deadline))[0];
+}
+
 export function formatDate(iso: string): string {
   const d = new Date(iso + "T00:00:00Z");
   return d.toLocaleDateString("en-US", {
