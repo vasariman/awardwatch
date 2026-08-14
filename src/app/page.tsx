@@ -4,6 +4,7 @@ import { getAllCompetitions, getHeroCompetitions } from "@/lib/competitions";
 import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
 import { CompetitionGrid } from "@/components/CompetitionGrid";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 // Filter query params (?category=, ?status=, ?student=) always canonicalize
 // to the bare homepage so search engines don't index them as duplicates.
@@ -51,7 +52,7 @@ export default async function HomePage({
           />
         </div>
 
-        <CompetitionGrid items={items} />
+        <CompetitionGrid items={items} insert={<NewsletterSignup />} insertAfter={6} />
       </section>
     </>
   );

@@ -99,6 +99,38 @@ export default function DatenschutzPage() {
           </p>
         </Section>
 
+        <Section title="Newsletter (Brevo)">
+          <p>
+            If you subscribe to the newsletter, your email address is
+            processed by Brevo (Sendinblue GmbH / Brevo SAS, 106 boulevard
+            Haussmann, 75008 Paris, France) on our behalf under a data
+            processing agreement pursuant to Art. 28 GDPR. Data is stored on
+            servers within the European Union.
+          </p>
+          <p className="mt-4">
+            We use a double opt-in procedure: after entering your address you
+            receive an email asking you to confirm the subscription. Your
+            address is only added to the list once you click that link. Until
+            then, nothing is stored on our side. The confirmation, including
+            its timestamp, is logged so that we can demonstrate your consent
+            if required.
+          </p>
+          <p className="mt-4">
+            The legal basis is your consent (Art. 6(1)(a) GDPR). You can
+            withdraw it at any time with effect for the future — every email
+            contains an unsubscribe link, or you can write to us. After
+            unsubscribing, your address is deleted from the list; the record
+            of your original consent may be retained separately as evidence
+            of lawful processing.
+          </p>
+          <p className="mt-4">
+            Brevo evaluates deliveries in aggregate (e.g. delivery and bounce
+            rates) to operate and secure the service. No profile is built for
+            advertising purposes and your address is not passed on to third
+            parties.
+          </p>
+        </Section>
+
         <Section title="Fonts">
           <p>
             Typefaces are self-hosted: font files are bundled with the site
