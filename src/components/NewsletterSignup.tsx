@@ -53,14 +53,14 @@ export function NewsletterSignup() {
       {state === "done" ? (
         <div className="flex flex-col gap-3">
           <p className="font-mono text-[11px] uppercase tracking-[.06em] text-black/45">
-            Almost there
+            You&apos;re in
           </p>
           <h3 className="max-w-2xl font-sans text-2xl font-black leading-[1.02] tracking-[-0.02em] text-ink md:text-3xl">
-            Check your inbox and confirm your address.
+            Thanks — you&apos;re on the list.
           </h3>
           <p className="max-w-xl font-sans text-sm leading-relaxed text-black/70">
-            We&apos;ve sent you a confirmation link. Until you click it, you
-            are not subscribed and we store nothing.
+            The next issue goes out within two weeks. Every email has an
+            unsubscribe link at the bottom.
           </p>
         </div>
       ) : (
