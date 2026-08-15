@@ -441,7 +441,7 @@
     "shortDescription": "American Institute of Architects awards program honoring architecture, interior architecture, urban design, and unbuilt projects located outside the United States.",
     "longDescription": "The AIA International Design Awards, run by the American Institute of Architects' International chapter, recognize built and unbuilt work by AIA-affiliated architects on projects located anywhere outside the US and its territories. The 2026 program spans seven categories: Architecture, Interior Architecture, Urban Design, Unbuilt Projects, Firm Award, Sustainable Future Award (developed with Dow), and Inclusive Design Excellence Award. Non-AIA members may enter but must complete an AIA membership application as part of submission. The 2026 submission deadline is Friday, August 14, 2026 at 5:00pm Eastern US time, with winners celebrated at the AIA International Conference in Cairo on November 14, 2026.",
     "submissionFormat": "Primary jury-review submission is a PDF (max 20 pages, max 10MB) with at least 3 project photographs plus floor plans, site plans, elevations, and sections. Separate high-resolution (300dpi+) images are required for exhibition/publication if the entry is selected.",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "title": "Red Dot Award: Product Design 2027",
@@ -606,5 +606,87 @@
     "slug": "kingspan-microhome-2026",
     "studentTag": true,
     "longDescription": "Now in its 11th edition, Kingspan MICROHOME challenges architects, designers, and creative thinkers to develop a modular, self-sufficient, energy-efficient microhome with a maximum footprint of 25 square meters for a hypothetical young professional couple. The competition is open to entrants of any professional background and includes dedicated Buildner Student and Sustainability Awards alongside the main placings and the sponsor-funded Kingspan Award. All submissions must be in English."
+  },
+  {
+    "title": "The Architect's Chair – Stockholm Furniture Fair Edition #6",
+    "organizer": "Buildner (in partnership with Stockholm Furniture Fair)",
+    "deadline": "2027-01-05",
+    "categories": [
+      "Interior/Furniture Design",
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "Latvia",
+    "entryFee": "Advanced tier (24 Jul – 24 Sep 2026): €120 professional / €110 student; Last Minute tier (25 Sep – 3 Dec 2026): €140 professional / €120 student, plus 4.5% VAT; registration closes 3 December 2026",
+    "registrationUrl": "https://architecturecompetitions.com/architectschairstockholm",
+    "prizeMoney": "€8,000 total prize fund: 1st €3,500, 2nd €2,000, 3rd €1,000, Student Award €1,000, Sustainability Award €500, plus 6 honorable mentions",
+    "resultDate": "2027-02-10",
+    "shortDescription": "A Buildner and Stockholm Furniture Fair competition inviting architects and designers to distill their design philosophy into a single signature chair or seating piece.",
+    "submissionFormat": "Digital submission via the Buildner platform: renders/visuals of the furniture design and a supporting narrative, in English; physical prototypes not required",
+    "status": "open",
+    "slug": "buildner-architects-chair-stockholm-2026",
+    "studentTag": true,
+    "longDescription": "Now in its sixth edition, The Architect's Chair challenges entrants to design a piece of furniture — following in the tradition of Eames, Mies van der Rohe, and Jacobsen — that expresses their architectural thinking in object form. Open to architects, artists, students, and creatives of any professional background working individually or in teams of up to four, entries may include benches and stools alongside chairs; renders are accepted and physical prototypes are not required. Winners are exhibited at the Stockholm Furniture Fair and published on ArchDaily."
+  },
+  {
+    "title": "DIELINE Awards 2027",
+    "organizer": "DIELINE Media LLC",
+    "deadline": "2027-02-27",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Tiered by entry window and eligibility tier: Professional $295–$545, Independent $195–$425, Concept/Student/Design-for-Good $95–$215, rising across nine deadline windows from Early Bird (July 1, 2026) through Late Entry (February 27, 2027)",
+    "registrationUrl": "https://dielineawards.com/",
+    "prizeMoney": "No cash prize — winners receive a custom digital seal, feature coverage on DIELINE, and exhibition in the annual Winner Showcase; one Best of Show winner (chosen from the five highest-scoring entries) also receives a Crystal Clear trophy and a global press release",
+    "resultDate": "2027-05-01",
+    "shortDescription": "A leading global packaging design and CPG design competition from DIELINE, spanning consumer packaging categories from food and beverage to circular/refill design.",
+    "submissionFormat": "Online submission via the DIELINE Awards platform: packaging photography/renders and a written project description, per category",
+    "status": "open",
+    "slug": "dieline-awards-2027",
+    "studentTag": true,
+    "longDescription": "The DIELINE Awards, run by packaging-design publication DIELINE, recognize excellence across consumer packaging and CPG design. The 2027 edition expands to include five new categories — Brand Worlds & Experiential, Functional Innovation & Accessibility, Retail/POS & Merchandising, Connected Packaging & Digital, and Circular, Refill & Reuse — alongside deeper subcategory coverage in Health & Beauty, Food, Beverage, and Home. Entries span Professional, Independent, and a restructured Concept/Student track, with every submission reviewed by DIELINE's editorial team for potential feature coverage regardless of judging outcome."
+  },
+  {
+    "title": "IIDA Global Excellence Awards 2026",
+    "organizer": "IIDA (International Interior Design Association)",
+    "deadline": "2026-10-13",
+    "categories": [
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "Early-Bird (Sep 1–8, 2026): $350 members / $450 non-members; Regular (Sep 9–Oct 5): $450 / $550; Last Chance (Oct 6–13): $550 / $650",
+    "registrationUrl": "https://iida.org/competitions-awards/iida-global-excellence-awards",
+    "prizeMoney": "No cash prize — winners are celebrated at an awards ceremony in Paris, featured on IIDA.org and social media, and receive digital winner assets plus press-release coverage to industry outlets",
+    "resultDate": "2027-02-27",
+    "shortDescription": "IIDA's flagship international interior design awards program, honoring interior design and interior architecture projects located outside the United States.",
+    "submissionFormat": "Online submission via IIDA's official competition portal, including project imagery and a written project narrative",
+    "status": "open",
+    "slug": "iida-global-excellence-awards-2026",
+    "studentTag": false,
+    "longDescription": "Now in its 17th year, the IIDA Global Excellence Awards recognize originality and creativity in interior design and interior architecture across 19 categories — including corporate, hospitality, healthcare, education, retail, and residential spaces. Any interior designer, interior architect, or architect worldwide may submit, provided the project itself is located outside the United States and was completed within the previous two years. Winners are celebrated at an in-person ceremony in Paris."
+  },
+  {
+    "title": "World Design Awards 2026",
+    "organizer": "The Architecture Community (World Architecture Community)",
+    "deadline": "2026-11-05",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "open",
+    "country": "International",
+    "entryFee": "Super Early discount (Nov 30, 2025 – Mar 1, 2026): $150; Regular fee (Mar 2 – Oct 31, 2026): $250",
+    "registrationUrl": "https://www.thearchitecturecommunity.com/world-design-awards/",
+    "prizeMoney": "No cash prize — winners receive a trophy, certificate, a published book feature, and promotional exposure across The Architecture Community's platforms and media partners",
+    "resultDate": "2026-11-30",
+    "shortDescription": "An international architecture and design award covering commercial, residential, interior, landscape, and urban design projects, open to architects, students, and designers worldwide.",
+    "submissionFormat": "Digital submission: up to 4 A3-size JPG sheets (RGB), a cover image, a written project description (DOC file), and a studio brief, submitted as a single zip file (max 80MB) via the online portal",
+    "status": "open",
+    "slug": "world-design-awards-2026",
+    "studentTag": true,
+    "longDescription": "Run by The Architecture Community (the organization behind World Architecture Community / worldarchitecture.org, active since the mid-2000s), the World Design Awards recognize built and concept work across more than 20 categories spanning commercial, residential, institutional, and interior architecture as well as landscape, urban design, and temporary structures. Entries are judged by separate design and architecture panels and are open globally to architects, engineers, designers, students, and artists, with no restriction on project completion date or concept stage."
   }
 ]
