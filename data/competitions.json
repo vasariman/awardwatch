@@ -768,5 +768,25 @@
     "slug": "lamp-lighting-design-competition-2026",
     "studentTag": true,
     "longDescription": "L.A.M.P is an independent, small-organization international lighting design competition focused on championing emerging talent and connecting lighting designers to new markets. The 2026 edition is open to Professional and Student entrants, with past editions also recognizing a Manufactured category for lighting products already in production. Submission and sponsorship fees fund the competition's prize money and marketing support for finalists. The competition has been covered by design press including Azure Magazine, Design Milk, and Bustler."
+  },
+  {
+    "title": "DBA Design Effectiveness Awards 2027",
+    "organizer": "Design Business Association (DBA)",
+    "deadline": "2026-12-01",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United Kingdom",
+    "entryFee": "DBA Members receive one complimentary entry then a discounted per-entry rate (£595+VAT in the 2025 cycle); Non-members pay a standard per-entry rate (£1,120+VAT in 2025), with an early-booking discount (~£100+VAT off). Exact 2027 figures were not published in sources found this session",
+    "registrationUrl": "https://effectivedesign.org.uk/",
+    "prizeMoney": "No cash prize — winners receive Bronze, Silver, or Gold recognition, announced at The Design Effect industry event in London",
+    "resultDate": "2027-06-01",
+    "shortDescription": "The UK's longest-running awards program for measuring the commercial impact of design, jointly entered by the design team or agency and the client who commissioned the work.",
+    "submissionFormat": "Two-part submission via the DBA's entry platform: an anonymous case study (max 9 pages) for judging, plus a publication version (max 12 pages) if shortlisted; entries must include measurable evidence dated after 1 June 2024, plus a signed sign-off from senior leadership at both the design team/agency and the client",
+    "status": "open",
+    "slug": "dba-design-effectiveness-awards-2027",
+    "studentTag": false,
+    "longDescription": "Run by the Design Business Association (DBA) and established in 1989, the Design Effectiveness Awards are the longest-running program dedicated to demonstrating the business impact of design, using commercial data as a core judging criterion alongside creative merit. Entries are open globally, but must be submitted jointly by the agency or in-house design team that delivered the work and the client who commissioned it, backed by measurable evidence of the work's effect on the business. Winners receive Gold, Silver, or Bronze recognition and are celebrated at The Design Effect industry event in London."
   }
 ]
