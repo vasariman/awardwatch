@@ -870,5 +870,90 @@
     "slug": "ny-product-design-awards-2026-season-2",
     "studentTag": false,
     "longDescription": "The NY Product Design Awards is organized by International Awards Associate (IAA), the organization behind the MUSE Design Awards and London Design Awards. Season 2 of the 2026 program spans 17 categories, from lighting and automotive/transport to furniture, packaging, digital devices, medical equipment, and wearable technology, and is open to product designers, design teams, and manufacturers worldwide. Winners receive the 'Ava' statuette along with marketing and publicity benefits."
+  },
+  {
+    "title": "Spark Design Awards 2026 (Fall/Winter Cycle)",
+    "organizer": "Spark Awards (International Design Competition)",
+    "deadline": "2026-11-25",
+    "categories": [
+      "Product/Industrial Design",
+      "Architecture",
+      "Interior/Furniture Design",
+      "Graphic Design",
+      "UX/UI Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Two-phase fee: Phase 1 registration (Late/Fall deadline) is US$675 for most professional categories (US$430 for Graphic Design, lower for students); entries shortlisted as Finalist Candidates pay an additional US$575 Phase 2 fee ahead of the live jury round",
+    "registrationUrl": "https://www.sparkawards.com/entry-types/registration/",
+    "prizeMoney": "No cash prize — winners receive Platinum, Gold, Silver, or Bronze recognition (or the 'Greatest Design of the Year' title), a certificate, logo rights, and inclusion in the online Winners Gallery",
+    "resultDate": "2026-12-15",
+    "shortDescription": "A long-running, budget-friendly multidisciplinary design competition spanning product, architecture, interiors, graphic, and digital design, judged through a two-phase jury process.",
+    "submissionFormat": "Online submission via the Spark Awards registration portal: project images and a written description, per category-specific requirements; shortlisted finalists undergo an additional live jury review",
+    "status": "open",
+    "slug": "spark-design-awards-2026-fall",
+    "studentTag": true,
+    "longDescription": "Founded in 2001 by producer Peter Kuchnicki, the Spark Awards (International Design Competition) is a multidisciplinary program spanning Product & Industrial Design, Spaces Design (architecture, interiors, landscape, and urban planning), Graphic Design, Digital Design (UX/UI, apps, motion), Packaging, Transport & Mobility, Health/Medical/Universal Design, and a dedicated Student Design track. Judging uses a two-phase process: an initial registration and jury round determines shortlisted Finalist Candidates, who then pay a second fee ahead of a live jury session that selects Platinum, Gold, Silver, and Bronze winners. The current cycle's final deadline runs through November 19, 2026 for professionals and November 25, 2026 for students."
+  },
+  {
+    "title": "LIT Lighting Design Awards 2026",
+    "organizer": "Farmani Group",
+    "deadline": "2026-10-18",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Professional: CHF 230 (~US$250) per entry incl. Swiss VAT (50% off each additional category); Student: CHF 100 (~US$106) per entry (50% off each additional category); a 10% late fee applies during the final entry window (Sep 30 – Oct 18, 2026)",
+    "registrationUrl": "https://litawards.com/",
+    "prizeMoney": "No cash prize — winners receive recognition titles (e.g. Lighting Design of the Year, Emerging Lighting Designer of the Year), inclusion in the annual catalogue, and are celebrated at an in-person awards ceremony",
+    "resultDate": "2027-06-01",
+    "shortDescription": "An international lighting design competition covering lighting products, architectural lighting, and entertainment lighting, marking its 10-year anniversary in 2026.",
+    "submissionFormat": "Online submission via the LIT Awards entry portal: project images/renders and a written description, per category-specific requirements",
+    "status": "open",
+    "slug": "lit-lighting-design-awards-2026",
+    "studentTag": true,
+    "longDescription": "Organized by Farmani Group — the same organization behind the International Design Awards, Architecture MasterPrize, and European Product Design Award — the LIT Lighting Design Awards recognize excellence in Lighting Product Design, Entertainment Lighting Design, and Architectural Lighting Design, alongside special Lifetime Achievement and Spotlight prizes. Now marking its 10th anniversary, the 2025 edition drew entries from 62 countries. Winners are celebrated at an in-person gala (Paris hosted the 2024 and 2025 ceremonies) and featured in the annual LIT catalogue."
+  },
+  {
+    "title": "Indigo Design Award 2026",
+    "organizer": "Marly Group Limited",
+    "deadline": "2027-01-31",
+    "categories": [
+      "Graphic Design",
+      "UX/UI Design"
+    ],
+    "targetAudience": "open",
+    "country": "Portugal",
+    "entryFee": "Freelancer entries from US$150 (+US$50 per additional category); Early Bird (through Sep 30, 2026): 15% discount; Extended Early Bird (through Nov 30, 2026): 10% discount; full price applies after. Agency and student rates differ; exact current tier amounts were not confirmed in sources found this session",
+    "registrationUrl": "https://www.indigoaward.com/",
+    "prizeMoney": "No cash prize confirmed — winners receive portfolio visibility, recognition across 46+ countries, and features in Indigo's design-community promotion; specific trophy/certificate details were not confirmed in sources found this session",
+    "resultDate": "2027-02-28",
+    "shortDescription": "An independent, Lisbon-based international design competition for graphic and digital design, judged by a jury of professionals from major tech and agency brands, with reduced entry fees for freelancers and students.",
+    "submissionFormat": "Online submission: up to 10 images per entry (JPG/PNG, max 5MB each), with an optional supporting PDF",
+    "status": "open",
+    "slug": "indigo-design-award-2026",
+    "studentTag": true,
+    "longDescription": "Founded in 2017 and run by Marly Group Limited in Lisbon, Portugal, the Indigo Design Award evaluates work across four categories: Graphic Design, Digital Design (including UX/UI), Branding, and Design for Social Change. Entrants include agencies, freelancers, and students, judged by an international jury drawn from companies including Google, Microsoft, Nike, Spotify, and IBM. The competition emphasizes accessibility for smaller studios and independent designers, with tiered pricing and a published refund policy."
+  },
+  {
+    "title": "Design Intelligence Award (DIA) 2026",
+    "organizer": "Design Intelligence Award Committee (endorsed by the World Design Organization)",
+    "deadline": "2026-09-01",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "China",
+    "entryFee": "Free during the initial registration period (through Jul 1, 2026); RMB 3,500 (~US$510) per entry for late registration through the Sep 1, 2026 deadline",
+    "registrationUrl": "https://www.di-award.org/en",
+    "prizeMoney": "Total prize pool of approximately €500,000: ¥1,000,000 Grand Award (1 winner); Product Group — Gold ¥300,000 each (4 winners), Silver ¥100,000 each (16 winners), Bronze ¥30,000 each (20 winners); Concept Group — Future Talents ¥20,000 each (4 winners), Young Talents trophies/certificates (10 winners)",
+    "resultDate": "2026-12-31",
+    "shortDescription": "A China-based, WDO-endorsed industrial design award with a roughly €500,000 total prize pool, spanning Product Group and Concept Group tracks across four sectors.",
+    "submissionFormat": "Online registration with project documentation; video documentation is mandatory for non-physical products and required for all entries advancing to the second evaluation round",
+    "status": "closing-soon",
+    "slug": "design-intelligence-award-2026",
+    "studentTag": true,
+    "longDescription": "The Design Intelligence Award (DIA) is endorsed by the World Design Organization and organized in China, evaluating entries across two groups — Product (market-ready designs) and Concept (forward-looking proposals, including a dedicated Young Talents track) — spanning four sectors: Digital Economy, Industrial Equipment, Life Wisdom, and Cultural Innovation. The competition is open to enterprises, universities, institutions, and individuals worldwide, with free registration during an initial window followed by a paid late-registration period. The 2026 cycle offers a total prize pool of roughly €500,000, including a ¥1,000,000 Grand Award."
   }
 ]
