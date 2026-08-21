@@ -257,7 +257,7 @@
     "shortDescription": "An international product design award from Farmani Group recognizing innovation across categories like automotive, consumer electronics, and eco design.",
     "longDescription": "The European Product Design Award (EPDA) is organized by Farmani Group, the same organization behind the International Design Awards and Architecture MasterPrize. The competition draws entries from more than 58 countries across categories spanning automotive, consumer electronics, food and beverage, and eco design, judged by a jury of more than 30 international design leaders. The 2026 awards ceremony takes place in Venice.",
     "submissionFormat": "Online submission: 6–10 project images (professional photography preferred) plus a written project description; a supporting PDF may also be uploaded. A physical product sample is not required.",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "tokyo-tdc-2027",
@@ -788,5 +788,87 @@
     "slug": "dba-design-effectiveness-awards-2027",
     "studentTag": false,
     "longDescription": "Run by the Design Business Association (DBA) and established in 1989, the Design Effectiveness Awards are the longest-running program dedicated to demonstrating the business impact of design, using commercial data as a core judging criterion alongside creative merit. Entries are open globally, but must be submitted jointly by the agency or in-house design team that delivered the work and the client who commissioned it, backed by measurable evidence of the work's effect on the business. Winners receive Gold, Silver, or Bronze recognition and are celebrated at The Design Effect industry event in London."
+  },
+  {
+    "title": "Architizer A+Awards 2027 (15th Annual)",
+    "organizer": "Architizer",
+    "deadline": "2027-02-19",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "International",
+    "entryFee": "Tiered by deadline: $275 USD (Oct 23, 2026) rising to $425 USD (Feb 19, 2027), plus an optional $195 USD Project of the Year consideration fee and a 3% payment processing surcharge",
+    "registrationUrl": "https://awards.architizer.com/",
+    "prizeMoney": "No cash prize — winners are published in the annual hardbound book 'Architizer: The World's Best Architecture' and celebrated online and at in-person events",
+    "resultDate": "2027-06-01",
+    "shortDescription": "The industry's largest international architecture awards program, judged by a jury of hundreds of professionals plus an online public vote across dozens of building typologies.",
+    "submissionFormat": "Online submission via the Architizer A+Awards platform: project images/renders, a written project description, and category-specific supporting material",
+    "status": "open",
+    "slug": "architizer-a-plus-awards-2027",
+    "studentTag": true,
+    "longDescription": "Organized by Architizer, the A+Awards is one of the largest international architecture awards programs, reviewing thousands of submissions each year across typology categories (residential, commercial, cultural, institutional, and more), Plus Categories addressing contemporary issues, and dedicated Sustainability and Student Project categories. Entries are judged by a jury of several hundred professionals from architecture, design, and related fields, combined with an online public vote. Winners are published in the annual hardbound compendium 'Architizer: The World's Best Architecture.'"
+  },
+  {
+    "title": "Open Chair Design Competition 2026",
+    "organizer": "Creathlon (in partnership with Aibuild)",
+    "deadline": "2026-11-06",
+    "categories": [
+      "Interior/Furniture Design",
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "United Kingdom",
+    "entryFee": "Early Bird: £5 (individual) / £10 (team); Regular: £15 / £25; Late: £25 / £35",
+    "registrationUrl": "https://www.creathlon.co.uk/competitions/open-chair",
+    "prizeMoney": "£1,000 total: 1st place £600, 2nd place £300, 3rd place £100, plus 5 honorable mentions (certificates)",
+    "resultDate": "2027-01-12",
+    "shortDescription": "A global ideas competition challenging designers to create a full-scale chair that can be 3D-printed at home and assembled with minimal tools.",
+    "submissionFormat": "Digital submission (max 15MB combined): two 3D-print files (.STL) showing the assembled chair and individual parts, an A2 landscape board (JPG) with visualizations and an assembly guide, an A2 portrait poster (JPG), and a project description (PDF, max 500 words)",
+    "status": "open",
+    "slug": "open-chair-design-competition-2026",
+    "studentTag": true,
+    "longDescription": "Open Chair, run by UK-based Creathlon in partnership with Aibuild, invites students, professionals, and design enthusiasts worldwide to reimagine the chair through the lens of digital fabrication and open-source design. Entrants submit a full-scale chair designed to be 3D-printed on a home printer, assembled with minimal tools, and shared as a reproducible design for others to build. Teams are permitted alongside individual entries."
+  },
+  {
+    "title": "International Sustainable Building Competition 2026",
+    "organizer": "UNEP, Global Alliance for Buildings and Construction (GlobalABC), and Türkiye Ministry of Environment, Urbanization and Climate Change",
+    "deadline": "2026-10-15",
+    "categories": [
+      "Architecture",
+      "Sustainable Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Türkiye",
+    "entryFee": "Free",
+    "registrationUrl": "https://yesint.csb.gov.tr/",
+    "prizeMoney": "No cash prize — winners receive a certificate of honour and international recognition at COP31",
+    "resultDate": "2026-11-20",
+    "shortDescription": "A UN- and Türkiye-backed international competition recognizing energy-efficient, low-carbon, climate-resilient buildings, with winners honored at COP31 in Antalya.",
+    "submissionFormat": "Online application via yesint.csb.gov.tr with 3–4 project photographs uploaded directly through the site",
+    "status": "open",
+    "slug": "international-sustainable-building-competition-2026",
+    "studentTag": false,
+    "longDescription": "Organized by UNEP, the Global Alliance for Buildings and Construction (GlobalABC), and Türkiye's Ministry of Environment, Urbanization and Climate Change, the International Sustainable Building Competition invites architects and building professionals worldwide to submit built projects and masterplans that demonstrate energy-efficient, low-carbon, and climate-resilient design. The competition is free to enter and is timed to coincide with COP31, the UN Climate Change Conference hosted in Antalya, Türkiye in November 2026, where winning projects will be honored."
+  },
+  {
+    "title": "NY Product Design Awards 2026 (Season 2)",
+    "organizer": "International Awards Associate (IAA)",
+    "deadline": "2026-10-21",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "$219 USD for the first entry plus a $30 USD annual administrative fee; $219 USD per additional category for the same work (non-refundable)",
+    "registrationUrl": "https://nydesignawards.com/",
+    "prizeMoney": "No cash prize — winners receive the 'Ava' statuette plus marketing and publicity benefits",
+    "resultDate": "2026-11-06",
+    "shortDescription": "An International Awards Associate program recognizing product design across 17 categories including lighting, automotive, furniture, and wearable technology.",
+    "submissionFormat": "Fully online submission: flattened JPEG/JPG images (under 4MB, ~1,200px wide, 300dpi, RGB), a project synopsis of roughly 350 words, and optional video/audio via a Vimeo/YouTube/Youku URL; physical product samples are optional",
+    "status": "open",
+    "slug": "ny-product-design-awards-2026-season-2",
+    "studentTag": false,
+    "longDescription": "The NY Product Design Awards is organized by International Awards Associate (IAA), the organization behind the MUSE Design Awards and London Design Awards. Season 2 of the 2026 program spans 17 categories, from lighting and automotive/transport to furniture, packaging, digital devices, medical equipment, and wearable technology, and is open to product designers, design teams, and manufacturers worldwide. Winners receive the 'Ava' statuette along with marketing and publicity benefits."
   }
 ]
