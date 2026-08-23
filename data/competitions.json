@@ -955,5 +955,169 @@
     "slug": "design-intelligence-award-2026",
     "studentTag": true,
     "longDescription": "The Design Intelligence Award (DIA) is endorsed by the World Design Organization and organized in China, evaluating entries across two groups — Product (market-ready designs) and Concept (forward-looking proposals, including a dedicated Young Talents track) — spanning four sectors: Digital Economy, Industrial Equipment, Life Wisdom, and Cultural Innovation. The competition is open to enterprises, universities, institutions, and individuals worldwide, with free registration during an initial window followed by a paid late-registration period. The 2026 cycle offers a total prize pool of roughly €500,000, including a ¥1,000,000 Grand Award."
+  },
+  {
+    "title": "Archiproducts Design Awards 2026",
+    "organizer": "Archiproducts",
+    "deadline": "2026-09-14",
+    "categories": [
+      "Product/Industrial Design",
+      "Interior/Furniture Design",
+      "Sustainable Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Italy",
+    "entryFee": "€900 per product (single submission); €600 for each additional product from the same brand; +€200 supplementary fee for entries in the Sustainability category",
+    "registrationUrl": "https://awards.archiproducts.com/",
+    "prizeMoney": "No cash prize — winners receive physical awards, certificates, and digital/branding recognition, celebrated at an in-person ceremony (past editions held at Superstudio Più, Milan)",
+    "resultDate": "2026-10-31",
+    "shortDescription": "An Italian product design competition from Archiproducts recognizing furniture, lighting, bathroom, kitchen, and building-material design, with a dedicated Sustainability category.",
+    "submissionFormat": "Online nomination via the Archiproducts Design Awards portal: product images and supporting details, submitted by the manufacturer or brand (1 to 5 products per brand, launched or presented between June 2025 and September 2026)",
+    "status": "closing-soon",
+    "slug": "archiproducts-design-awards-2026",
+    "studentTag": false,
+    "longDescription": "Now in its 11th edition, the Archiproducts Design Awards is an international product design competition run by Archiproducts, the Italian architecture and design products platform headquartered in Bari, Italy. Brands and manufacturers nominate products across categories including furniture, bathroom, kitchen, outdoor, office, contract, lighting, wellness, décor, finishes, building shell, construction, and systems/materials, plus a dedicated Sustainability category judged separately with an additional fee. The jury has included figures such as the Head of Design at David Chipperfield Architects and leadership from Zaha Hadid Architects. Winners are celebrated at an in-person ceremony, with past editions held at Superstudio Più in Milan."
+  },
+  {
+    "title": "AN's 2026 Best of Design Awards",
+    "organizer": "The Architect's Newspaper",
+    "deadline": "2026-09-18",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "$295 general entry (Aug 1 – Sep 18, 2026, 11:59pm ET); $150 for emerging firms (founded within the last five years), applicable across all categories",
+    "registrationUrl": "https://archpaperawards.com/design26/",
+    "prizeMoney": "No cash prize — winners are published in AN's print Best of Design 2026 issue and featured across AN's editorial platforms to over 1 million AEC-industry readers",
+    "resultDate": "2026-11-30",
+    "shortDescription": "An annual awards program from The Architect's Newspaper honoring standout architecture and interiors projects across more than 50 categories reflecting AN's editorial coverage.",
+    "submissionFormat": "Online submission via the AN Best of Design registration portal: project images, a written description, and supporting materials per category",
+    "status": "closing-soon",
+    "slug": "an-best-of-design-awards-2026",
+    "studentTag": false,
+    "longDescription": "The Architect's Newspaper's Best of Design Awards recognize outstanding work across more than 50 categories spanning infrastructure, landscape, facades, civic and cultural buildings, homes, ADUs, and interiors. Entries are judged on strength of presentation, evidence of innovation, creative use of technology, sustainability, and overall design quality. Projects must have been completed within two years of the submission deadline (landscape, public, and unbuilt projects within three years). Winners are published in AN's print Best of Design issue and promoted across the publication's editorial platforms."
+  },
+  {
+    "title": "Architectural Products Product Innovation Awards 2026",
+    "organizer": "Architectural Products magazine (Endeavor Business Media)",
+    "deadline": "2026-08-31",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "$275 per entry, with a $150 discount on the second and subsequent entries in the same program; reduced pricing applies during early-entry windows",
+    "registrationUrl": "https://www.arch-products.com/product-innovation-awards",
+    "prizeMoney": "No cash prize — winners receive a PIA 2026 logo for use in marketing materials, plus feature coverage on the Architectural Products website and in the November/December 2026 print issue",
+    "resultDate": "2026-12-02",
+    "shortDescription": "A US trade-publication award from Architectural Products magazine recognizing innovative building products across categories from lighting and facades to finishes and hardware.",
+    "submissionFormat": "Online submission via the Architectural Products Product Innovation Awards portal: product details and supporting images per category",
+    "status": "closing-soon",
+    "slug": "architectural-products-innovation-awards-2026",
+    "studentTag": false,
+    "longDescription": "The Product Innovation Awards, run by Architectural Products magazine (part of Endeavor Business Media's Buildings & Construction group), honor products, systems, and materials that elevate architectural creativity and performance. Categories span acoustics, appliances and plumbing, building materials and facades, finishes and surfaces, furnishings, hardware, lighting, openings, roofing, textiles, and technology. Products launched between December 2023 and December 2026 are eligible. Winners are featured on the Architectural Products website and in the magazine's November/December print issue, and may use the PIA 2026 logo in their own marketing."
+  },
+  {
+    "title": "Graphis Design Awards 2027",
+    "organizer": "Graphis, Inc.",
+    "deadline": "2027-03-02",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "Member Single entry $70 / Non-Member Single entry $140; Member Series/Video entry $140 / Non-Member Series/Video entry $280 (Graphis Members save 50%)",
+    "registrationUrl": "https://graphis.com/competition/design-awards-2027/entry",
+    "prizeMoney": "No cash prize — Platinum, Gold, and Silver winners are published on graphis.com and receive recognition among global creative directors and design leaders",
+    "resultDate": "2027-06-01",
+    "shortDescription": "An annual professional graphic design competition from Graphis spanning brand identity, packaging, editorial, typography, environmental, and digital design.",
+    "submissionFormat": "Online submission via the Graphis entry platform: a single image for standalone work, or a series (up to six additional images) for campaigns, branding systems, or multi-spread publications",
+    "status": "open",
+    "slug": "graphis-design-awards-2027",
+    "studentTag": false,
+    "longDescription": "Graphis Design Awards is an annual professional-only graphic design competition run by Graphis, Inc., the New York publisher behind the Poster, Advertising, Photography, and New Talent competitions. Categories include Brand Identity, Packaging, Editorial, Typography, Environmental, Digital Design, Gaming, and Poster Design. A single entry is one image (a poster, cover, ad, logo, photograph, or illustration); a series entry covers campaigns, branding systems, or multi-spread publications. Platinum and Gold-winning work is published on graphis.com and viewed by creative directors and design leaders worldwide; student work is directed instead to Graphis's separate New Talent competition."
+  },
+  {
+    "title": "International Architecture Awards 2027",
+    "organizer": "The Chicago Athenaeum: Museum of Architecture and Design / The European Centre for Architecture Art Design and Urban Studies",
+    "deadline": "2026-12-01",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "€395 per project",
+    "registrationUrl": "https://www.chi-athenaeum.org/application-international.html",
+    "prizeMoney": "No cash prize — winning architects prepare framed drawings or photographic panels and models for exhibition; projects are published on the Museum's website or in a catalogue, with past exhibitions held in cities including London, Brussels, and Istanbul",
+    "resultDate": "2027-09-01",
+    "shortDescription": "A prestigious international architecture award from The Chicago Athenaeum and The European Centre recognizing outstanding new buildings, landscape architecture, and urban planning projects worldwide.",
+    "submissionFormat": "Online application via chi-athenaeum.org: 10-12 project images (16:9 or 1:1 aspect ratio, 300dpi, max 6MB each), a 500-700 word project description in English, and a single PDF (plans, sections, elevations); file names must use Latin characters only",
+    "status": "open",
+    "slug": "international-architecture-awards-2027",
+    "studentTag": false,
+    "longDescription": "The International Architecture Awards are presented jointly by The Chicago Athenaeum: Museum of Architecture and Design and The European Centre for Architecture Art Design and Urban Studies, recognizing the world's most outstanding new buildings, interiors, landscapes, and urban planning projects. The award is open to international architects and firms (including U.S.-based firms submitting international or domestic work), with eligible projects designed or built after January 1, 2024. Categories span more than 15 building types, including airports, bridges, commercial and corporate buildings, hospitals, hotels, offices, residential, retail, schools, religious structures, urban planning, landscape architecture, and restorations; previously awarded projects are ineligible. Winning projects are exhibited internationally and published by the Museum."
+  },
+  {
+    "title": "The Quiet Tower International Architecture Competition",
+    "organizer": "Buildner",
+    "deadline": "2027-02-15",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "Latvia",
+    "entryFee": "Advanced tier (23 Jul – 15 Oct 2026): €120 professional / €110 student; Last Minute tier (16 Oct 2026 – 13 Jan 2027): €140 professional / €120 student, plus 4.5% VAT; installment payment available",
+    "registrationUrl": "https://architecturecompetitions.com/quiettower",
+    "prizeMoney": "€10,000 total prize fund: 1st €5,000, 2nd €2,500, 3rd €1,000, plus a €1,000 Buildner Student Award, a €500 Buildner Sustainability Award, and 6 honourable mentions with certificates",
+    "resultDate": "2027-04-06",
+    "shortDescription": "An open international architecture ideas competition from Buildner inviting designs for an observation tower on Latvia's remote Cape Kolka coastline.",
+    "submissionFormat": "Online registration and submission via architecturecompetitions.com: full design brief with CAD site files and reference photos/videos provided; entries and correspondence must be in English",
+    "status": "open",
+    "slug": "quiet-tower-architecture-competition",
+    "studentTag": true,
+    "longDescription": "The Quiet Tower is an international architecture ideas competition organized by Buildner, inviting architects, designers, students, and enthusiasts worldwide to reimagine an observation tower on the Baltic coastline at Cape Kolka, Latvia. Rather than an iconic landmark, the brief calls for a 'lookout ritual' — a structure emphasizing atmosphere and emotional connection, inspired by fire lookout towers and Nordic retreat culture. The competition is open to all with no professional qualification required, and entries can be submitted individually or by teams of up to four. The €10,000 prize fund includes dedicated Student and Sustainability awards alongside the main placements."
+  },
+  {
+    "title": "Andrew Martin International Interior Designer of the Year Award 2027",
+    "organizer": "Andrew Martin",
+    "deadline": "2026-12-20",
+    "categories": [
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United Kingdom",
+    "entryFee": "Not publicly disclosed on andrewmartin.co.uk; entrants apply via a downloadable PDF application form rather than a listed fee schedule",
+    "registrationUrl": "https://www.andrewmartin.co.uk/design-awards",
+    "prizeMoney": "No cash prize — the winner and a shortlisted international 'Top 100' are published in the Andrew Martin Interior Design Review, a 500-page annual hardcover volume, and profiled on andrewmartin.co.uk; the overall Designer of the Year is chosen by a panel of celebrity judges (2025 judges included Stanley Tucci and Felicity Blunt)",
+    "resultDate": "2027-12-01",
+    "shortDescription": "A prestigious global interior design award from British furniture brand Andrew Martin, dubbed 'the Oscars of the design world,' recognizing a Designer of the Year from an international 'Top 100' shortlist.",
+    "submissionFormat": "Downloadable PDF application form submitted directly to Andrew Martin, per the process outlined at andrewmartin.co.uk/design-awards",
+    "status": "open",
+    "slug": "andrew-martin-design-awards-2027",
+    "studentTag": false,
+    "longDescription": "Running since 1996 and described by The Sunday Times as 'the Oscars of the Design World,' the Andrew Martin International Interior Designer of the Year Award is presented by the British luxury furniture and interiors brand Andrew Martin. Professional interior designers from around the world submit residential and commercial projects for consideration; a shortlist of roughly 100 designers is published each year in the Andrew Martin Interior Design Review, often called 'the bible of interior design.' A panel of celebrity judges then selects the overall Designer of the Year from the international entrants."
+  },
+  {
+    "title": "WorldStar 2027 Global Packaging Awards",
+    "organizer": "World Packaging Organisation (WPO)",
+    "deadline": "2026-10-15",
+    "categories": [
+      "Product/Industrial Design",
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "International",
+    "entryFee": "€650 for the first entry, €500 for each additional entry; Special Award category entries (Sustainability, Marketing, Packaging that Saves Food, Accessible Packaging) are €650 each and require an entry in a main category first",
+    "registrationUrl": "https://worldstar.org/application/",
+    "prizeMoney": "No cash prize — winners receive a WorldStar trophy and certificate, worldwide media recognition, and rights to use the winner's logo on packaging and promotional materials",
+    "resultDate": "2027-01-15",
+    "shortDescription": "The world's most prestigious packaging design award, presented by the World Packaging Organisation, open only to packs that have already won a WPO-recognized national or regional packaging competition.",
+    "submissionFormat": "Online submission via worldstar.org: category selection, a 500-word written justification of the pack, and up to 5 high-resolution images (combined file size under 5MB); payment due by November 2, 2026",
+    "status": "open",
+    "slug": "worldstar-packaging-awards-2027",
+    "studentTag": false,
+    "longDescription": "WorldStar is the global packaging awards program of the World Packaging Organisation (WPO), widely regarded as the pre-eminent international recognition for packaging design, innovation, and sustainability. Entry is restricted to packaging that has already won an award in one of roughly 75-85 WPO-recognized national or regional packaging competitions in the current or previous year — there is no direct-entry route for unproven packs. Categories span major packaging types alongside Special Awards for Sustainability, Marketing, Packaging that Saves Food, and Accessible Packaging. Around 200 winners are typically selected from 300+ qualifying entries spanning 30+ countries, with winners honored at an international gala tied to a major packaging trade fair."
   }
 ]
