@@ -110,10 +110,25 @@ export default function DatenschutzPage() {
           <p className="mt-4">
             Your address is added to the list as soon as you submit the form.
             The legal basis is your consent (Art. 6(1)(a) GDPR), given by
-            ticking the consent box on the signup form. You can withdraw it at
-            any time with effect for the future — every email contains an
-            unsubscribe link, or you can simply write to us. After
-            unsubscribing, your address is removed from the list.
+            ticking the consent box on the signup form.
+          </p>
+          <p className="mt-4">
+            To be able to demonstrate that consent was given, as we are required
+            to under Art. 7(1) GDPR, we store the date and time of your signup,
+            the IP address it was submitted from, and a reference to the version
+            of the consent wording you agreed to. This is kept alongside your
+            address for as long as you are subscribed, and for a further three
+            years after you unsubscribe (the standard limitation period under
+            § 195 BGB), on the basis of our legitimate interest in defending
+            against claims (Art. 6(1)(f) GDPR).
+          </p>
+          <p className="mt-4">
+            You can withdraw your consent at any time with effect for the future
+            — every email contains an unsubscribe link, or you can simply write
+            to us. When you unsubscribe, your address is not deleted but moved
+            to a suppression list, so that we can be sure not to contact you
+            again. If you would prefer your data to be erased entirely instead,
+            write to us and we will do that.
           </p>
           <p className="mt-4">
             Brevo evaluates deliveries in aggregate (e.g. delivery and bounce
@@ -145,11 +160,12 @@ export default function DatenschutzPage() {
           <p>
             Under the GDPR you have the right to request access to,
             rectification, or erasure of your personal data, to restrict or
-            object to its processing, and to data portability. Since this
-            site does not collect personal data beyond anonymized,
-            aggregated analytics and standard hosting logs, there is
-            typically nothing tied to you individually to access or erase —
-            but you&apos;re welcome to reach out with any question at{" "}
+            object to its processing, and to data portability. Unless you have
+            subscribed to the newsletter, this site collects no personal data
+            beyond anonymized, aggregated analytics and standard hosting logs,
+            so there is typically nothing tied to you individually to access or
+            erase. If you are a subscriber, your address and signup record are —
+            and you can have them at any time by writing to{" "}
             <a href="mailto:hello@dennishess.de" className="text-ink no-underline">
               hello@dennishess.de
             </a>

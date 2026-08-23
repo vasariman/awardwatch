@@ -7,6 +7,15 @@ import { NextResponse } from "next/server";
 // A welcome email is sent afterwards as a transactional message -- purely
 // informational, it carries no action for the recipient.
 //
+// Because there is no confirmation click, the proof of consent required by
+// Art. 7(1) GDPR has to be captured here. Every new contact gets three
+// attributes written alongside the address; these must exist in Brevo under
+// Contacts -> Settings -> Contact attributes (all of type "Text") or the API
+// rejects the request:
+//   OPT_IN_AT      ISO timestamp of the submit
+//   OPT_IN_IP      IP the submit came from
+//   OPT_IN_SOURCE  which form and which wording was agreed to
+//
 // Required env vars (.env.local locally, Vercel project settings in prod):
 //   BREVO_API_KEY              v3 API key from Brevo -> SMTP & API
 //   BREVO_LIST_ID              numeric id of the target list
@@ -19,6 +28,24 @@ const EMAIL_ENDPOINT = "https://api.brevo.com/v3/smtp/email";
 
 // Intentionally permissive: exotic but valid addresses shouldn't be rejected.
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+// Bump this whenever the consent wording in NewsletterSignup.tsx changes, so
+// an old record still says which sentence that person actually agreed to.
+const CONSENT_VERSION = "2026-08-23";
+
+/**
+ * Best-effort client IP. Vercel sets x-forwarded-for; the left-most entry is
+ * the original client. "unknown" is stored rather than nothing, so the absence
+ * is itself visible in the record.
+ */
+function clientIp(request: Request): string {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) {
+    const first = forwarded.split(",")[0]?.trim();
+    if (first) return first;
+  }
+  return request.headers.get("x-real-ip")?.trim() || "unknown";
+}
 
 type Payload = {
   email?: unknown;
@@ -112,8 +139,16 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         email,
         listIds: [listId],
-        // Re-adds someone who unsubscribed earlier without erroring out.
-        updateEnabled: true,
+        // Deliberately false. With updateEnabled a repeat submit would
+        // overwrite OPT_IN_AT on an existing contact -- i.e. anyone could
+        // reset someone else's proof of consent by retyping their address.
+        // The duplicate case is handled below instead.
+        updateEnabled: false,
+        attributes: {
+          OPT_IN_AT: new Date().toISOString(),
+          OPT_IN_IP: clientIp(request),
+          OPT_IN_SOURCE: `signup-form@${CONSENT_VERSION}`,
+        },
       }),
     });
   } catch (error) {

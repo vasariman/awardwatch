@@ -59,8 +59,8 @@ export function NewsletterSignup() {
             Thanks — you&apos;re on the list.
           </h3>
           <p className="max-w-xl font-sans text-sm leading-relaxed text-black/70">
-            The next issue goes out within two weeks. Every email has an
-            unsubscribe link at the bottom.
+            The next issue goes out at the start of the month. Every email has
+            an unsubscribe link at the bottom.
           </p>
         </div>
       ) : (
@@ -73,8 +73,8 @@ export function NewsletterSignup() {
               Never miss a deadline.
             </h3>
             <p className="mt-3 font-sans text-sm leading-relaxed text-black/70">
-              Every two weeks: the design competitions closing in the next 30
-              days, with fees and eligibility. No spam, unsubscribe in one
+              Once a month: the design competitions closing in the next six
+              weeks, with fees and eligibility. No spam, unsubscribe in one
               click.
             </p>
           </div>
