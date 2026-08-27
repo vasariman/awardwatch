@@ -1200,5 +1200,87 @@
     "slug": "detail-architecture-award-2027",
     "studentTag": true,
     "longDescription": "The DETAIL Architecture Award, presented by the respected German architecture publication DETAIL, honors completed building projects worldwide whose architecture stands out for the quality and consistency of its overall concept — independent of project size or budget. The 2027 edition comprises the main DETAIL Architecture Award, a Special Prize for Affordable Housing, the DETAIL Architecture Award for Students & Schools, and a DETAIL Readers' Award, all judged by an independent international expert jury."
+  },
+  {
+    "title": "German Brand Award 2027",
+    "organizer": "German Design Council (Rat für Formgebung)",
+    "deadline": "2027-06-24",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Germany",
+    "entryFee": "Tiered registration fee by phase (early/standard/late) per project, plus VAT; the prior (2026) cycle ran roughly €449–€635 per project, but exact 2027 amounts were not published in sources found this session",
+    "registrationUrl": "https://www.german-brand-award.com/en/participate",
+    "prizeMoney": "No cash prize — winners receive the German Brand Award label, certificate, online gallery listing, and an invitation to the Awards Show in Berlin; optional paid trophy/sculpture packages are available separately",
+    "resultDate": "2027-06-25",
+    "shortDescription": "An international brand design award from the German Design Council recognizing outstanding branding, identity, and marketing work by companies and agencies worldwide.",
+    "submissionFormat": "Online registration and nomination via the German Brand Award platform, with written project documentation per category",
+    "status": "open",
+    "slug": "german-brand-award-2027",
+    "studentTag": false,
+    "longDescription": "Presented by the German Design Council — the same body behind the German Design Award — the German Brand Award recognizes companies, agencies, and institutions whose branding and marketing work sets new standards. Entrants register and nominate projects across categories spanning corporate and product brand work, judged by an independent expert jury. The award draws over 1,300 submissions annually from around 20 countries, with winners celebrated at an Awards Show in Berlin."
+  },
+  {
+    "title": "25th Andreu World International Design Contest 2026 — Manufacturing the Future",
+    "organizer": "Andreu World",
+    "deadline": "2026-09-16",
+    "categories": [
+      "Interior/Furniture Design",
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "Spain",
+    "entryFee": "Free",
+    "registrationUrl": "https://andreuworld.com/en/talent/design-contest",
+    "prizeMoney": "€5,000 first prize, €2,500 second prize, plus three special mentions",
+    "resultDate": "2026-12-10",
+    "shortDescription": "A 25th-anniversary international furniture design contest from Spanish manufacturer Andreu World, open to students and professionals worldwide, themed 'Manufacturing the Future' for the circular economy.",
+    "submissionFormat": "A physical 1:5 scale model of the design plus a technical report and/or video, submitted by email following online registration",
+    "status": "closing-soon",
+    "slug": "andreu-world-design-contest-2026",
+    "studentTag": true,
+    "longDescription": "Now marking its 25th edition, the Andreu World International Design Contest invites students and professionals worldwide to design seating and tables referencing Andreu World's product lines. This anniversary edition, themed 'Manufacturing the Future,' challenges entrants to design for the circular economy and positive environmental impact. A jury of leading design professionals — including figures from Foster & Partners and the World Design Organization — judges submissions, which require a 1:5 scale physical model plus a technical report."
+  },
+  {
+    "title": "Living Places – Simon Architecture Prize 2026 (6th Edition)",
+    "organizer": "Simon, in collaboration with Fundació Mies van der Rohe",
+    "deadline": "2026-10-05",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Spain",
+    "entryFee": "Free",
+    "registrationUrl": "https://www.simonprize.org/current-edition/",
+    "prizeMoney": "€10,000 each for two winning projects, plus an exclusive piece designed by Andreu Carulla",
+    "resultDate": "2027-02-15",
+    "shortDescription": "The 6th edition of the Living Places – Simon Architecture Prize, organized by Simon with the Fundació Mies van der Rohe, recognizing built projects by architects, city planners, and landscapers across Europe, Mexico, Brazil, and Morocco.",
+    "submissionFormat": "Online submission via simonprize.org following pre-registration, per the official rules (published in English and Spanish)",
+    "status": "closing-soon",
+    "slug": "simon-architecture-prize-2026",
+    "studentTag": false,
+    "longDescription": "Organized by the Simon brand in collaboration with the Fundació Mies van der Rohe, the Living Places – Simon Architecture Prize recognizes built projects — including interiors, public spaces, and landscaping — completed between January 2024 and December 2025. Now in its 6th edition, the prize is open to qualified architects, city planners, and landscapers from all European countries as well as Mexico, Brazil, and, new this year, Morocco. The competition distinctively incorporates video as a core tool for communicating the architectural work. Two winning projects each receive €10,000 and an exclusive piece designed by Andreu Carulla; finalists are announced in December, with the award ceremony in February."
+  },
+  {
+    "title": "Unbox 2026 Architecture Competition",
+    "organizer": "Volume Zero Competitions",
+    "deadline": "2026-12-03",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "India",
+    "entryFee": "Tiered per-team registration fee: Standard tier (Sep 25 – Nov 13, 2026) is USD 95 + 18% GST (~USD 112) for international entrants or INR 3,500 + GST for India-based entrants; lower Headstart/Early Bird rates applied earlier in the cycle",
+    "registrationUrl": "https://volumezerocompetitions.com/unbox-2026",
+    "prizeMoney": "USD 10,000 total: 1st place $5,000, 2nd place $2,500, 3rd place $1,500, plus 4 Gold Mentions at $1,000 each and 10 Honorable Mentions (certificates only)",
+    "resultDate": "2027-02-05",
+    "shortDescription": "An international ideas competition from Volume Zero — marking its 30th competition and 10th anniversary — challenging entrants to design micro-architectural interventions for adaptable, inclusive spatial experiences.",
+    "submissionFormat": "Digital submission via the Volume Zero competition platform following online team registration; exact panel/file specifications not confirmed in sources found this session",
+    "status": "open",
+    "slug": "unbox-2026-architecture-competition",
+    "studentTag": true,
+    "longDescription": "Unbox 2026 is organized by Volume Zero Competitions, marking the organizer's 30th international architecture competition and 10th anniversary. The ideas competition invites architects, students, and designers worldwide to propose small-scale architectural interventions that transform constrained spaces into adaptable, inclusive experiences. The competition offers a total prize pool of USD 10,000 across three main prizes, four Gold Mentions, and ten Honorable Mentions, with all winners receiving publication and certificates."
   }
 ]
