@@ -12,7 +12,9 @@ export function CompetitionCard({ item }: { item: Competition }) {
       className={`group flex flex-col gap-5 border-2 bg-white p-6 no-underline transition-all ${
         item.status === "expired"
           ? "border-black/25 opacity-35 grayscale hover:bg-neutral-500 hover:opacity-70"
-          : "border-ink hover:bg-ink"
+          : item.status === "pending"
+            ? "border-dashed border-black/30 hover:bg-ink"
+            : "border-ink hover:bg-ink"
       }`}
     >
       <div className="flex flex-wrap items-center gap-2">
