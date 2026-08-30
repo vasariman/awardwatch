@@ -7,6 +7,7 @@ import {
   formatDate,
   getAllCompetitions,
   getCompetitionBySlug,
+  getPriorEdition,
   getSuccessorCompetition,
 } from "@/lib/competitions";
 import { CategoryChip, StatusChip, StudentChip } from "@/components/Chips";
@@ -32,7 +33,10 @@ export async function generateMetadata({
   const item = getCompetitionBySlug(slug);
   if (!item) return {};
 
-  const title = `${item.title} — Deadline ${formatDate(item.deadline)} | AwardWatch`;
+  const title =
+    item.status === "pending"
+      ? `${item.title} — dates not yet announced | AwardWatch`
+      : `${item.title} — Deadline ${formatDate(item.deadline as string)} | AwardWatch`;
   const path = `/competitions/${item.slug}`;
 
   return {
@@ -65,44 +69,57 @@ export default async function CompetitionDetailPage({
   if (!item) notFound();
 
   const successor = item.status === "expired" ? getSuccessorCompetition(item) : undefined;
+  const priorEdition = item.status === "pending" ? getPriorEdition(item) : undefined;
   const categoryImage = getCategoryImage(item.categories);
 
+  // Only ever built from fields that are actually known — never a
+  // placeholder, never a value carried over from another edition.
   const stats = [
-    { label: "Deadline", value: formatDate(item.deadline) },
-    { label: "Results announced", value: formatDate(item.resultDate) },
+    ...(item.opensAt ? [{ label: "Submissions open", value: formatDate(item.opensAt) }] : []),
+    ...(item.deadline !== null ? [{ label: "Deadline", value: formatDate(item.deadline) }] : []),
+    ...(item.resultDate !== null ? [{ label: "Results announced", value: formatDate(item.resultDate) }] : []),
     { label: "Entry fee", value: item.entryFee },
     { label: "Award / prize", value: item.prizeMoney },
     { label: "Audience", value: audienceLabel(item.targetAudience) },
     { label: "Submission format", value: item.submissionFormat },
   ];
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    name: item.title,
-    description: item.shortDescription,
-    startDate: item.deadline,
-    endDate: item.deadline,
-    eventStatus: "https://schema.org/EventScheduled",
-    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
-    location: {
-      "@type": "VirtualLocation",
-      url: item.registrationUrl,
-    },
-    organizer: {
-      "@type": "Organization",
-      name: item.organizer,
-      url: item.registrationUrl,
-    },
-    url: `${SITE_URL}/competitions/${item.slug}`,
-  };
+  // No deadline confirmed -> no Event markup at all, rather than an Event
+  // with an invented or reused date. When a deadline is known, startDate
+  // is only included if opensAt is actually confirmed — never backfilled
+  // from the deadline, which would misstate the deadline as a start date.
+  const jsonLd =
+    item.deadline === null
+      ? null
+      : {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: item.title,
+          description: item.shortDescription,
+          ...(item.opensAt ? { startDate: item.opensAt } : {}),
+          endDate: item.deadline,
+          eventStatus: "https://schema.org/EventScheduled",
+          eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+          location: {
+            "@type": "VirtualLocation",
+            url: item.registrationUrl,
+          },
+          organizer: {
+            "@type": "Organization",
+            name: item.organizer,
+            url: item.registrationUrl,
+          },
+          url: `${SITE_URL}/competitions/${item.slug}`,
+        };
 
   return (
     <div className="border-t-2 border-ink bg-white px-6 pb-24 pt-0 md:pb-28">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
-      />
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+        />
+      )}
       <div className="mx-auto max-w-[820px] px-0 md:px-6">
         <Link
           href="/"
@@ -133,19 +150,64 @@ export default async function CompetitionDetailPage({
               <div className="font-sans text-[10px] font-bold uppercase tracking-[.06em] text-accent">
                 This edition has closed
               </div>
-              <div className="mt-1.5 font-sans text-xl font-black leading-snug text-ink">
-                {successor.title} is now open
-              </div>
-              <div className="mt-1 font-sans text-sm font-bold text-black/60">
-                Deadline {formatDate(successor.deadline)}
-              </div>
+              {successor.status === "pending" ? (
+                <>
+                  <div className="mt-1.5 font-sans text-xl font-black leading-snug text-ink">
+                    The next edition hasn&apos;t been announced yet
+                  </div>
+                  <div className="mt-1 font-sans text-sm font-bold text-black/60">
+                    We&apos;re tracking it here — check back for dates
+                  </div>
+                </>
+              ) : successor.status === "upcoming" ? (
+                <>
+                  <div className="mt-1.5 font-sans text-xl font-black leading-snug text-ink">
+                    {successor.title} is announced
+                  </div>
+                  <div className="mt-1 font-sans text-sm font-bold text-black/60">
+                    {successor.opensAt && `Opens ${formatDate(successor.opensAt)} — `}
+                    Deadline {formatDate(successor.deadline as string)}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="mt-1.5 font-sans text-xl font-black leading-snug text-ink">
+                    {successor.title} is now open
+                  </div>
+                  <div className="mt-1 font-sans text-sm font-bold text-black/60">
+                    Deadline {formatDate(successor.deadline as string)}
+                  </div>
+                </>
+              )}
             </div>
             <Link
               href={`/competitions/${successor.slug}`}
               className="inline-block shrink-0 bg-accent px-6 py-4 text-center font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
             >
-              View current edition →
+              {successor.status === "pending" ? "View tracking page" : "View current edition"} →
             </Link>
+          </div>
+        )}
+
+        {item.status === "pending" && (
+          <div className="mt-8 border-2 border-dashed border-black/30 bg-cream p-6">
+            <div className="font-sans text-[10px] font-bold uppercase tracking-[.06em] text-black/45">
+              Dates not yet announced
+            </div>
+            <p className="mt-2 font-sans text-base font-semibold leading-relaxed text-ink">
+              {item.expectedPeriod ||
+                "The organizer hasn't published official dates for this edition yet."}
+            </p>
+            {priorEdition && (
+              <p className="mt-2 font-sans text-sm leading-relaxed text-black/60">
+                For orientation only — the previous edition ({priorEdition.title}) had a
+                deadline of {formatDate(priorEdition.deadline as string)}. This is not a
+                prediction for this edition.
+              </p>
+            )}
+            <p className="mt-2 font-sans text-sm leading-relaxed text-black/60">
+              This page will update as soon as official dates are confirmed.
+            </p>
           </div>
         )}
 

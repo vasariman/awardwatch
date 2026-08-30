@@ -4,6 +4,8 @@ import { statusLabel } from "@/lib/competitions";
 const STATUS_STYLES: Record<Status, string> = {
   open: "bg-ink text-white",
   "closing-soon": "bg-accent text-white",
+  upcoming: "border border-ink bg-white text-ink",
+  pending: "border border-dashed border-black/40 bg-cream text-black/60",
   expired: "bg-black/10 text-black/40",
 };
 

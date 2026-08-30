@@ -3,6 +3,7 @@
     "slug": "if-design-award-2027",
     "title": "iF Design Award 2027",
     "organizer": "iF International Forum Design GmbH",
+    "seriesId": "if-design-award",
     "deadline": "2026-11-04",
     "categories": [
       "Product/Industrial Design"
@@ -23,6 +24,7 @@
     "slug": "james-dyson-award-2026",
     "title": "James Dyson Award 2026",
     "organizer": "James Dyson Foundation",
+    "seriesId": "james-dyson-award",
     "deadline": "2026-07-15",
     "categories": [
       "Product/Industrial Design"
@@ -43,6 +45,7 @@
     "slug": "german-design-award-2027",
     "title": "German Design Award 2027",
     "organizer": "German Design Council",
+    "seriesId": "german-design-award",
     "deadline": "2026-09-11",
     "categories": [
       "Graphic Design"
@@ -63,6 +66,7 @@
     "slug": "muse-design-awards-2026",
     "title": "MUSE Design Awards 2026 (Season 2)",
     "organizer": "International Awards Associate",
+    "seriesId": "muse-design-awards",
     "deadline": "2026-07-09",
     "categories": [
       "Graphic Design"
@@ -83,6 +87,7 @@
     "slug": "a-design-award-2026-27",
     "title": "A' Design Award & Competition 2026–2027",
     "organizer": "A' Design Award & Competition (Como)",
+    "seriesId": "a-design-award-and-competition",
     "deadline": "2026-09-30",
     "categories": [
       "UX/UI Design"
@@ -103,6 +108,7 @@
     "slug": "architecture-masterprize-2026",
     "title": "Architecture MasterPrize 2026",
     "organizer": "Farmani Group",
+    "seriesId": "architecture-masterprize",
     "deadline": "2026-08-31",
     "categories": [
       "Architecture"
@@ -123,6 +129,7 @@
     "slug": "interior-design-best-of-year-2026",
     "title": "Interior Design Best of Year Awards 2026",
     "organizer": "SANDOW Design Group / Interior Design magazine",
+    "seriesId": "interior-design-best-of-year-awards",
     "deadline": "2026-09-18",
     "categories": [
       "Interior/Furniture Design"
@@ -143,6 +150,7 @@
     "slug": "bundespreis-ecodesign-2026",
     "title": "Bundespreis Ecodesign 2026",
     "organizer": "German Federal Ministry for the Environment / Umweltbundesamt",
+    "seriesId": "bundespreis-ecodesign",
     "deadline": "2026-04-02",
     "categories": [
       "Sustainable Design"
@@ -163,6 +171,7 @@
     "slug": "green-product-award-2027",
     "title": "Green Product Award 2027",
     "organizer": "Green Product Award / Green Future Club",
+    "seriesId": "green-product-award",
     "deadline": "2026-09-17",
     "categories": [
       "Sustainable Design"
@@ -183,6 +192,7 @@
     "slug": "international-design-awards-2026",
     "title": "International Design Awards (IDA) 2026",
     "organizer": "IDA / Farmani Group",
+    "seriesId": "international-design-awards",
     "deadline": "2026-10-15",
     "categories": [
       "Interior/Furniture Design"
@@ -203,6 +213,7 @@
     "slug": "green-good-design-award-2027",
     "title": "Green Good Design Award 2027",
     "organizer": "The Chicago Athenaeum: Museum of Architecture and Design",
+    "seriesId": "green-good-design-award",
     "deadline": "2027-01-15",
     "categories": [
       "Sustainable Design"
@@ -223,6 +234,7 @@
     "slug": "communication-arts-typography-competition-2027",
     "title": "Communication Arts Typography Competition 2027",
     "organizer": "Communication Arts",
+    "seriesId": "communication-arts-typography-competition",
     "deadline": "2026-09-18",
     "categories": [
       "Graphic Design"
@@ -243,6 +255,7 @@
     "slug": "european-product-design-award-2026",
     "title": "European Product Design Award 2026",
     "organizer": "Farmani Group",
+    "seriesId": "european-product-design-award",
     "deadline": "2026-08-20",
     "categories": [
       "Product/Industrial Design"
@@ -263,6 +276,7 @@
     "slug": "tokyo-tdc-2027",
     "title": "Tokyo TDC 2027 Annual Awards",
     "organizer": "Tokyo Type Directors Club",
+    "seriesId": "tokyo-tdc-annual-awards",
     "deadline": "2026-09-15",
     "categories": [
       "Graphic Design"
@@ -283,6 +297,7 @@
     "slug": "ux-design-awards-2027",
     "title": "UX Design Awards 2027",
     "organizer": "IDZ Designpartner Berlin GmbH",
+    "seriesId": "ux-design-awards",
     "deadline": "2026-11-15",
     "categories": [
       "UX/UI Design"
@@ -303,6 +318,7 @@
     "slug": "buildners-unbuilt-award-2026",
     "title": "Buildner's Unbuilt Award 2026",
     "organizer": "Buildner",
+    "seriesId": "buildner-s-unbuilt-award",
     "deadline": "2026-10-20",
     "categories": [
       "Architecture"
@@ -323,6 +339,7 @@
     "slug": "communication-arts-illustration-competition-2027",
     "title": "Communication Arts 2027 Illustration Competition",
     "organizer": "Communication Arts",
+    "seriesId": "communication-arts-illustration-competition",
     "deadline": "2027-01-08",
     "categories": [
       "Graphic Design"
@@ -343,6 +360,7 @@
     "slug": "green-concept-award-2027",
     "title": "Green Concept Award 2027",
     "organizer": "Green Product Award / Green Future Club",
+    "seriesId": "green-concept-award",
     "deadline": "2027-01-17",
     "categories": [
       "Sustainable Design"
@@ -363,6 +381,7 @@
     "slug": "win-awards-2026",
     "title": "WIN Awards 2026",
     "organizer": "World Interiors News",
+    "seriesId": "win-awards",
     "deadline": "2026-08-06",
     "categories": [
       "Interior/Furniture Design"
@@ -383,6 +402,7 @@
     "slug": "london-design-awards-2026-season-2",
     "title": "London Design Awards 2026 (Season 2)",
     "organizer": "International Awards Associate (IAA)",
+    "seriesId": "london-design-awards",
     "deadline": "2026-11-06",
     "categories": [
       "Product/Industrial Design",
@@ -407,6 +427,7 @@
     "slug": "kokuyo-design-award-2027",
     "title": "KOKUYO Design Award 2027",
     "organizer": "KOKUYO Co., Ltd.",
+    "seriesId": "kokuyo-design-award",
     "deadline": "2026-10-07",
     "categories": [
       "Product/Industrial Design"
@@ -427,6 +448,7 @@
     "slug": "aia-international-design-awards-2026",
     "title": "AIA International Design Awards 2026",
     "organizer": "American Institute of Architects (AIA) International",
+    "seriesId": "aia-international-design-awards",
     "deadline": "2026-08-14",
     "categories": [
       "Architecture"
@@ -444,8 +466,10 @@
     "status": "expired"
   },
   {
+    "slug": "red-dot-award-product-design-2027",
     "title": "Red Dot Award: Product Design 2027",
     "organizer": "Red Dot GmbH & Co. KG (Design Zentrum Nordrhein Westfalen)",
+    "seriesId": "red-dot-award-product-design",
     "deadline": "2027-01-15",
     "categories": [
       "Product/Industrial Design"
@@ -459,13 +483,14 @@
     "shortDescription": "One of the world's most prestigious product design competitions, recognizing outstanding product design across industries worldwide.",
     "submissionFormat": "Online registration and entry via the My Red Dot portal, with a separate registration required for each entry",
     "status": "open",
-    "slug": "red-dot-award-product-design-2027",
     "studentTag": false,
     "longDescription": "The Red Dot Award: Product Design is one of the largest and most renowned design competitions in the world, run by Design Zentrum Nordrhein Westfalen. Registration for the 2027 edition opens 14 September 2026 and runs through the late submission deadline of 15 January 2027, in early bird, standard, and late-submission phases with increasing fees. The award is open to manufacturers and designers worldwide whose products are made using an industrial production process and launched on the market between 1 January 2025 and 1 July 2027. Entrants register and submit via the My Red Dot online portal, with a separate registration required for each entry. Winners are notified by email at the beginning of April 2027, and the Red Dot: Best of the Best trophies are awarded at a gala evening at the Aalto Theatre in Essen, Germany, on 13 July 2027."
   },
   {
+    "slug": "american-architecture-awards-2027",
     "title": "American Architecture Awards 2027",
     "organizer": "The Chicago Athenaeum: Museum of Architecture and Design",
+    "seriesId": "american-architecture-awards",
     "deadline": "2027-02-01",
     "categories": [
       "Architecture"
@@ -479,13 +504,14 @@
     "shortDescription": "Annual program from The Chicago Athenaeum honoring outstanding American architecture, landscape architecture, and urban planning projects.",
     "submissionFormat": "Online application via awardapplication.com: a 500-1000 word project description, 10-12 images (16:9 or 1:1, 300dpi, max 6MB each), and a single PDF (max 25MB) of floor plans, sections, and elevations",
     "status": "open",
-    "slug": "american-architecture-awards-2027",
     "studentTag": false,
     "longDescription": "The American Architecture Awards, presented by The Chicago Athenaeum: Museum of Architecture and Design, recognize commercial, corporate, institutional, healthcare, transportation, educational, and residential buildings as well as urban planning projects, across more than 32 categories including specialized areas like energy buildings and restoration work. Eligible submissions must be the work of American architects, landscape architects, or urban planners (including international firms with U.S. offices) for projects built or unbuilt in the U.S., or by U.S. firms working abroad, since 1 January 2025. The submission deadline for the 2027 edition is 1 February 2027. Winning projects are exhibited internationally and published in the Metropolitan Arts Press catalog."
   },
   {
+    "slug": "communication-arts-photography-competition-2027",
     "title": "Communication Arts 2027 Photography Competition",
     "organizer": "Communication Arts magazine",
+    "seriesId": "communication-arts-photography-competition",
     "deadline": "2027-03-12",
     "categories": [
       "Graphic Design"
@@ -499,13 +525,14 @@
     "shortDescription": "International photography competition from Communication Arts magazine, honoring outstanding work across advertising, editorial, and other categories.",
     "submissionFormat": "Online submission: digital images as JPG/RGB (max 2MB) or motion entries as MOV/MP4/MPG (max 500MB)",
     "status": "open",
-    "slug": "communication-arts-photography-competition-2027",
     "studentTag": true,
     "longDescription": "The Communication Arts Photography Competition is an annual international competition recognizing excellence in advertising, book, editorial, institutional, self-promotion, motion/cinematography, and unpublished photography, plus a dedicated Student Work category. Any photograph first published or produced between March 2026 and March 2027 is eligible, with entries accepted from any country; AI-generated submissions are excluded. The deadline for the 2027 competition is 12 March 2027 (midnight Pacific Time), with late entries accepted until 26 March 2027 for a $10 per-entry surcharge. There is no cash prize; winners receive a personalized solid aluminum Award of Excellence, a certificate, and publication in the Communication Arts Photography Annual (print and digital) along with online exposure. Only accepted entrants are notified, within about two months of the final deadline."
   },
   {
+    "slug": "dna-paris-design-award-2027",
     "title": "DNA Paris Design Awards 2027",
     "organizer": "DNA Paris Design Awards",
+    "seriesId": "dna-paris-design-awards",
     "deadline": "2027-05-07",
     "categories": [
       "Architecture",
@@ -522,13 +549,14 @@
     "shortDescription": "A Paris-based multidisciplinary design award spanning architecture, interior, landscape, product, and graphic design, open to both professionals and students.",
     "submissionFormat": "Online submission via the DNA Paris entry portal: project images and a written description, with category-specific supporting material",
     "status": "open",
-    "slug": "dna-paris-design-award-2027",
     "studentTag": true,
     "longDescription": "The DNA Paris Design Awards recognize outstanding work across five main disciplines — architecture, interior design, landscape, product design, and graphic design — with separate, lower-cost entry tiers for student submissions. Entrants can apply for up to five sub-awards within their main category. Main category winners are named DNA Designer of the Year, and all winners are celebrated at an annual awards ceremony in Paris."
   },
   {
+    "slug": "a-sustainable-products-projects-green-design-award-2026",
     "title": "A' Sustainable Products, Projects and Green Design Award 2026",
     "organizer": "A' Design Award & Competition (Como)",
+    "seriesId": "a-sustainable-products-projects-and-green-design-award",
     "deadline": "2026-09-30",
     "categories": [
       "Sustainable Design"
@@ -542,13 +570,14 @@
     "shortDescription": "A sustainability-focused track of the long-running A' Design Award, recognizing sustainable products, projects, and green design across a broad range of industries.",
     "submissionFormat": "Online submission via the A' Design Award competition platform: images, technical details, and a written design statement",
     "status": "open",
-    "slug": "a-sustainable-products-projects-green-design-award-2026",
     "studentTag": false,
     "longDescription": "Run by the same organization behind the flagship A' Design Award & Competition, the A' Sustainable Products, Projects and Green Design Award evaluates entries spanning eco-friendly furniture, sustainable architecture and interiors, renewable energy projects, green industrial design, and dozens of related categories. Professional-edition laureates receive the A' Design Prize, a package of PR, marketing, and publicity tools, and are celebrated at the annual gala presentation."
   },
   {
+    "slug": "sdgs-design-international-awards-2026",
     "title": "SDGs Design International Awards 2026",
     "organizer": "SDGs Design International Awards Committee (Kyushu University, Japan & Dongseo University, Korea)",
+    "seriesId": "sdgs-design-international-awards",
     "deadline": "2026-09-15",
     "categories": [
       "Sustainable Design"
@@ -562,13 +591,14 @@
     "shortDescription": "A binational academic design competition from Kyushu University (Japan) and Dongseo University (Korea) for student ideas addressing the UN Sustainable Development Goals.",
     "submissionFormat": "Word or PDF application form submitted by email to the organizing committee, per the format specified in the official call for entries",
     "status": "closing-soon",
-    "slug": "sdgs-design-international-awards-2026",
     "studentTag": true,
     "longDescription": "The SDGs Design International Awards invite university, graduate school, vocational, and high school students worldwide — including those outside design programs — to propose creative design solutions to the UN Sustainable Development Goals. Entries fall under four themes: Resilient Cities and Communities, Sustainable Green Design and Climate Action, Blue Sustainability (Oceans and Water), and other related topics. The competition is jointly organized by the design faculties of Kyushu University and Dongseo University."
   },
   {
+    "slug": "buildner-pavilion-atlas-2026",
     "title": "Pavilion Atlas 2026",
     "organizer": "Buildner (in partnership with ArchDaily)",
+    "seriesId": "pavilion-atlas",
     "deadline": "2026-10-19",
     "categories": [
       "Architecture"
@@ -582,13 +612,14 @@
     "shortDescription": "An international conceptual pavilion design competition from Buildner and ArchDaily, open to architects, artists, and creatives of all backgrounds.",
     "submissionFormat": "Digital submission of a conceptual pavilion design and supporting narrative, submitted in English via the Buildner platform",
     "status": "open",
-    "slug": "buildner-pavilion-atlas-2026",
     "studentTag": true,
     "longDescription": "Pavilion Atlas, organized by Buildner in partnership with ArchDaily, invites entrants to design a conceptual pavilion for a country of their choice, conveying a spatial narrative about that place. Open to architects, artists, and creatives regardless of professional qualification, entries are judged with dedicated prizes for students and for sustainability-focused designs, alongside the main placings. All submissions must be in English."
   },
   {
+    "slug": "kingspan-microhome-2026",
     "title": "Kingspan MICROHOME 2026",
     "organizer": "Buildner (in partnership with Kingspan)",
+    "seriesId": "kingspan-microhome",
     "deadline": "2026-11-02",
     "categories": [
       "Architecture",
@@ -603,13 +634,14 @@
     "shortDescription": "A Buildner and Kingspan-sponsored international competition to design a sustainable, energy-efficient microhome under 25m², open to all backgrounds.",
     "submissionFormat": "Four A2 presentation panels (suggested, not mandatory) submitted in English via the Buildner platform",
     "status": "open",
-    "slug": "kingspan-microhome-2026",
     "studentTag": true,
     "longDescription": "Now in its 11th edition, Kingspan MICROHOME challenges architects, designers, and creative thinkers to develop a modular, self-sufficient, energy-efficient microhome with a maximum footprint of 25 square meters for a hypothetical young professional couple. The competition is open to entrants of any professional background and includes dedicated Buildner Student and Sustainability Awards alongside the main placings and the sponsor-funded Kingspan Award. All submissions must be in English."
   },
   {
+    "slug": "buildner-architects-chair-stockholm-2026",
     "title": "The Architect's Chair – Stockholm Furniture Fair Edition #6",
     "organizer": "Buildner (in partnership with Stockholm Furniture Fair)",
+    "seriesId": "the-architect-s-chair-stockholm-furniture-fair",
     "deadline": "2027-01-05",
     "categories": [
       "Interior/Furniture Design",
@@ -624,13 +656,14 @@
     "shortDescription": "A Buildner and Stockholm Furniture Fair competition inviting architects and designers to distill their design philosophy into a single signature chair or seating piece.",
     "submissionFormat": "Digital submission via the Buildner platform: renders/visuals of the furniture design and a supporting narrative, in English; physical prototypes not required",
     "status": "open",
-    "slug": "buildner-architects-chair-stockholm-2026",
     "studentTag": true,
     "longDescription": "Now in its sixth edition, The Architect's Chair challenges entrants to design a piece of furniture — following in the tradition of Eames, Mies van der Rohe, and Jacobsen — that expresses their architectural thinking in object form. Open to architects, artists, students, and creatives of any professional background working individually or in teams of up to four, entries may include benches and stools alongside chairs; renders are accepted and physical prototypes are not required. Winners are exhibited at the Stockholm Furniture Fair and published on ArchDaily."
   },
   {
+    "slug": "dieline-awards-2027",
     "title": "DIELINE Awards 2027",
     "organizer": "DIELINE Media LLC",
+    "seriesId": "dieline-awards",
     "deadline": "2027-02-27",
     "categories": [
       "Graphic Design"
@@ -644,13 +677,14 @@
     "shortDescription": "A leading global packaging design and CPG design competition from DIELINE, spanning consumer packaging categories from food and beverage to circular/refill design.",
     "submissionFormat": "Online submission via the DIELINE Awards platform: packaging photography/renders and a written project description, per category",
     "status": "open",
-    "slug": "dieline-awards-2027",
     "studentTag": true,
     "longDescription": "The DIELINE Awards, run by packaging-design publication DIELINE, recognize excellence across consumer packaging and CPG design. The 2027 edition expands to include five new categories — Brand Worlds & Experiential, Functional Innovation & Accessibility, Retail/POS & Merchandising, Connected Packaging & Digital, and Circular, Refill & Reuse — alongside deeper subcategory coverage in Health & Beauty, Food, Beverage, and Home. Entries span Professional, Independent, and a restructured Concept/Student track, with every submission reviewed by DIELINE's editorial team for potential feature coverage regardless of judging outcome."
   },
   {
+    "slug": "iida-global-excellence-awards-2026",
     "title": "IIDA Global Excellence Awards 2026",
     "organizer": "IIDA (International Interior Design Association)",
+    "seriesId": "iida-global-excellence-awards",
     "deadline": "2026-10-13",
     "categories": [
       "Interior/Furniture Design"
@@ -664,13 +698,14 @@
     "shortDescription": "IIDA's flagship international interior design awards program, honoring interior design and interior architecture projects located outside the United States.",
     "submissionFormat": "Online submission via IIDA's official competition portal, including project imagery and a written project narrative",
     "status": "open",
-    "slug": "iida-global-excellence-awards-2026",
     "studentTag": false,
     "longDescription": "Now in its 17th year, the IIDA Global Excellence Awards recognize originality and creativity in interior design and interior architecture across 19 categories — including corporate, hospitality, healthcare, education, retail, and residential spaces. Any interior designer, interior architect, or architect worldwide may submit, provided the project itself is located outside the United States and was completed within the previous two years. Winners are celebrated at an in-person ceremony in Paris."
   },
   {
+    "slug": "world-design-awards-2026",
     "title": "World Design Awards 2026",
     "organizer": "The Architecture Community (World Architecture Community)",
+    "seriesId": "world-design-awards",
     "deadline": "2026-11-05",
     "categories": [
       "Architecture",
@@ -685,13 +720,14 @@
     "shortDescription": "An international architecture and design award covering commercial, residential, interior, landscape, and urban design projects, open to architects, students, and designers worldwide.",
     "submissionFormat": "Digital submission: up to 4 A3-size JPG sheets (RGB), a cover image, a written project description (DOC file), and a studio brief, submitted as a single zip file (max 80MB) via the online portal",
     "status": "open",
-    "slug": "world-design-awards-2026",
     "studentTag": true,
     "longDescription": "Run by The Architecture Community (the organization behind World Architecture Community / worldarchitecture.org, active since the mid-2000s), the World Design Awards recognize built and concept work across more than 20 categories spanning commercial, residential, institutional, and interior architecture as well as landscape, urban design, and temporary structures. Entries are judged by separate design and architecture panels and are open globally to architects, engineers, designers, students, and artists, with no restriction on project completion date or concept stage."
   },
   {
+    "slug": "brick-in-architecture-awards-2026",
     "title": "2026 Brick in Architecture Awards",
     "organizer": "Brick Industry Association (BIA)",
+    "seriesId": "brick-in-architecture-awards",
     "deadline": "2026-09-25",
     "categories": [
       "Architecture"
@@ -705,13 +741,14 @@
     "shortDescription": "A US architecture award from the Brick Industry Association honoring outstanding built projects that showcase clay brick, judged across nine categories.",
     "submissionFormat": "Entries are submitted through the my.gobrick.com portal per the official Rules & Regulations; exact image/document specifications were not confirmed in sources found this session",
     "status": "closing-soon",
-    "slug": "brick-in-architecture-awards-2026",
     "studentTag": false,
     "longDescription": "Presented annually by the Brick Industry Association (BIA), the Brick in Architecture Awards recognize residential, commercial, educational, and historic-renovation projects in which new clay brick forms more than half of the visible exterior surface. Entrants must be architects or designers at architectural, design-build, or landscape architecture firms, and eligible projects must have been completed on or after January 1, 2020. Entries compete within nine categories for Best in Class, Gold, Silver, or Bronze recognition, plus an overall Craftsmanship Award; a peer jury judges submissions in October, with winners celebrated at the Brick Excellence Gala during the National Clay Brick Expo in Nashville."
   },
   {
+    "slug": "graphis-poster-awards-2027",
     "title": "Graphis Poster Awards 2027",
     "organizer": "Graphis, Inc.",
+    "seriesId": "graphis-poster-awards",
     "deadline": "2027-02-02",
     "categories": [
       "Graphic Design"
@@ -725,13 +762,14 @@
     "shortDescription": "A long-running New York-based international poster design competition from Graphis, recognizing excellence in poster design by industry professionals.",
     "submissionFormat": "Online submission via the Graphis entry platform: a digital image of the poster design plus project details, per Graphis's standard entry requirements (exact file specs not confirmed in sources found this session)",
     "status": "open",
-    "slug": "graphis-poster-awards-2027",
     "studentTag": false,
     "longDescription": "Graphis Poster Awards is an annual professional-only poster design competition run by Graphis, Inc., the New York publisher behind the Graphis Design, Advertising, and New Talent competitions. Work must be produced by industry professionals within the past two years; student work is directed instead to Graphis's separate New Talent competition. Winners are announced in a blog post, online gallery, and newsletter on graphis.com, and Platinum/Gold-winning work is published in the print Graphis Poster Annual."
   },
   {
+    "slug": "webby-awards-2027",
     "title": "31st Annual Webby Awards",
     "organizer": "International Academy of Digital Arts and Sciences (IADAS)",
+    "seriesId": "webby-awards",
     "deadline": "2026-10-17",
     "categories": [
       "UX/UI Design"
@@ -745,13 +783,14 @@
     "shortDescription": "The Webby Awards, presented by the International Academy of Digital Arts and Sciences, honor excellence across websites, apps, and other digital experiences, with a dedicated Websites & Mobile Sites category judged partly on UX/UI design.",
     "submissionFormat": "Online submission via webbyawards.com: a live URL or app link plus a written project description, per category-specific entry guidelines",
     "status": "open",
-    "slug": "webby-awards-2027",
     "studentTag": false,
     "longDescription": "Founded in 1998, the Webby Awards are presented by the International Academy of Digital Arts and Sciences (IADAS), a 3,000+ member judging body of internet and digital-media professionals. Entries span eight media types including Websites & Mobile Sites and Apps, Software & Immersive, evaluated on criteria that include usability and user experience alongside content and creativity. The competition is open globally to individuals, brands, and organizations, with an early-bird pricing window and a final entry deadline each fall; winners are announced the following spring and celebrated at a ceremony in New York."
   },
   {
+    "slug": "lamp-lighting-design-competition-2026",
     "title": "L.A.M.P International Lighting Design Competition 2026",
     "organizer": "L.A.M.P (independent lighting-design competition organization)",
+    "seriesId": "l-a-m-p-international-lighting-design-competition",
     "deadline": "2026-10-01",
     "categories": [
       "Product/Industrial Design"
@@ -765,13 +804,14 @@
     "shortDescription": "An independent international lighting design competition open to both professional and student designers, with finalists selected across Professional, Student, and Manufactured categories.",
     "submissionFormat": "Online submission via the L.A.M.P Submittable portal (xlampthecompetition.submittable.com); exact file/document requirements were not confirmed in sources found this session",
     "status": "closing-soon",
-    "slug": "lamp-lighting-design-competition-2026",
     "studentTag": true,
     "longDescription": "L.A.M.P is an independent, small-organization international lighting design competition focused on championing emerging talent and connecting lighting designers to new markets. The 2026 edition is open to Professional and Student entrants, with past editions also recognizing a Manufactured category for lighting products already in production. Submission and sponsorship fees fund the competition's prize money and marketing support for finalists. The competition has been covered by design press including Azure Magazine, Design Milk, and Bustler."
   },
   {
+    "slug": "dba-design-effectiveness-awards-2027",
     "title": "DBA Design Effectiveness Awards 2027",
     "organizer": "Design Business Association (DBA)",
+    "seriesId": "dba-design-effectiveness-awards",
     "deadline": "2026-12-01",
     "categories": [
       "Graphic Design"
@@ -785,13 +825,14 @@
     "shortDescription": "The UK's longest-running awards program for measuring the commercial impact of design, jointly entered by the design team or agency and the client who commissioned the work.",
     "submissionFormat": "Two-part submission via the DBA's entry platform: an anonymous case study (max 9 pages) for judging, plus a publication version (max 12 pages) if shortlisted; entries must include measurable evidence dated after 1 June 2024, plus a signed sign-off from senior leadership at both the design team/agency and the client",
     "status": "open",
-    "slug": "dba-design-effectiveness-awards-2027",
     "studentTag": false,
     "longDescription": "Run by the Design Business Association (DBA) and established in 1989, the Design Effectiveness Awards are the longest-running program dedicated to demonstrating the business impact of design, using commercial data as a core judging criterion alongside creative merit. Entries are open globally, but must be submitted jointly by the agency or in-house design team that delivered the work and the client who commissioned it, backed by measurable evidence of the work's effect on the business. Winners receive Gold, Silver, or Bronze recognition and are celebrated at The Design Effect industry event in London."
   },
   {
+    "slug": "architizer-a-plus-awards-2027",
     "title": "Architizer A+Awards 2027 (15th Annual)",
     "organizer": "Architizer",
+    "seriesId": "architizer-a-awards",
     "deadline": "2027-02-19",
     "categories": [
       "Architecture"
@@ -805,13 +846,14 @@
     "shortDescription": "The industry's largest international architecture awards program, judged by a jury of hundreds of professionals plus an online public vote across dozens of building typologies.",
     "submissionFormat": "Online submission via the Architizer A+Awards platform: project images/renders, a written project description, and category-specific supporting material",
     "status": "open",
-    "slug": "architizer-a-plus-awards-2027",
     "studentTag": true,
     "longDescription": "Organized by Architizer, the A+Awards is one of the largest international architecture awards programs, reviewing thousands of submissions each year across typology categories (residential, commercial, cultural, institutional, and more), Plus Categories addressing contemporary issues, and dedicated Sustainability and Student Project categories. Entries are judged by a jury of several hundred professionals from architecture, design, and related fields, combined with an online public vote. Winners are published in the annual hardbound compendium 'Architizer: The World's Best Architecture.'"
   },
   {
+    "slug": "open-chair-design-competition-2026",
     "title": "Open Chair Design Competition 2026",
     "organizer": "Creathlon (in partnership with Aibuild)",
+    "seriesId": "open-chair-design-competition",
     "deadline": "2026-11-06",
     "categories": [
       "Interior/Furniture Design",
@@ -826,13 +868,14 @@
     "shortDescription": "A global ideas competition challenging designers to create a full-scale chair that can be 3D-printed at home and assembled with minimal tools.",
     "submissionFormat": "Digital submission (max 15MB combined): two 3D-print files (.STL) showing the assembled chair and individual parts, an A2 landscape board (JPG) with visualizations and an assembly guide, an A2 portrait poster (JPG), and a project description (PDF, max 500 words)",
     "status": "open",
-    "slug": "open-chair-design-competition-2026",
     "studentTag": true,
     "longDescription": "Open Chair, run by UK-based Creathlon in partnership with Aibuild, invites students, professionals, and design enthusiasts worldwide to reimagine the chair through the lens of digital fabrication and open-source design. Entrants submit a full-scale chair designed to be 3D-printed on a home printer, assembled with minimal tools, and shared as a reproducible design for others to build. Teams are permitted alongside individual entries."
   },
   {
+    "slug": "international-sustainable-building-competition-2026",
     "title": "International Sustainable Building Competition 2026",
     "organizer": "UNEP, Global Alliance for Buildings and Construction (GlobalABC), and Türkiye Ministry of Environment, Urbanization and Climate Change",
+    "seriesId": "international-sustainable-building-competition",
     "deadline": "2026-10-15",
     "categories": [
       "Architecture",
@@ -847,13 +890,14 @@
     "shortDescription": "A UN- and Türkiye-backed international competition recognizing energy-efficient, low-carbon, climate-resilient buildings, with winners honored at COP31 in Antalya.",
     "submissionFormat": "Online application via yesint.csb.gov.tr with 3–4 project photographs uploaded directly through the site",
     "status": "open",
-    "slug": "international-sustainable-building-competition-2026",
     "studentTag": false,
     "longDescription": "Organized by UNEP, the Global Alliance for Buildings and Construction (GlobalABC), and Türkiye's Ministry of Environment, Urbanization and Climate Change, the International Sustainable Building Competition invites architects and building professionals worldwide to submit built projects and masterplans that demonstrate energy-efficient, low-carbon, and climate-resilient design. The competition is free to enter and is timed to coincide with COP31, the UN Climate Change Conference hosted in Antalya, Türkiye in November 2026, where winning projects will be honored."
   },
   {
+    "slug": "ny-product-design-awards-2026-season-2",
     "title": "NY Product Design Awards 2026 (Season 2)",
     "organizer": "International Awards Associate (IAA)",
+    "seriesId": "ny-product-design-awards",
     "deadline": "2026-10-21",
     "categories": [
       "Product/Industrial Design"
@@ -867,13 +911,14 @@
     "shortDescription": "An International Awards Associate program recognizing product design across 17 categories including lighting, automotive, furniture, and wearable technology.",
     "submissionFormat": "Fully online submission: flattened JPEG/JPG images (under 4MB, ~1,200px wide, 300dpi, RGB), a project synopsis of roughly 350 words, and optional video/audio via a Vimeo/YouTube/Youku URL; physical product samples are optional",
     "status": "open",
-    "slug": "ny-product-design-awards-2026-season-2",
     "studentTag": false,
     "longDescription": "The NY Product Design Awards is organized by International Awards Associate (IAA), the organization behind the MUSE Design Awards and London Design Awards. Season 2 of the 2026 program spans 17 categories, from lighting and automotive/transport to furniture, packaging, digital devices, medical equipment, and wearable technology, and is open to product designers, design teams, and manufacturers worldwide. Winners receive the 'Ava' statuette along with marketing and publicity benefits."
   },
   {
+    "slug": "spark-design-awards-2026-fall",
     "title": "Spark Design Awards 2026 (Fall/Winter Cycle)",
     "organizer": "Spark Awards (International Design Competition)",
+    "seriesId": "spark-design-awards-fall-winter-cycle",
     "deadline": "2026-11-25",
     "categories": [
       "Product/Industrial Design",
@@ -891,13 +936,14 @@
     "shortDescription": "A long-running, budget-friendly multidisciplinary design competition spanning product, architecture, interiors, graphic, and digital design, judged through a two-phase jury process.",
     "submissionFormat": "Online submission via the Spark Awards registration portal: project images and a written description, per category-specific requirements; shortlisted finalists undergo an additional live jury review",
     "status": "open",
-    "slug": "spark-design-awards-2026-fall",
     "studentTag": true,
     "longDescription": "Founded in 2001 by producer Peter Kuchnicki, the Spark Awards (International Design Competition) is a multidisciplinary program spanning Product & Industrial Design, Spaces Design (architecture, interiors, landscape, and urban planning), Graphic Design, Digital Design (UX/UI, apps, motion), Packaging, Transport & Mobility, Health/Medical/Universal Design, and a dedicated Student Design track. Judging uses a two-phase process: an initial registration and jury round determines shortlisted Finalist Candidates, who then pay a second fee ahead of a live jury session that selects Platinum, Gold, Silver, and Bronze winners. The current cycle's final deadline runs through November 19, 2026 for professionals and November 25, 2026 for students."
   },
   {
+    "slug": "lit-lighting-design-awards-2026",
     "title": "LIT Lighting Design Awards 2026",
     "organizer": "Farmani Group",
+    "seriesId": "lit-lighting-design-awards",
     "deadline": "2026-10-18",
     "categories": [
       "Product/Industrial Design"
@@ -911,13 +957,14 @@
     "shortDescription": "An international lighting design competition covering lighting products, architectural lighting, and entertainment lighting, marking its 10-year anniversary in 2026.",
     "submissionFormat": "Online submission via the LIT Awards entry portal: project images/renders and a written description, per category-specific requirements",
     "status": "open",
-    "slug": "lit-lighting-design-awards-2026",
     "studentTag": true,
     "longDescription": "Organized by Farmani Group — the same organization behind the International Design Awards, Architecture MasterPrize, and European Product Design Award — the LIT Lighting Design Awards recognize excellence in Lighting Product Design, Entertainment Lighting Design, and Architectural Lighting Design, alongside special Lifetime Achievement and Spotlight prizes. Now marking its 10th anniversary, the 2025 edition drew entries from 62 countries. Winners are celebrated at an in-person gala (Paris hosted the 2024 and 2025 ceremonies) and featured in the annual LIT catalogue."
   },
   {
+    "slug": "indigo-design-award-2026",
     "title": "Indigo Design Award 2026",
     "organizer": "Marly Group Limited",
+    "seriesId": "indigo-design-award",
     "deadline": "2027-01-31",
     "categories": [
       "Graphic Design",
@@ -932,13 +979,14 @@
     "shortDescription": "An independent, Lisbon-based international design competition for graphic and digital design, judged by a jury of professionals from major tech and agency brands, with reduced entry fees for freelancers and students.",
     "submissionFormat": "Online submission: up to 10 images per entry (JPG/PNG, max 5MB each), with an optional supporting PDF",
     "status": "open",
-    "slug": "indigo-design-award-2026",
     "studentTag": true,
     "longDescription": "Founded in 2017 and run by Marly Group Limited in Lisbon, Portugal, the Indigo Design Award evaluates work across four categories: Graphic Design, Digital Design (including UX/UI), Branding, and Design for Social Change. Entrants include agencies, freelancers, and students, judged by an international jury drawn from companies including Google, Microsoft, Nike, Spotify, and IBM. The competition emphasizes accessibility for smaller studios and independent designers, with tiered pricing and a published refund policy."
   },
   {
+    "slug": "design-intelligence-award-2026",
     "title": "Design Intelligence Award (DIA) 2026",
     "organizer": "Design Intelligence Award Committee (endorsed by the World Design Organization)",
+    "seriesId": "design-intelligence-award",
     "deadline": "2026-09-01",
     "categories": [
       "Product/Industrial Design"
@@ -952,13 +1000,14 @@
     "shortDescription": "A China-based, WDO-endorsed industrial design award with a roughly €500,000 total prize pool, spanning Product Group and Concept Group tracks across four sectors.",
     "submissionFormat": "Online registration with project documentation; video documentation is mandatory for non-physical products and required for all entries advancing to the second evaluation round",
     "status": "closing-soon",
-    "slug": "design-intelligence-award-2026",
     "studentTag": true,
     "longDescription": "The Design Intelligence Award (DIA) is endorsed by the World Design Organization and organized in China, evaluating entries across two groups — Product (market-ready designs) and Concept (forward-looking proposals, including a dedicated Young Talents track) — spanning four sectors: Digital Economy, Industrial Equipment, Life Wisdom, and Cultural Innovation. The competition is open to enterprises, universities, institutions, and individuals worldwide, with free registration during an initial window followed by a paid late-registration period. The 2026 cycle offers a total prize pool of roughly €500,000, including a ¥1,000,000 Grand Award."
   },
   {
+    "slug": "archiproducts-design-awards-2026",
     "title": "Archiproducts Design Awards 2026",
     "organizer": "Archiproducts",
+    "seriesId": "archiproducts-design-awards",
     "deadline": "2026-09-14",
     "categories": [
       "Product/Industrial Design",
@@ -974,13 +1023,14 @@
     "shortDescription": "An Italian product design competition from Archiproducts recognizing furniture, lighting, bathroom, kitchen, and building-material design, with a dedicated Sustainability category.",
     "submissionFormat": "Online nomination via the Archiproducts Design Awards portal: product images and supporting details, submitted by the manufacturer or brand (1 to 5 products per brand, launched or presented between June 2025 and September 2026)",
     "status": "closing-soon",
-    "slug": "archiproducts-design-awards-2026",
     "studentTag": false,
     "longDescription": "Now in its 11th edition, the Archiproducts Design Awards is an international product design competition run by Archiproducts, the Italian architecture and design products platform headquartered in Bari, Italy. Brands and manufacturers nominate products across categories including furniture, bathroom, kitchen, outdoor, office, contract, lighting, wellness, décor, finishes, building shell, construction, and systems/materials, plus a dedicated Sustainability category judged separately with an additional fee. The jury has included figures such as the Head of Design at David Chipperfield Architects and leadership from Zaha Hadid Architects. Winners are celebrated at an in-person ceremony, with past editions held at Superstudio Più in Milan."
   },
   {
+    "slug": "an-best-of-design-awards-2026",
     "title": "AN's 2026 Best of Design Awards",
     "organizer": "The Architect's Newspaper",
+    "seriesId": "an-s-best-of-design-awards",
     "deadline": "2026-09-18",
     "categories": [
       "Architecture",
@@ -995,13 +1045,14 @@
     "shortDescription": "An annual awards program from The Architect's Newspaper honoring standout architecture and interiors projects across more than 50 categories reflecting AN's editorial coverage.",
     "submissionFormat": "Online submission via the AN Best of Design registration portal: project images, a written description, and supporting materials per category",
     "status": "closing-soon",
-    "slug": "an-best-of-design-awards-2026",
     "studentTag": false,
     "longDescription": "The Architect's Newspaper's Best of Design Awards recognize outstanding work across more than 50 categories spanning infrastructure, landscape, facades, civic and cultural buildings, homes, ADUs, and interiors. Entries are judged on strength of presentation, evidence of innovation, creative use of technology, sustainability, and overall design quality. Projects must have been completed within two years of the submission deadline (landscape, public, and unbuilt projects within three years). Winners are published in AN's print Best of Design issue and promoted across the publication's editorial platforms."
   },
   {
+    "slug": "architectural-products-innovation-awards-2026",
     "title": "Architectural Products Product Innovation Awards 2026",
     "organizer": "Architectural Products magazine (Endeavor Business Media)",
+    "seriesId": "architectural-products-product-innovation-awards",
     "deadline": "2026-08-31",
     "categories": [
       "Product/Industrial Design"
@@ -1015,13 +1066,14 @@
     "shortDescription": "A US trade-publication award from Architectural Products magazine recognizing innovative building products across categories from lighting and facades to finishes and hardware.",
     "submissionFormat": "Online submission via the Architectural Products Product Innovation Awards portal: product details and supporting images per category",
     "status": "closing-soon",
-    "slug": "architectural-products-innovation-awards-2026",
     "studentTag": false,
     "longDescription": "The Product Innovation Awards, run by Architectural Products magazine (part of Endeavor Business Media's Buildings & Construction group), honor products, systems, and materials that elevate architectural creativity and performance. Categories span acoustics, appliances and plumbing, building materials and facades, finishes and surfaces, furnishings, hardware, lighting, openings, roofing, textiles, and technology. Products launched between December 2023 and December 2026 are eligible. Winners are featured on the Architectural Products website and in the magazine's November/December print issue, and may use the PIA 2026 logo in their own marketing."
   },
   {
+    "slug": "graphis-design-awards-2027",
     "title": "Graphis Design Awards 2027",
     "organizer": "Graphis, Inc.",
+    "seriesId": "graphis-design-awards",
     "deadline": "2027-03-02",
     "categories": [
       "Graphic Design"
@@ -1035,13 +1087,14 @@
     "shortDescription": "An annual professional graphic design competition from Graphis spanning brand identity, packaging, editorial, typography, environmental, and digital design.",
     "submissionFormat": "Online submission via the Graphis entry platform: a single image for standalone work, or a series (up to six additional images) for campaigns, branding systems, or multi-spread publications",
     "status": "open",
-    "slug": "graphis-design-awards-2027",
     "studentTag": false,
     "longDescription": "Graphis Design Awards is an annual professional-only graphic design competition run by Graphis, Inc., the New York publisher behind the Poster, Advertising, Photography, and New Talent competitions. Categories include Brand Identity, Packaging, Editorial, Typography, Environmental, Digital Design, Gaming, and Poster Design. A single entry is one image (a poster, cover, ad, logo, photograph, or illustration); a series entry covers campaigns, branding systems, or multi-spread publications. Platinum and Gold-winning work is published on graphis.com and viewed by creative directors and design leaders worldwide; student work is directed instead to Graphis's separate New Talent competition."
   },
   {
+    "slug": "international-architecture-awards-2027",
     "title": "International Architecture Awards 2027",
     "organizer": "The Chicago Athenaeum: Museum of Architecture and Design / The European Centre for Architecture Art Design and Urban Studies",
+    "seriesId": "international-architecture-awards",
     "deadline": "2026-12-01",
     "categories": [
       "Architecture"
@@ -1055,13 +1108,14 @@
     "shortDescription": "A prestigious international architecture award from The Chicago Athenaeum and The European Centre recognizing outstanding new buildings, landscape architecture, and urban planning projects worldwide.",
     "submissionFormat": "Online application via chi-athenaeum.org: 10-12 project images (16:9 or 1:1 aspect ratio, 300dpi, max 6MB each), a 500-700 word project description in English, and a single PDF (plans, sections, elevations); file names must use Latin characters only",
     "status": "open",
-    "slug": "international-architecture-awards-2027",
     "studentTag": false,
     "longDescription": "The International Architecture Awards are presented jointly by The Chicago Athenaeum: Museum of Architecture and Design and The European Centre for Architecture Art Design and Urban Studies, recognizing the world's most outstanding new buildings, interiors, landscapes, and urban planning projects. The award is open to international architects and firms (including U.S.-based firms submitting international or domestic work), with eligible projects designed or built after January 1, 2024. Categories span more than 15 building types, including airports, bridges, commercial and corporate buildings, hospitals, hotels, offices, residential, retail, schools, religious structures, urban planning, landscape architecture, and restorations; previously awarded projects are ineligible. Winning projects are exhibited internationally and published by the Museum."
   },
   {
+    "slug": "quiet-tower-architecture-competition",
     "title": "The Quiet Tower International Architecture Competition",
     "organizer": "Buildner",
+    "seriesId": "the-quiet-tower-international-architecture-competition",
     "deadline": "2027-02-15",
     "categories": [
       "Architecture"
@@ -1075,13 +1129,14 @@
     "shortDescription": "An open international architecture ideas competition from Buildner inviting designs for an observation tower on Latvia's remote Cape Kolka coastline.",
     "submissionFormat": "Online registration and submission via architecturecompetitions.com: full design brief with CAD site files and reference photos/videos provided; entries and correspondence must be in English",
     "status": "open",
-    "slug": "quiet-tower-architecture-competition",
     "studentTag": true,
     "longDescription": "The Quiet Tower is an international architecture ideas competition organized by Buildner, inviting architects, designers, students, and enthusiasts worldwide to reimagine an observation tower on the Baltic coastline at Cape Kolka, Latvia. Rather than an iconic landmark, the brief calls for a 'lookout ritual' — a structure emphasizing atmosphere and emotional connection, inspired by fire lookout towers and Nordic retreat culture. The competition is open to all with no professional qualification required, and entries can be submitted individually or by teams of up to four. The €10,000 prize fund includes dedicated Student and Sustainability awards alongside the main placements."
   },
   {
+    "slug": "andrew-martin-design-awards-2027",
     "title": "Andrew Martin International Interior Designer of the Year Award 2027",
     "organizer": "Andrew Martin",
+    "seriesId": "andrew-martin-international-interior-designer-of-the-year-award",
     "deadline": "2026-12-20",
     "categories": [
       "Interior/Furniture Design"
@@ -1095,13 +1150,14 @@
     "shortDescription": "A prestigious global interior design award from British furniture brand Andrew Martin, dubbed 'the Oscars of the design world,' recognizing a Designer of the Year from an international 'Top 100' shortlist.",
     "submissionFormat": "Downloadable PDF application form submitted directly to Andrew Martin, per the process outlined at andrewmartin.co.uk/design-awards",
     "status": "open",
-    "slug": "andrew-martin-design-awards-2027",
     "studentTag": false,
     "longDescription": "Running since 1996 and described by The Sunday Times as 'the Oscars of the Design World,' the Andrew Martin International Interior Designer of the Year Award is presented by the British luxury furniture and interiors brand Andrew Martin. Professional interior designers from around the world submit residential and commercial projects for consideration; a shortlist of roughly 100 designers is published each year in the Andrew Martin Interior Design Review, often called 'the bible of interior design.' A panel of celebrity judges then selects the overall Designer of the Year from the international entrants."
   },
   {
+    "slug": "worldstar-packaging-awards-2027",
     "title": "WorldStar 2027 Global Packaging Awards",
     "organizer": "World Packaging Organisation (WPO)",
+    "seriesId": "worldstar-global-packaging-awards",
     "deadline": "2026-10-15",
     "categories": [
       "Product/Industrial Design",
@@ -1116,13 +1172,14 @@
     "shortDescription": "The world's most prestigious packaging design award, presented by the World Packaging Organisation, open only to packs that have already won a WPO-recognized national or regional packaging competition.",
     "submissionFormat": "Online submission via worldstar.org: category selection, a 500-word written justification of the pack, and up to 5 high-resolution images (combined file size under 5MB); payment due by November 2, 2026",
     "status": "open",
-    "slug": "worldstar-packaging-awards-2027",
     "studentTag": false,
     "longDescription": "WorldStar is the global packaging awards program of the World Packaging Organisation (WPO), widely regarded as the pre-eminent international recognition for packaging design, innovation, and sustainability. Entry is restricted to packaging that has already won an award in one of roughly 75-85 WPO-recognized national or regional packaging competitions in the current or previous year — there is no direct-entry route for unproven packs. Categories span major packaging types alongside Special Awards for Sustainability, Marketing, Packaging that Saves Food, and Accessible Packaging. Around 200 winners are typically selected from 300+ qualifying entries spanning 30+ countries, with winners honored at an international gala tied to a major packaging trade fair."
   },
   {
+    "slug": "adi-compasso-doro-international-2027",
     "title": "ADI Compasso d'Oro International Award 2027 (IV Edition)",
     "organizer": "ADI - Associazione per il Disegno Industriale (Italian Association for Industrial Design)",
+    "seriesId": "adi-compasso-d-oro-international-award",
     "deadline": "2027-01-20",
     "categories": [
       "Product/Industrial Design",
@@ -1137,13 +1194,14 @@
     "shortDescription": "The fourth edition of the international spin-off of Italy's historic Compasso d'Oro, ADI's design prize running since 1954, themed 'Play for Humanity: Sport and Music for All' in partnership with Expo 2027 Belgrade.",
     "submissionFormat": "Online submission via compassodorointernational.com including product photographs, a written description, and a short video (max. 60 seconds, smartphone footage acceptable) in English",
     "status": "open",
-    "slug": "adi-compasso-doro-international-2027",
     "studentTag": false,
     "longDescription": "The ADI Compasso d'Oro International Award extends the legacy of Italy's oldest and most prestigious industrial design prize (established 1954) to an international stage. This fourth edition is organized in collaboration with Expo 2027 Belgrade and centers on the theme 'Play for Humanity: Sport and Music for All'. Entries span nine categories including Design for Living, Lighting, Mobility, Work, the Individual, Food Design, Service and Social Design, Communication Design, and Exhibition Design. Products must already be released to market in one of the countries participating in Expo 2027 Belgrade. Submissions are reviewed by ADI's expert jury, with winners announced at a ceremony in Belgrade."
   },
   {
+    "slug": "miaw-innovation-2026",
     "title": "MIAW Innovation 2026 (Muuuz International Awards)",
     "organizer": "Muuuz / ArchiDesignClub (Groupe Ficade)",
+    "seriesId": "miaw-innovation",
     "deadline": "2026-11-25",
     "categories": [
       "Interior/Furniture Design"
@@ -1157,13 +1215,14 @@
     "shortDescription": "Annual French interior-products award from Muuuz/ArchiDesignClub recognizing the most outstanding products in architecture, interior design, and decoration, with an Innovation-focused track alongside its Design track.",
     "submissionFormat": "Online registration via miaw.muuuz.com with product images and a technical/design description",
     "status": "open",
-    "slug": "miaw-innovation-2026",
     "studentTag": false,
     "longDescription": "The Muuuz International Awards (MIAW), run by French design and architecture media outlet Muuuz (ArchiDesignClub, Groupe Ficade), have recognized outstanding products in architecture, interior design, and decoration for over a decade. The Innovation edition highlights a product's technical, functional, and virtuous qualities across four categories: Interior Equipment/Furnishing, Materials and Coatings, Lighting, and Outdoor. Winners are presented with trophies at award ceremonies held at venues in Paris, including the Grand Hôtel InterContinental Paris."
   },
   {
+    "slug": "one-show-design-branding-2027",
     "title": "The One Show 2027 — Design & Branding",
     "organizer": "The One Club for Creativity",
+    "seriesId": "the-one-show-design-and-branding",
     "deadline": "2027-03-05",
     "categories": [
       "Graphic Design"
@@ -1177,13 +1236,14 @@
     "shortDescription": "The Design & Branding discipline of The One Show, one of the advertising and design industry's longest-running global creative awards, run by The One Club for Creativity in New York.",
     "submissionFormat": "Online entry via oneshow.org; several Design & Branding categories additionally require physical entry materials mailed to The One Club",
     "status": "open",
-    "slug": "one-show-design-branding-2027",
     "studentTag": false,
     "longDescription": "The One Show is one of the creative industry's most prestigious international awards programs, run annually by The One Club for Creativity. Alongside its advertising disciplines, it includes dedicated 'Design & Branding' and 'Design in Advertising' categories recognizing excellence in brand identity, packaging, environmental and editorial design, and related visual communication work. Entries for the 2027 cycle open October 27, 2026, with a series of escalating-fee deadlines running through early March 2027. Winners are celebrated with the program's iconic Pencil trophies during Creative Week in New York City."
   },
   {
+    "slug": "detail-architecture-award-2027",
     "title": "DETAIL Architecture Award 2027",
     "organizer": "DETAIL (Institut für internationale Architektur-Dokumentation)",
+    "seriesId": "detail-architecture-award",
     "deadline": "2026-10-31",
     "categories": [
       "Architecture"
@@ -1197,13 +1257,14 @@
     "shortDescription": "Annual international architecture prize from Germany's DETAIL magazine recognizing completed building projects for the quality of their overall design concept, alongside a dedicated Students & Schools award and an Affordable Housing special prize.",
     "submissionFormat": "Online submission via detail.de including project drawings, photographs, and a written project description; a separate submission track exists for the Students & Schools award",
     "status": "open",
-    "slug": "detail-architecture-award-2027",
     "studentTag": true,
     "longDescription": "The DETAIL Architecture Award, presented by the respected German architecture publication DETAIL, honors completed building projects worldwide whose architecture stands out for the quality and consistency of its overall concept — independent of project size or budget. The 2027 edition comprises the main DETAIL Architecture Award, a Special Prize for Affordable Housing, the DETAIL Architecture Award for Students & Schools, and a DETAIL Readers' Award, all judged by an independent international expert jury."
   },
   {
+    "slug": "german-brand-award-2027",
     "title": "German Brand Award 2027",
     "organizer": "German Design Council (Rat für Formgebung)",
+    "seriesId": "german-brand-award",
     "deadline": "2027-06-24",
     "categories": [
       "Graphic Design"
@@ -1217,13 +1278,14 @@
     "shortDescription": "An international brand design award from the German Design Council recognizing outstanding branding, identity, and marketing work by companies and agencies worldwide.",
     "submissionFormat": "Online registration and nomination via the German Brand Award platform, with written project documentation per category",
     "status": "open",
-    "slug": "german-brand-award-2027",
     "studentTag": false,
     "longDescription": "Presented by the German Design Council — the same body behind the German Design Award — the German Brand Award recognizes companies, agencies, and institutions whose branding and marketing work sets new standards. Entrants register and nominate projects across categories spanning corporate and product brand work, judged by an independent expert jury. The award draws over 1,300 submissions annually from around 20 countries, with winners celebrated at an Awards Show in Berlin."
   },
   {
+    "slug": "andreu-world-design-contest-2026",
     "title": "25th Andreu World International Design Contest 2026 — Manufacturing the Future",
     "organizer": "Andreu World",
+    "seriesId": "andreu-world-international-design-contest",
     "deadline": "2026-09-16",
     "categories": [
       "Interior/Furniture Design",
@@ -1238,13 +1300,14 @@
     "shortDescription": "A 25th-anniversary international furniture design contest from Spanish manufacturer Andreu World, open to students and professionals worldwide, themed 'Manufacturing the Future' for the circular economy.",
     "submissionFormat": "A physical 1:5 scale model of the design plus a technical report and/or video, submitted by email following online registration",
     "status": "closing-soon",
-    "slug": "andreu-world-design-contest-2026",
     "studentTag": true,
     "longDescription": "Now marking its 25th edition, the Andreu World International Design Contest invites students and professionals worldwide to design seating and tables referencing Andreu World's product lines. This anniversary edition, themed 'Manufacturing the Future,' challenges entrants to design for the circular economy and positive environmental impact. A jury of leading design professionals — including figures from Foster & Partners and the World Design Organization — judges submissions, which require a 1:5 scale physical model plus a technical report."
   },
   {
+    "slug": "simon-architecture-prize-2026",
     "title": "Living Places – Simon Architecture Prize 2026 (6th Edition)",
     "organizer": "Simon, in collaboration with Fundació Mies van der Rohe",
+    "seriesId": "simon-architecture-prize",
     "deadline": "2026-10-05",
     "categories": [
       "Architecture",
@@ -1259,13 +1322,14 @@
     "shortDescription": "The 6th edition of the Living Places – Simon Architecture Prize, organized by Simon with the Fundació Mies van der Rohe, recognizing built projects by architects, city planners, and landscapers across Europe, Mexico, Brazil, and Morocco.",
     "submissionFormat": "Online submission via simonprize.org following pre-registration, per the official rules (published in English and Spanish)",
     "status": "closing-soon",
-    "slug": "simon-architecture-prize-2026",
     "studentTag": false,
     "longDescription": "Organized by the Simon brand in collaboration with the Fundació Mies van der Rohe, the Living Places – Simon Architecture Prize recognizes built projects — including interiors, public spaces, and landscaping — completed between January 2024 and December 2025. Now in its 6th edition, the prize is open to qualified architects, city planners, and landscapers from all European countries as well as Mexico, Brazil, and, new this year, Morocco. The competition distinctively incorporates video as a core tool for communicating the architectural work. Two winning projects each receive €10,000 and an exclusive piece designed by Andreu Carulla; finalists are announced in December, with the award ceremony in February."
   },
   {
+    "slug": "unbox-2026-architecture-competition",
     "title": "Unbox 2026 Architecture Competition",
     "organizer": "Volume Zero Competitions",
+    "seriesId": "unbox-architecture-competition",
     "deadline": "2026-12-03",
     "categories": [
       "Architecture"
@@ -1279,7 +1343,6 @@
     "shortDescription": "An international ideas competition from Volume Zero — marking its 30th competition and 10th anniversary — challenging entrants to design micro-architectural interventions for adaptable, inclusive spatial experiences.",
     "submissionFormat": "Digital submission via the Volume Zero competition platform following online team registration; exact panel/file specifications not confirmed in sources found this session",
     "status": "open",
-    "slug": "unbox-2026-architecture-competition",
     "studentTag": true,
     "longDescription": "Unbox 2026 is organized by Volume Zero Competitions, marking the organizer's 30th international architecture competition and 10th anniversary. The ideas competition invites architects, students, and designers worldwide to propose small-scale architectural interventions that transform constrained spaces into adaptable, inclusive experiences. The competition offers a total prize pool of USD 10,000 across three main prizes, four Gold Mentions, and ten Honorable Mentions, with all winners receiving publication and certificates."
   }

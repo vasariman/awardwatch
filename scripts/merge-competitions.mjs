@@ -8,13 +8,16 @@
 //
 //   npm run merge
 //
-// Every candidate is validated (required fields, valid categories/audience/
-// status enums, a real future deadline, a well-formed URL, and duplicate
-// checks against both competitions.json and the rest of the batch). Only
+// Every candidate is validated (required fields — deadline/resultDate
+// excused when status is "pending" — valid categories/audience/status
+// enums, a real future deadline when one is given, a well-formed URL, and
+// duplicate checks against both competitions.json and the rest of the
+// batch — same seriesId as an existing entry is never a duplicate). Only
 // candidates with zero issues are appended to competitions.json — anything
 // flagged is left out and printed with its reasons so it can be fixed and
-// resubmitted. Existing entries are never deleted; entries whose deadline
-// has passed have their status corrected to "expired" in the same run.
+// resubmitted. Existing entries are never deleted; any existing entry whose
+// stored status no longer matches deadline/opensAt is corrected in the
+// same run.
 //
 // Add --dry-run to see the full report without writing competitions.json.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -22,10 +25,12 @@ import {
   DATA_PATH,
   INCOMING_COMPETITIONS_PATH,
   FULL_REQUIRED_FIELDS,
+  OPTIONAL_FIELDS,
   CATEGORIES,
   TARGET_AUDIENCES,
   STATUSES,
   isEmpty,
+  missingRequiredFields,
   daysUntil,
   computeStatus,
   normalizeTitleOrganizer,
@@ -77,10 +82,12 @@ function validateCandidate(candidate, today) {
     return ["Entry is not a JSON object."];
   }
 
-  for (const field of FULL_REQUIRED_FIELDS) {
-    if (isEmpty(candidate[field])) {
-      issues.push(`Missing/empty field: "${field}"`);
-    }
+  // deadline/resultDate are excused here when status is "pending" — see
+  // missingRequiredFields. A null deadline paired with any other status is
+  // still flagged as missing, which is exactly right: it catches a
+  // candidate that forgot to also set status: "pending".
+  for (const field of missingRequiredFields(candidate, FULL_REQUIRED_FIELDS)) {
+    issues.push(`Missing/empty field: "${field}"`);
   }
 
   if (!isEmpty(candidate.categories)) {
@@ -128,6 +135,17 @@ function validateCandidate(candidate, today) {
   ) {
     issues.push(`resultDate (${candidate.resultDate}) is before deadline (${candidate.deadline})`);
   }
+  if (isEmpty(candidate.deadline) && !isEmpty(candidate.resultDate)) {
+    issues.push(`resultDate is set but deadline is null — a pending edition can't have a confirmed result date`);
+  }
+
+  if (!isEmpty(candidate.opensAt)) {
+    if (!isValidDate(candidate.opensAt)) {
+      issues.push(`Invalid opensAt format: "${candidate.opensAt}" (expected YYYY-MM-DD)`);
+    } else if (!isEmpty(candidate.deadline) && isValidDate(candidate.deadline) && candidate.opensAt > candidate.deadline) {
+      issues.push(`opensAt (${candidate.opensAt}) is after deadline (${candidate.deadline}) — contradictory`);
+    }
+  }
 
   if (!isEmpty(candidate.registrationUrl) && !/^https?:\/\//i.test(candidate.registrationUrl)) {
     issues.push(`registrationUrl doesn't look like a valid URL: "${candidate.registrationUrl}"`);
@@ -147,7 +165,7 @@ function buildExistingIndex(existing) {
   for (const e of existing) {
     if (!isEmpty(e.registrationUrl)) byUrl.set(normalizeUrl(e.registrationUrl), e.slug);
     const key = normalizeTitleOrganizer(e.title, e.organizer);
-    if (key !== "|") byTitleOrg.set(key, e.slug);
+    if (key !== "|") byTitleOrg.set(key, { slug: e.slug, seriesId: e.seriesId });
     if (e.slug) bySlug.add(e.slug);
   }
   return { byUrl, byTitleOrg, bySlug };
@@ -164,7 +182,14 @@ function findDuplicateIssue(candidate, index) {
     return `Duplicate: registrationUrl matches existing entry "${index.byUrl.get(url)}"`;
   }
   if (titleOrgKey !== "|" && index.byTitleOrg.has(titleOrgKey)) {
-    return `Possible duplicate: title+organizer closely matches existing entry "${index.byTitleOrg.get(titleOrgKey)}" — review manually`;
+    const match = index.byTitleOrg.get(titleOrgKey);
+    // Same seriesId as an existing entry -> a different edition of the same
+    // series, not a duplicate, no matter how close title+organizer match.
+    const sameSeries =
+      !isEmpty(candidate.seriesId) && !isEmpty(match.seriesId) && candidate.seriesId === match.seriesId;
+    if (!sameSeries) {
+      return `Possible duplicate: title+organizer closely matches existing entry "${match.slug}" — review manually`;
+    }
   }
   return null;
 }
@@ -178,6 +203,13 @@ function pickSchemaFields(candidate) {
   for (const field of FULL_REQUIRED_FIELDS) {
     if (field in candidate) picked[field] = candidate[field];
   }
+  // resultDate is a required *key* even though its value is never a
+  // required non-null one — default it to null rather than leaving the
+  // key absent when a candidate omits it outright.
+  if (!("resultDate" in picked)) picked.resultDate = null;
+  for (const field of OPTIONAL_FIELDS) {
+    if (!isEmpty(candidate[field])) picked[field] = candidate[field];
+  }
   return picked;
 }
 
@@ -185,18 +217,26 @@ function registerInIndex(candidate, index) {
   const url = isEmpty(candidate.registrationUrl) ? null : normalizeUrl(candidate.registrationUrl);
   const titleOrgKey = normalizeTitleOrganizer(candidate.title, candidate.organizer);
   if (url && !index.byUrl.has(url)) index.byUrl.set(url, candidate.slug);
-  if (titleOrgKey !== "|" && !index.byTitleOrg.has(titleOrgKey)) index.byTitleOrg.set(titleOrgKey, candidate.slug);
+  if (titleOrgKey !== "|" && !index.byTitleOrg.has(titleOrgKey)) {
+    index.byTitleOrg.set(titleOrgKey, { slug: candidate.slug, seriesId: candidate.seriesId });
+  }
   if (candidate.slug) index.bySlug.add(candidate.slug);
 }
 
-function correctExpiredStatuses(existing, today) {
+// Corrects any existing entry whose stored status no longer matches what
+// deadline/opensAt compute to today — not just expiry, since an entry can
+// equally have drifted stale into "closing-soon" or "upcoming" between
+// merge runs. The live site never trusts this stored value either way
+// (see src/lib/competitions.ts); this just keeps the raw JSON honest for
+// anyone reading it directly.
+function correctStaleStatuses(existing, today) {
   const corrected = [];
   const updated = existing.map((e) => {
-    if (isEmpty(e.deadline) || isEmpty(e.status)) return e;
-    const days = daysUntil(e.deadline, today);
-    if (days < 0 && e.status !== "expired") {
-      corrected.push({ slug: e.slug, title: e.title, deadline: e.deadline, previousStatus: e.status });
-      return { ...e, status: "expired" };
+    if (isEmpty(e.status)) return e;
+    const live = isEmpty(e.deadline) ? "pending" : computeStatus(e.deadline, e.opensAt, today);
+    if (live !== e.status) {
+      corrected.push({ slug: e.slug, title: e.title, deadline: e.deadline, previousStatus: e.status, newStatus: live });
+      return { ...e, status: live };
     }
     return e;
   });
@@ -230,8 +270,8 @@ function main() {
 
   console.log(`\nLoaded ${candidates.length} candidate(s) and ${existing.length} existing competition(s).`);
 
-  // --- Step 1: existing entries whose deadline has passed -------------
-  const { updated: existingWithCorrectedStatus, corrected: statusCorrections } = correctExpiredStatuses(
+  // --- Step 1: existing entries whose stored status has gone stale -----
+  const { updated: existingWithCorrectedStatus, corrected: statusCorrections } = correctStaleStatuses(
     existing,
     today
   );
@@ -250,7 +290,9 @@ function main() {
     const label = `[${i}] "${candidate?.title || "(no title)"}"${candidate?.organizer ? ` (${candidate.organizer})` : ""}`;
 
     if (issues.length === 0) {
-      const normalized = { ...pickSchemaFields(candidate), status: computeStatus(candidate.deadline, today) };
+      const picked = pickSchemaFields(candidate);
+      const status = isEmpty(picked.deadline) ? "pending" : computeStatus(picked.deadline, picked.opensAt, today);
+      const normalized = { ...picked, status };
       registerInIndex(normalized, index);
       results.push({ label, candidate: normalized, issues: [] });
     } else {
@@ -284,12 +326,12 @@ function main() {
     }
   }
 
-  console.log(`\n--- Existing entries corrected to "expired" (${statusCorrections.length}) ---`);
+  console.log(`\n--- Existing entries with a corrected status (${statusCorrections.length}) ---`);
   if (statusCorrections.length === 0) {
     console.log("None.");
   } else {
     for (const c of statusCorrections) {
-      console.log(`  - "${c.title}" (${c.slug}): deadline was ${c.deadline}, status was "${c.previousStatus}"`);
+      console.log(`  - "${c.title}" (${c.slug}): deadline ${c.deadline ?? "null"}, "${c.previousStatus}" -> "${c.newStatus}"`);
     }
   }
 
@@ -310,7 +352,7 @@ function main() {
   console.log("=".repeat(60));
   console.log(`${toMerge.length} valid new entries ${DRY_RUN ? "would be merged" : "merged"} into competitions.json`);
   console.log(`${flagged.length} candidates flagged and NOT merged (fix and resubmit)`);
-  console.log(`${statusCorrections.length} existing entries updated to "expired"`);
+  console.log(`${statusCorrections.length} existing entries had their status corrected`);
 
   if (!hasChanges) {
     console.log("\nNo changes to make — competitions.json left untouched.");

@@ -84,7 +84,9 @@ export function HeroSlider({ items }: { items: Competition[] }) {
 }
 
 function HeroSlide({ item, active }: { item: Competition; active: boolean }) {
-  const days = daysUntil(item.deadline);
+  // Hero items are always "open"/"closing-soon" (getHeroCompetitions
+  // excludes anything else), so deadline is always set here.
+  const days = daysUntil(item.deadline as string);
   const image = getCategoryImage(item.categories);
 
   return (
@@ -136,7 +138,7 @@ function HeroSlide({ item, active }: { item: Competition; active: boolean }) {
             <div className="font-mono text-xs uppercase tracking-[.08em] text-white/50">
               Deadline&nbsp;
               <span className="font-sans text-sm font-bold normal-case tracking-normal text-white">
-                {formatDate(item.deadline)}
+                {formatDate(item.deadline as string)}
               </span>
               {days >= 0 && item.status !== "expired" && (
                 <span className="ml-2 text-white/50">

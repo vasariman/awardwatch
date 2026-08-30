@@ -4,7 +4,7 @@ import { daysUntil, formatDate } from "@/lib/competitions";
 import { CategoryChip, StatusChip, StudentChip } from "./Chips";
 
 export function CompetitionCard({ item }: { item: Competition }) {
-  const days = daysUntil(item.deadline);
+  const days = item.deadline !== null ? daysUntil(item.deadline) : null;
 
   return (
     <Link
@@ -37,12 +37,27 @@ export function CompetitionCard({ item }: { item: Competition }) {
 
       <div className="mt-auto flex items-center justify-between border-t border-black/15 pt-4 group-hover:border-white/20">
         <div className="font-mono text-[11px] uppercase tracking-[.06em] text-black/45 group-hover:text-white/50">
-          Deadline{" "}
-          <span className="font-sans text-sm font-bold normal-case tracking-normal text-ink group-hover:text-white">
-            {formatDate(item.deadline)}
-          </span>
-          {days >= 0 && item.status !== "expired" && (
-            <span className="ml-1">({days === 0 ? "today" : `${days}d`})</span>
+          {item.status === "pending" ? (
+            <span className="font-sans text-sm font-bold normal-case tracking-normal text-ink group-hover:text-white">
+              Dates not yet announced
+            </span>
+          ) : item.status === "upcoming" && item.opensAt ? (
+            <>
+              Opens{" "}
+              <span className="font-sans text-sm font-bold normal-case tracking-normal text-ink group-hover:text-white">
+                {formatDate(item.opensAt)}
+              </span>
+            </>
+          ) : (
+            <>
+              Deadline{" "}
+              <span className="font-sans text-sm font-bold normal-case tracking-normal text-ink group-hover:text-white">
+                {formatDate(item.deadline as string)}
+              </span>
+              {days !== null && days >= 0 && item.status !== "expired" && (
+                <span className="ml-1">({days === 0 ? "today" : `${days}d`})</span>
+              )}
+            </>
           )}
         </div>
         <span className="font-sans text-sm font-bold text-ink group-hover:text-white">

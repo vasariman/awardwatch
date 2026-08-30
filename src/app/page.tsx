@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { Category } from "@/lib/types";
-import { getAllCompetitions, getHeroCompetitions } from "@/lib/competitions";
+import { compareByUrgency, getAllCompetitions, getHeroCompetitions } from "@/lib/competitions";
 import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
 import { CompetitionGrid } from "@/components/CompetitionGrid";
@@ -25,11 +25,7 @@ export default async function HomePage({
   if (sp.status) items = items.filter((c) => c.status === sp.status);
   if (sp.student === "true") items = items.filter((c) => c.studentTag);
 
-  items = [...items].sort((a, b) => {
-    if (a.status === "expired" && b.status !== "expired") return 1;
-    if (b.status === "expired" && a.status !== "expired") return -1;
-    return a.deadline.localeCompare(b.deadline);
-  });
+  items = [...items].sort(compareByUrgency);
 
   return (
     <>

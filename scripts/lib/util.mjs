@@ -17,26 +17,46 @@ export const INCOMING_COMPETITIONS_PATH = path.join(
   "incoming-competitions.json"
 );
 
+// Always required, regardless of status.
 export const REQUIRED_FIELDS = [
   "title",
   "organizer",
-  "deadline",
+  "seriesId",
   "categories",
   "targetAudience",
   "country",
   "entryFee",
   "registrationUrl",
   "prizeMoney",
-  "resultDate",
   "shortDescription",
   "submissionFormat",
   "status",
 ];
 
+// deadline is required for every status except "pending" — a pending
+// edition is pending precisely because it isn't known yet. resultDate is
+// never required to be non-null, for any status: an "open" edition can
+// have a confirmed deadline and still not have an announced result date.
+// One rule, not two — whatever isn't confirmed stays null, whether or not
+// deadline itself is known. Never treat either null as "fill this in"; a
+// null here is the honest, correct value.
+export const DATE_FIELDS = ["deadline", "resultDate"];
+
 // Full schema, including the fields the live site uses beyond the minimal
 // set above (slug is the routing key; studentTag/longDescription back the
 // detail page and the Student cross-cutting tag).
-export const FULL_REQUIRED_FIELDS = [...REQUIRED_FIELDS, "slug", "studentTag", "longDescription"];
+export const FULL_REQUIRED_FIELDS = [
+  ...REQUIRED_FIELDS,
+  ...DATE_FIELDS,
+  "slug",
+  "studentTag",
+  "longDescription",
+];
+
+// Optional fields: only meaningful in specific situations (expectedPeriod
+// for a pending edition, opensAt when actually researched), never required,
+// but still real schema fields that must survive a merge when present.
+export const OPTIONAL_FIELDS = ["expectedPeriod", "opensAt"];
 
 export const CATEGORIES = [
   "Product/Industrial Design",
@@ -48,13 +68,25 @@ export const CATEGORIES = [
 ];
 
 export const TARGET_AUDIENCES = ["students", "professionals", "open"];
-export const STATUSES = ["open", "closing-soon", "expired"];
+export const STATUSES = ["upcoming", "open", "closing-soon", "expired", "pending"];
 
 const CLOSING_SOON_WINDOW_DAYS = 45;
 
 export function isEmpty(value) {
   if (Array.isArray(value)) return value.length === 0;
   return value === undefined || value === null || value === "";
+}
+
+// Same idea as isEmpty, but aware that deadline/resultDate can honestly be
+// null: resultDate is never flagged as missing (null is always a valid,
+// final answer for it), and deadline is only excused on a "pending" entry
+// (that's what makes it pending).
+export function missingRequiredFields(entry, fields) {
+  return fields.filter((f) => {
+    if (f === "resultDate") return false;
+    if (f === "deadline" && entry?.status === "pending") return false;
+    return isEmpty(entry?.[f]);
+  });
 }
 
 export function daysUntil(iso, today = new Date()) {
@@ -65,9 +97,16 @@ export function daysUntil(iso, today = new Date()) {
   return Math.round((target.getTime() - start.getTime()) / 86400000);
 }
 
-export function computeStatus(deadlineIso, today = new Date()) {
+// Mirrors the live status computation in src/lib/competitions.ts — kept in
+// sync by hand since this file is plain JS run by scripts, not imported by
+// the Next.js app. Check order matters (see the comment there for why):
+// no deadline -> pending; deadline passed -> expired; opensAt still in the
+// future -> upcoming; deadline within the window -> closing-soon; else open.
+export function computeStatus(deadlineIso, opensAtIso, today = new Date()) {
+  if (deadlineIso == null) return "pending";
   const days = daysUntil(deadlineIso, today);
   if (days < 0) return "expired";
+  if (opensAtIso && daysUntil(opensAtIso, today) > 0) return "upcoming";
   if (days <= CLOSING_SOON_WINDOW_DAYS) return "closing-soon";
   return "open";
 }

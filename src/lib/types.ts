@@ -8,13 +8,19 @@ export type Category =
 
 export type TargetAudience = "students" | "professionals" | "open";
 
-export type Status = "open" | "closing-soon" | "expired";
+export type Status = "upcoming" | "open" | "closing-soon" | "expired" | "pending";
 
 export interface Competition {
   slug: string;
   title: string;
   organizer: string;
-  deadline: string;
+  /** Stable id shared by every edition of the same award series (lowercase,
+   *  hyphenated, no edition year — e.g. "german-design-award"). */
+  seriesId: string;
+  /** ISO date, or null when the edition is announced/expected but no
+   *  official deadline has been published yet. Never estimated, never
+   *  carried over from a prior edition. */
+  deadline: string | null;
   categories: Category[];
   targetAudience: TargetAudience;
   studentTag: boolean;
@@ -22,11 +28,20 @@ export interface Competition {
   entryFee: string;
   registrationUrl: string;
   prizeMoney: string;
-  resultDate: string;
+  /** ISO date, or null when not yet published — same rule as deadline. */
+  resultDate: string | null;
   shortDescription: string;
   longDescription: string;
   submissionFormat: string;
   status: Status;
+  /** Only meaningful when deadline is null. Free-text, sourced expected
+   *  window (e.g. "Registration usually opens in early summer") — never
+   *  interpreted as a date. */
+  expectedPeriod?: string;
+  /** ISO date submissions open, or null/absent when not published. Optional:
+   *  most editions won't have this researched. Never estimated, never
+   *  carried over from a prior edition. */
+  opensAt?: string | null;
 }
 
 export const CATEGORIES: Category[] = [

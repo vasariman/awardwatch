@@ -16,7 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}/competitions/${c.slug}`,
     lastModified: now,
     changeFrequency: c.status === "expired" ? "never" : "weekly",
-    priority: c.status === "expired" ? 0.3 : 0.8,
+    // Actionable, dated pages rank highest; a pending (undated) edition is
+    // a real page but less useful to crawl often, so it sits between open
+    // and expired.
+    priority: c.status === "expired" ? 0.3 : c.status === "pending" ? 0.5 : 0.8,
   }));
 
   return [...staticRoutes, ...competitionRoutes];
