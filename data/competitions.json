@@ -67,21 +67,21 @@
     "title": "MUSE Design Awards 2026 (Season 2)",
     "organizer": "International Awards Associate",
     "seriesId": "muse-design-awards",
-    "deadline": "2026-07-09",
+    "deadline": "2026-09-24",
     "categories": [
       "Graphic Design"
     ],
     "targetAudience": "open",
     "studentTag": false,
     "country": "United States",
-    "entryFee": "$219 regular entry + $30 annual administrative fee",
+    "entryFee": "$219–$269 professional entry depending on entry period (Regular through Last Minute) + $30 flat administrative fee",
     "registrationUrl": "https://design.museaward.com/",
     "prizeMoney": "MUSE trophy and global publicity (no cash prize)",
-    "resultDate": "2026-08-15",
+    "resultDate": "2026-10-16",
     "shortDescription": "A New York-based multidisciplinary design award spanning architecture, product, packaging, and graphic design.",
     "longDescription": "The MUSE Design Awards evaluate entries across dozens of subcategories, from architectural design to packaging and conceptual work. Judging is handled by a panel of design, media, and marketing professionals, and results include tiered Platinum, Gold, and Silver recognition rather than a single winner per category.",
     "submissionFormat": "Digital submission: images, a written description, and category-specific supporting material",
-    "status": "expired"
+    "status": "closing-soon"
   },
   {
     "slug": "a-design-award-2026-27",
