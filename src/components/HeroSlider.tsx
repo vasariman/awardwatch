@@ -142,7 +142,7 @@ function HeroSlide({ item, active }: { item: Competition; active: boolean }) {
               </span>
               {days >= 0 && item.status !== "expired" && (
                 <span className="ml-2 text-white/50">
-                  ({days === 0 ? "today" : `${days}d left`})
+                  ({days === 0 ? "today" : `${days} Day${days === 1 ? "" : "s"} left`})
                 </span>
               )}
             </div>

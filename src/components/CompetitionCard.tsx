@@ -57,7 +57,7 @@ export function CompetitionCard({ item }: { item: Competition }) {
                 {formatDate(item.deadline as string)}
               </span>
               {days !== null && days >= 0 && item.status !== "expired" && (
-                <span className="ml-1">({days === 0 ? "today" : `${days}d`})</span>
+                <span className="ml-1">({days === 0 ? "today" : `${days} Day${days === 1 ? "" : "s"}`})</span>
               )}
             </>
           )}
