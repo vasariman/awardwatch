@@ -1366,5 +1366,92 @@
     "slug": "win-awards-2027",
     "studentTag": false,
     "longDescription": "The WIN Awards (World Interiors News Awards) has opened a \"register your interest\" form for its 2027 edition on the organizer's official site, but has not yet published a submission deadline, entry fee, category list, or prize details for that cycle. The most recently completed edition, WIN Awards 2026, closed for entries on August 6, 2026 with winners announced in November 2026."
+  },
+  {
+    "title": "RIBA International Awards",
+    "organizer": "Royal Institute of British Architects (RIBA)",
+    "seriesId": "riba-international-awards",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "professionals",
+    "country": "International (UK-based)",
+    "entryFee": "Tiered by project contract value and category; RIBA members receive a 20% discount, with additional category entries priced separately. Exact fee schedule for this cycle not yet published.",
+    "registrationUrl": "https://www.riba.org/explore/awards/international-awards/",
+    "prizeMoney": "No direct cash prize. Winners receive a RIBA International Award; shortlisted projects can go on to win the RIBA International Prize and RIBA International Emerging Architect Award, prestige recognitions rather than cash prizes.",
+    "shortDescription": "Biennial global architecture awards from the UK's Royal Institute of British Architects, open to qualified architects worldwide for completed buildings outside the UK.",
+    "submissionFormat": "Online submission through RIBA's international awards portal, including project documentation, photography, and proof of architectural qualification/registration.",
+    "status": "upcoming",
+    "deadline": "2027-01-14",
+    "resultDate": null,
+    "slug": "riba-international-awards-2027-28",
+    "studentTag": false,
+    "longDescription": "The RIBA International Awards recognize outstanding completed architecture from anywhere in the world outside the UK. Run every two years by the Royal Institute of British Architects, the program feeds into the RIBA International Prize (awarded to the single most transformative building) and the RIBA International Emerging Architect Award (for practitioners of ten years' experience or less). Entrants must be qualified architects registered with RIBA or an equivalent national architecture registration board, and projects must have been completed and occupied for at least one year.",
+    "opensAt": "2026-11-10"
+  },
+  {
+    "title": "WAN Awards",
+    "organizer": "World Architecture News (WAN)",
+    "seriesId": "wan-awards",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "professionals",
+    "country": "International (UK-based)",
+    "entryFee": "Tiered by deadline: GBP 550 + VAT (first deadline, Sept 10, 2026), GBP 660 + VAT (second deadline, Oct 29, 2026), GBP 725 + VAT (final deadline, Nov 26, 2026)",
+    "registrationUrl": "https://www.wanawards.com/",
+    "prizeMoney": "No cash prize; category winners and an overall distinction are recognized on a publicity and press-coverage basis",
+    "shortDescription": "Global architecture awards from World Architecture News covering over 20 sector and specialist categories, from future projects to adaptive reuse and sustainable architecture.",
+    "submissionFormat": "Online submission through the WAN Awards platform with project images, descriptions, and supporting documentation",
+    "status": "open",
+    "deadline": "2026-11-26",
+    "resultDate": null,
+    "slug": "wan-awards-2027",
+    "studentTag": false,
+    "longDescription": "Presented by the editorial platform World Architecture News, the WAN Awards is one of the longer-running global architecture award programs, judged by an international panel of industry practitioners. It spans sector categories (commercial, education, healthcare, residential, transport, and more) as well as specialist categories such as accessibility, adaptive reuse, affordable housing, bridges, facade, landscape architecture, and overall sustainable architecture project, plus practice-level awards like Emerging Practice of the Year."
+  },
+  {
+    "title": "SIT Furniture Design Award",
+    "organizer": "3C Awards",
+    "seriesId": "sit-furniture-design-award",
+    "categories": [
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "open",
+    "country": "International (Switzerland-based)",
+    "entryFee": "CHF 220 (approx. $235) professional / CHF 100 (approx. $110) student per entry before early-bird discounts (10% off until Sept 20, 2026, 5% off until Nov 8, 2026); additional category entries for the same project receive a 50% discount",
+    "registrationUrl": "https://www.sitaward.com/",
+    "prizeMoney": "No standard cash prize for most categories; the Innovation Center category winner receives an unspecified cash prize to help realize a prototype or begin production",
+    "shortDescription": "International furniture and interior design award judged by an architect- and academic-led jury, with a gala ceremony held in Switzerland.",
+    "submissionFormat": "Online submission with project images and descriptions; entries may be conceptual, in-progress, or completed, and cannot be more than 5 years old",
+    "status": "open",
+    "deadline": "2027-04-11",
+    "resultDate": null,
+    "slug": "sit-furniture-design-award-2027",
+    "studentTag": true,
+    "longDescription": "The SIT Furniture Design Award recognizes furniture design (dining chairs, armchairs, coffee tables, commercial furniture, outdoor seating, and more) and interior design (residential design, sales office design) work from around the world, including a dedicated Emerging Furniture Designer of the Year category. Prior editions drew hundreds of entries from dozens of countries and were celebrated at galas in Basel and at KKL Luzern, judged by a panel of architects, interior designers, professors, and editors."
+  },
+  {
+    "title": "BLT Built Design Awards",
+    "organizer": "3C Awards",
+    "seriesId": "blt-built-design-awards",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design",
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "International (Switzerland-based)",
+    "entryFee": "CHF 270 (approx. $300) professional / CHF 80 (approx. $90) student per entry; a 10% early-bird discount was available until March 31, 2026; additional category entries for the same project receive a 50% discount",
+    "registrationUrl": "https://bltawards.com/",
+    "prizeMoney": "No cash prize; winners receive a trophy, publication in the official catalogue, and press distribution via v2com newswire to industry publications",
+    "shortDescription": "International awards for architecture, interior design, landscape architecture, and construction products, judged by an academic- and industry-led jury.",
+    "submissionFormat": "Online submission with up to 10 images, supporting PDF documents, and website links",
+    "status": "closing-soon",
+    "deadline": "2026-09-06",
+    "resultDate": null,
+    "slug": "blt-built-design-awards-2026",
+    "studentTag": true,
+    "longDescription": "BLT Built Design Awards covers four programs: Architectural Design of the Year (conceptual, in-progress, or completed projects from the last five years), Interior Design of the Year, Landscape Architecture of the Year, and Construction Product of the Year (professionals only, covering building materials and products). Entries are open worldwide to both professionals and students in the architecture, interior, and landscape categories, and are reviewed by a jury of academics, industry professionals, press, and building-industry leaders."
   }
 ]
