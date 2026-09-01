@@ -21,6 +21,20 @@ const plexMono = IBM_Plex_Mono({
 
 const DEFAULT_TITLE = "AwardWatch — Design Competition Deadlines";
 
+// Identifies AwardWatch itself as an entity (separate from the per-
+// competition Event markup on detail pages, which describes the
+// organizer of that competition, not us). No `sameAs` yet — that only
+// gets added once real social/profile links exist; an empty array isn't
+// meaningful markup.
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  logo: `${SITE_URL}/logo.png`,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: DEFAULT_TITLE,
@@ -47,6 +61,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${archivo.variable} ${plexMono.variable}`}>
       <body className="flex min-h-screen flex-col bg-white text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
