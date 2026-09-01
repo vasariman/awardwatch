@@ -123,7 +123,7 @@
     "shortDescription": "An international prize covering architectural design, interiors, landscape architecture, and architectural products.",
     "longDescription": "The Architecture MasterPrize invites built and unbuilt work from architects, interior designers, and landscape architects worldwide. Past editions have drawn entries from more than 70 countries. Winners are announced roughly a month after the final submission deadline and are featured in the organizer's annual publication.",
     "submissionFormat": "Digital submission: drawings, renders, photographs, and a project narrative",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "interior-design-best-of-year-2026",
@@ -207,7 +207,7 @@
     "shortDescription": "A long-running Los Angeles-based award spanning architecture, interior, product, fashion, and graphic design.",
     "longDescription": "The International Design Awards recognize both professionals and students across five core disciplines: architecture, interior, product, fashion, and graphic design. Entries must have been completed within the last five years. Winners are graded Gold, Silver, or Bronze within each category, with top honorees also considered for Designer of the Year and Emerging Designer of the Year.",
     "submissionFormat": "Digital submission: images, technical details, and a project statement",
-    "status": "open"
+    "status": "closing-soon"
   },
   {
     "slug": "green-good-design-award-2027",
@@ -889,7 +889,7 @@
     "resultDate": "2026-11-20",
     "shortDescription": "A UN- and Türkiye-backed international competition recognizing energy-efficient, low-carbon, climate-resilient buildings, with winners honored at COP31 in Antalya.",
     "submissionFormat": "Online application via yesint.csb.gov.tr with 3–4 project photographs uploaded directly through the site",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "Organized by UNEP, the Global Alliance for Buildings and Construction (GlobalABC), and Türkiye's Ministry of Environment, Urbanization and Climate Change, the International Sustainable Building Competition invites architects and building professionals worldwide to submit built projects and masterplans that demonstrate energy-efficient, low-carbon, and climate-resilient design. The competition is free to enter and is timed to coincide with COP31, the UN Climate Change Conference hosted in Antalya, Türkiye in November 2026, where winning projects will be honored."
   },
@@ -1065,7 +1065,7 @@
     "resultDate": "2026-12-02",
     "shortDescription": "A US trade-publication award from Architectural Products magazine recognizing innovative building products across categories from lighting and facades to finishes and hardware.",
     "submissionFormat": "Online submission via the Architectural Products Product Innovation Awards portal: product details and supporting images per category",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": false,
     "longDescription": "The Product Innovation Awards, run by Architectural Products magazine (part of Endeavor Business Media's Buildings & Construction group), honor products, systems, and materials that elevate architectural creativity and performance. Categories span acoustics, appliances and plumbing, building materials and facades, finishes and surfaces, furnishings, hardware, lighting, openings, roofing, textiles, and technology. Products launched between December 2023 and December 2026 are eligible. Winners are featured on the Architectural Products website and in the magazine's November/December print issue, and may use the PIA 2026 logo in their own marketing."
   },
@@ -1171,7 +1171,7 @@
     "resultDate": "2027-01-15",
     "shortDescription": "The world's most prestigious packaging design award, presented by the World Packaging Organisation, open only to packs that have already won a WPO-recognized national or regional packaging competition.",
     "submissionFormat": "Online submission via worldstar.org: category selection, a 500-word written justification of the pack, and up to 5 high-resolution images (combined file size under 5MB); payment due by November 2, 2026",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "WorldStar is the global packaging awards program of the World Packaging Organisation (WPO), widely regarded as the pre-eminent international recognition for packaging design, innovation, and sustainability. Entry is restricted to packaging that has already won an award in one of roughly 75-85 WPO-recognized national or regional packaging competitions in the current or previous year. There is no direct-entry route for unproven packs. Categories span major packaging types alongside Special Awards for Sustainability, Marketing, Packaging that Saves Food, and Accessible Packaging. Around 200 winners are typically selected from 300+ qualifying entries spanning 30+ countries, with winners honored at an international gala tied to a major packaging trade fair."
   },
@@ -1453,5 +1453,71 @@
     "slug": "blt-built-design-awards-2026",
     "studentTag": true,
     "longDescription": "BLT Built Design Awards covers four programs: Architectural Design of the Year (conceptual, in-progress, or completed projects from the last five years), Interior Design of the Year, Landscape Architecture of the Year, and Construction Product of the Year (professionals only, covering building materials and products). Entries are open worldwide to both professionals and students in the architecture, interior, and landscape categories, and are reviewed by a jury of academics, industry professionals, press, and building-industry leaders."
+  },
+  {
+    "title": "Communication Arts 2027 Interactive Competition",
+    "organizer": "Communication Arts",
+    "seriesId": "communication-arts-interactive-competition",
+    "categories": [
+      "UX/UI Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Varies by category (published in the organizer's Category Fee schedule); $10 per-entry late fee for entries submitted October 9-23, 2026",
+    "registrationUrl": "https://www.commarts.com/competition/2027-interactive",
+    "prizeMoney": "No cash prize: winners receive a personalized aluminum Award of Excellence, publication in the Communication Arts Interactive Annual (print and digital), and a certificate",
+    "shortDescription": "International competition from Communication Arts magazine recognizing outstanding interactive design work across websites, apps, and digital installations.",
+    "submissionFormat": "Online submission via URL for web-based work (must stay live for 3 months past the deadline) or video (MOV, MP4, MPG, MPEG; max 500MB, max 5 minutes for web video); no printed materials accepted",
+    "status": "closing-soon",
+    "deadline": "2026-10-09",
+    "resultDate": null,
+    "slug": "communication-arts-interactive-competition-2027",
+    "studentTag": true,
+    "longDescription": "The Communication Arts Interactive Competition honors interactive projects created for digital distribution, including websites and microsites, social platform applications, desktop and mobile apps, tablet and handheld experiences, environmental installations, and other interactive media, plus a dedicated student category. Selected work is published in the Interactive Annual (print and digital editions) and featured on commarts.com, judged by an independent jury of creative professionals using a majority-vote screening and finals process."
+  },
+  {
+    "title": "Communication Arts 2027 Design Competition",
+    "organizer": "Communication Arts",
+    "seriesId": "communication-arts-design-competition",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Varies by category (published in the organizer's Category Fee schedule); $10 per-entry late fee for entries submitted May 7-21, 2027",
+    "registrationUrl": "https://www.commarts.com/competition/2027-design",
+    "prizeMoney": "No cash prize: winners receive a personalized aluminum Award of Excellence, publication in the Communication Arts Design Annual (print and digital), and a certificate",
+    "shortDescription": "Communication Arts' flagship design competition, honoring branding, packaging, editorial, and environmental graphic design work published or produced worldwide.",
+    "submissionFormat": "Online submission only: digital images as RGB JPG/JPEG (max 2MB), video as MOV/MP4/MPG/MPEG (max 500MB), or PDF (max 50MB)",
+    "status": "open",
+    "deadline": "2027-05-07",
+    "resultDate": null,
+    "slug": "communication-arts-design-competition-2027",
+    "studentTag": true,
+    "longDescription": "Open to any design project printed, published, or aired for the first time between May 2026 and May 2027, the Communication Arts Design Competition spans 25 categories including packaging, trademarks, identity guides, branding programs, annual reports, brochures, catalogs, posters, editorial design, books, environmental graphics, motion graphics, public service work, and a dedicated student category. AI-generated text-to-image submissions are prohibited. Winning work is published in the Design Annual and featured on commarts.com."
+  },
+  {
+    "title": "Architecture & Design Collection Awards 2026",
+    "organizer": "Architecture & Design Community (ADC) / Architecture Collection Magazine",
+    "seriesId": "architecture-design-collection-awards",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design",
+      "Product/Industrial Design",
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "International",
+    "entryFee": "Tiered by registration phase: EUR 130 (early bird, closed) up to EUR 210 (late registration, until October 18, 2026); students receive a 50% discount and compete in dedicated student categories",
+    "registrationUrl": "https://architecture-collection.com/",
+    "prizeMoney": "No cash prize: winners receive international recognition, an electronic certificate, personalized winner logos and promotional visuals, a dedicated winner's landing page, and the option to purchase an official ADCA trophy",
+    "shortDescription": "International multi-category design awards for architecture, interior, product, and communication design, judged by a jury of working professionals.",
+    "submissionFormat": "Online submission through the organizer's platform; specific file and format requirements were not accessible this session",
+    "status": "open",
+    "deadline": "2026-10-19",
+    "resultDate": "2026-11-18",
+    "slug": "architecture-design-collection-awards-2026",
+    "studentTag": true,
+    "longDescription": "Now in its 5th edition, the Architecture & Design Collection Awards (ADCA) invites architects, designers, studios, artists, and students worldwide to submit work across 13 categories including architecture, interior, landscape, furniture, lighting, product, and communication and web design. The 2026 jury includes practitioners from firms such as Olson Kundig alongside creative directors and academics from the UK, US, China, and Ecuador. The prior edition drew submissions from more than 40 countries."
   }
 ]
