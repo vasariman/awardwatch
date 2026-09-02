@@ -70,7 +70,7 @@ export const CATEGORIES = [
 export const TARGET_AUDIENCES = ["students", "professionals", "open"];
 export const STATUSES = ["upcoming", "open", "closing-soon", "expired", "pending"];
 
-const CLOSING_SOON_WINDOW_DAYS = 45;
+const CLOSING_SOON_WINDOW_DAYS = 30;
 
 export function isEmpty(value) {
   if (Array.isArray(value)) return value.length === 0;

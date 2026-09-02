@@ -14,7 +14,8 @@ export function FilterBar({
 }: {
   activeCategory?: string;
   activeStatus?: string;
-  activeStudent?: boolean;
+  /** Raw `?student=` value: "true" (open to students) or "only" (student-exclusive). */
+  activeStudent?: string;
 }) {
   const noFilters = !activeCategory && !activeStatus && !activeStudent;
 
@@ -40,8 +41,19 @@ export function FilterBar({
       >
         Closing soon
       </Link>
-      <Link href="/?student=true" scroll={false} className={pillClass(!!activeStudent)}>
-        Student
+      <Link
+        href="/?student=true"
+        scroll={false}
+        className={pillClass(activeStudent === "true")}
+      >
+        Open to students
+      </Link>
+      <Link
+        href="/?student=only"
+        scroll={false}
+        className={pillClass(activeStudent === "only")}
+      >
+        Students only
       </Link>
     </div>
   );

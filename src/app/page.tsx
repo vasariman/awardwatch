@@ -24,6 +24,7 @@ export default async function HomePage({
   if (sp.category) items = items.filter((c) => c.categories.includes(sp.category as Category));
   if (sp.status) items = items.filter((c) => c.status === sp.status);
   if (sp.student === "true") items = items.filter((c) => c.studentTag);
+  if (sp.student === "only") items = items.filter((c) => c.targetAudience === "students");
 
   items = [...items].sort(compareByUrgency);
 
@@ -44,7 +45,7 @@ export default async function HomePage({
           <FilterBar
             activeCategory={sp.category}
             activeStatus={sp.status}
-            activeStudent={sp.student === "true"}
+            activeStudent={sp.student}
           />
         </div>
 
