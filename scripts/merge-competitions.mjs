@@ -36,13 +36,13 @@ import {
   normalizeTitleOrganizer,
   normalizeUrl,
   loadCompetitions,
+  DATE_RE,
 } from "./lib/util.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const inputPathArg = process.argv.slice(2).find((a) => !a.startsWith("--"));
 const inputPath = inputPathArg || INCOMING_COMPETITIONS_PATH;
 
-const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 function isValidDate(iso) {
@@ -194,10 +194,12 @@ function findDuplicateIssue(candidate, index) {
   return null;
 }
 
-// Only these fields are ever written into competitions.json. This keeps
-// scratch-only bookkeeping some research runs attach to a candidate (e.g. a
-// "sourcingNotes" field flagging estimated values that still need
-// reconfirming) from leaking into the live data on a real merge.
+// Only these fields are ever written into competitions.json — this keeps
+// truly ad-hoc keys a research run might attach out of the data. Note that
+// "sourcingNotes" (fields that were still an honest placeholder at merge
+// time) is deliberately in OPTIONAL_FIELDS, not excluded: it survives the
+// merge so the admin-only audit view can flag entries that went live with
+// unconfirmed data. It's never rendered anywhere on the public site.
 function pickSchemaFields(candidate) {
   const picked = {};
   for (const field of FULL_REQUIRED_FIELDS) {

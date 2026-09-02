@@ -54,9 +54,13 @@ export const FULL_REQUIRED_FIELDS = [
 ];
 
 // Optional fields: only meaningful in specific situations (expectedPeriod
-// for a pending edition, opensAt when actually researched), never required,
-// but still real schema fields that must survive a merge when present.
-export const OPTIONAL_FIELDS = ["expectedPeriod", "opensAt"];
+// for a pending edition, opensAt when actually researched, sourcingNotes
+// for any field that was still an honest placeholder at merge time), never
+// required, but still real schema fields that must survive a merge when
+// present. sourcingNotes is intentionally NOT stripped at merge anymore —
+// see the field's doc comment in src/lib/types.ts — so the admin audit
+// view can flag entries that went live with unconfirmed data.
+export const OPTIONAL_FIELDS = ["expectedPeriod", "opensAt", "sourcingNotes"];
 
 export const CATEGORIES = [
   "Product/Industrial Design",
@@ -72,8 +76,11 @@ export const STATUSES = ["upcoming", "open", "closing-soon", "expired", "pending
 
 const CLOSING_SOON_WINDOW_DAYS = 30;
 
+export const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
 export function isEmpty(value) {
   if (Array.isArray(value)) return value.length === 0;
+  if (value !== null && typeof value === "object") return Object.keys(value).length === 0;
   return value === undefined || value === null || value === "";
 }
 

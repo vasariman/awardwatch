@@ -1,68 +1,22 @@
 #!/usr/bin/env node
 // Read-only audit of /data/competitions.json. Never writes/modifies the file.
+// All the actual detection logic lives in scripts/lib/audit-checks.mjs —
+// this file only loads data and formats the findings for the terminal. The
+// local admin page (src/app/admin/page.tsx) imports the same functions, so
+// the two views can never disagree with each other.
+import { DATA_PATH, REQUIRED_FIELDS, DATE_FIELDS, loadCompetitions } from "./lib/util.mjs";
 import {
-  DATA_PATH,
-  REQUIRED_FIELDS,
-  DATE_FIELDS,
-  isEmpty,
-  missingRequiredFields,
-  daysUntil,
-  computeStatus,
-  normalizeTitleOrganizer,
-  loadCompetitions,
-} from "./lib/util.mjs";
-
-const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
-const FAR_OUT_DAYS = 182; // ~6 months
-
-function seriesWithoutCurrentEdition(entries, today) {
-  const bySeriesId = new Map();
-  for (const e of entries) {
-    if (isEmpty(e.seriesId)) continue;
-    if (!bySeriesId.has(e.seriesId)) bySeriesId.set(e.seriesId, []);
-    bySeriesId.get(e.seriesId).push(e);
-  }
-
-  const report = [];
-  for (const [seriesId, group] of bySeriesId) {
-    const dated = group.filter((e) => !isEmpty(e.deadline));
-    if (dated.length === 0) continue; // all-pending series: nothing has run out yet
-
-    const newest = dated.reduce((a, b) => (a.deadline > b.deadline ? a : b));
-    const newestStatus = computeStatus(newest.deadline, newest.opensAt, today);
-    if (newestStatus !== "expired" && newestStatus !== "closing-soon") continue;
-
-    // Is there already another edition of this series covering the gap
-    // (open/closing-soon/upcoming/pending)? If so, nothing to chase.
-    const hasCoverage = group
-      .filter((e) => e.slug !== newest.slug)
-      .some((e) => {
-        const s = isEmpty(e.deadline) ? "pending" : computeStatus(e.deadline, e.opensAt, today);
-        return s !== "expired";
-      });
-    if (hasCoverage) continue;
-
-    const days = daysUntil(newest.deadline, today);
-    report.push({
-      seriesId,
-      slug: newest.slug,
-      title: newest.title,
-      deadline: newest.deadline,
-      days,
-      sortKey: newestStatus === "expired" ? days : 1000 + days,
-    });
-  }
-
-  return report.sort((a, b) => a.sortKey - b.sortKey);
-}
-
-function implausibleSeriesIdReason(id) {
-  if (isEmpty(id)) return "empty";
-  if (/\b(19|20)\d{2}\b/.test(id)) return "contains a year";
-  if (/[A-Z]/.test(id)) return "contains uppercase letters";
-  if (/\s/.test(id)) return "contains whitespace";
-  return null;
-}
+  findSeriesWithoutCurrentEdition,
+  findImplausibleSeriesIds,
+  findMissingFields,
+  findPendingEntries,
+  findStatusMismatches,
+  findOpensAtContradictions,
+  findOpensAtInvalidFormat,
+  findExactUrlDuplicates,
+  findFuzzyDuplicates,
+  findFarOutWithoutOpensAt,
+} from "./lib/audit-checks.mjs";
 
 function main() {
   const today = new Date();
@@ -75,83 +29,16 @@ function main() {
     process.exit(1);
   }
 
-  const missingFieldsReport = [];
-  const statusMismatchReport = [];
-  const urlSeen = new Map();
-  const exactUrlDupes = [];
-  const titleOrgSeen = new Map();
-  const fuzzyDupes = [];
-  const implausibleSeriesIds = [];
-  const pendingEntries = [];
-  const opensAtContradictions = [];
-  const opensAtInvalidFormat = [];
-  const farOutWithoutOpensAt = [];
-
-  entries.forEach((entry, i) => {
-    const key = entry.slug || entry.id || `#${i}`;
-
-    // 1. Missing/empty required fields (deadline/resultDate excused on "pending")
-    const missing = missingRequiredFields(entry, REQUIRED_FIELDS.concat(DATE_FIELDS));
-    if (missing.length > 0) {
-      missingFieldsReport.push({ key, missing });
-    }
-
-    // 2. Stored status vs. live-computed status (deadline/opensAt vs. today)
-    if (!isEmpty(entry.status)) {
-      const live = isEmpty(entry.deadline) ? "pending" : computeStatus(entry.deadline, entry.opensAt, today);
-      if (live !== entry.status) {
-        statusMismatchReport.push({ key, deadline: entry.deadline, storedStatus: entry.status, liveStatus: live });
-      }
-    }
-
-    // 3a. Exact duplicate registrationUrl
-    if (!isEmpty(entry.registrationUrl)) {
-      const url = entry.registrationUrl.trim().replace(/\/+$/, "");
-      if (urlSeen.has(url)) {
-        exactUrlDupes.push({ a: urlSeen.get(url), b: key, url });
-      } else {
-        urlSeen.set(url, key);
-      }
-    }
-
-    // 3b. Fuzzy duplicate on normalized title+organizer — different editions
-    // of the same series (same seriesId) are never dupes, no matter how
-    // close their normalized title+organizer key is.
-    const norm = normalizeTitleOrganizer(entry.title, entry.organizer);
-    if (norm !== "|") {
-      const prior = titleOrgSeen.get(norm);
-      if (prior && (isEmpty(entry.seriesId) || prior.seriesId !== entry.seriesId)) {
-        fuzzyDupes.push({ a: prior.key, b: key });
-      }
-      if (!prior) titleOrgSeen.set(norm, { key, seriesId: entry.seriesId });
-    }
-
-    // 4b. Missing/implausible seriesId
-    const reason = implausibleSeriesIdReason(entry.seriesId);
-    if (reason) implausibleSeriesIds.push({ key, seriesId: entry.seriesId, reason });
-
-    // 4c. Pending entries (simple list — see project notes on why not
-    // git-blame-based staleness detection for now)
-    if (isEmpty(entry.deadline)) pendingEntries.push({ key, title: entry.title });
-
-    // Addendum: opensAt sanity checks
-    if (!isEmpty(entry.opensAt)) {
-      if (!DATE_RE.test(entry.opensAt)) {
-        opensAtInvalidFormat.push({ key, opensAt: entry.opensAt });
-      } else if (!isEmpty(entry.deadline) && entry.opensAt > entry.deadline) {
-        opensAtContradictions.push({ key, opensAt: entry.opensAt, deadline: entry.deadline });
-      }
-    }
-
-    // Addendum: informational — deadline far out and opensAt not researched
-    // yet. Not an error, just the worklist for the next research pass.
-    if (!isEmpty(entry.deadline) && isEmpty(entry.opensAt)) {
-      const days = daysUntil(entry.deadline, today);
-      if (days > FAR_OUT_DAYS) farOutWithoutOpensAt.push({ key, deadline: entry.deadline, days });
-    }
-  });
-
-  const seriesGaps = seriesWithoutCurrentEdition(entries, today);
+  const seriesGaps = findSeriesWithoutCurrentEdition(entries, today);
+  const missingFieldsReport = findMissingFields(entries, REQUIRED_FIELDS.concat(DATE_FIELDS));
+  const implausibleSeriesIds = findImplausibleSeriesIds(entries);
+  const pendingEntries = findPendingEntries(entries);
+  const statusMismatchReport = findStatusMismatches(entries, today);
+  const opensAtContradictions = findOpensAtContradictions(entries);
+  const opensAtInvalidFormat = findOpensAtInvalidFormat(entries);
+  const exactUrlDupes = findExactUrlDuplicates(entries);
+  const fuzzyDupes = findFuzzyDuplicates(entries);
+  const farOutWithoutOpensAt = findFarOutWithoutOpensAt(entries, today);
 
   console.log("=".repeat(60));
   console.log("AwardWatch — competitions.json audit");
@@ -176,7 +63,7 @@ function main() {
     console.log("None. All entries have every required field filled in.");
   } else {
     for (const r of missingFieldsReport) {
-      console.log(`  - ${r.key}: missing [${r.missing.join(", ")}]`);
+      console.log(`  - ${r.slug}: missing [${r.missing.join(", ")}]`);
     }
   }
 
@@ -185,7 +72,7 @@ function main() {
     console.log("None.");
   } else {
     for (const r of implausibleSeriesIds) {
-      console.log(`  - ${r.key}: seriesId "${r.seriesId ?? ""}" — ${r.reason}`);
+      console.log(`  - ${r.slug}: seriesId "${r.seriesId}" — ${r.reason}`);
     }
   }
 
@@ -195,7 +82,7 @@ function main() {
     console.log("None.");
   } else {
     for (const r of pendingEntries) {
-      console.log(`  - ${r.key}: "${r.title}"`);
+      console.log(`  - ${r.slug}: "${r.title}"`);
     }
   }
 
@@ -204,7 +91,7 @@ function main() {
     console.log("None. Every stored status matches what deadline/opensAt compute to today.");
   } else {
     for (const r of statusMismatchReport) {
-      console.log(`  - ${r.key}: deadline ${r.deadline ?? "null"}, stored "${r.storedStatus}" -> live "${r.liveStatus}"`);
+      console.log(`  - ${r.slug}: deadline ${r.deadline ?? "null"}, stored "${r.storedStatus}" -> live "${r.liveStatus}"`);
     }
   }
 
@@ -213,7 +100,7 @@ function main() {
     console.log("None.");
   } else {
     for (const r of opensAtContradictions) {
-      console.log(`  - ${r.key}: opensAt ${r.opensAt} is after deadline ${r.deadline}`);
+      console.log(`  - ${r.slug}: opensAt ${r.opensAt} is after deadline ${r.deadline}`);
     }
   }
 
@@ -222,7 +109,7 @@ function main() {
     console.log("None.");
   } else {
     for (const r of opensAtInvalidFormat) {
-      console.log(`  - ${r.key}: opensAt "${r.opensAt}"`);
+      console.log(`  - ${r.slug}: opensAt "${r.opensAt}"`);
     }
   }
 
@@ -251,7 +138,7 @@ function main() {
     console.log("None.");
   } else {
     for (const r of farOutWithoutOpensAt) {
-      console.log(`  - ${r.key}: deadline ${r.deadline} (in ${r.days}d)`);
+      console.log(`  - ${r.slug}: deadline ${r.deadline} (in ${r.days}d)`);
     }
   }
 
