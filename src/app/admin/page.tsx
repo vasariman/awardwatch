@@ -126,8 +126,14 @@ export default function AdminPage() {
 
   const entries = loadCompetitions();
   const today = new Date();
+  const publishedSlugs = new Set(entries.map((e: Record<string, unknown>) => e.slug));
 
-  const incoming = loadIncomingCandidates();
+  // Mirrors Step 1a of the weekly research routine: a candidate whose slug
+  // is already published was already reviewed and merged for real — the
+  // incoming file just hasn't been cleared since (it isn't automatically).
+  const incoming = loadIncomingCandidates().filter(
+    (c) => typeof c.slug !== "string" || !publishedSlugs.has(c.slug)
+  );
   const seriesGaps = findSeriesWithoutCurrentEdition(entries, today);
   const missingFields = findMissingFields(entries, REQUIRED_FIELDS.concat(DATE_FIELDS));
   const implausibleSeriesIds = findImplausibleSeriesIds(entries);
