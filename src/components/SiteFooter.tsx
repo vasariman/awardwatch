@@ -51,6 +51,12 @@ export function SiteFooter() {
                 Contact
               </Link>
             )}
+            <Link
+              href="/calendar-feed"
+              className="font-sans text-[13px] font-semibold text-ink no-underline"
+            >
+              Subscribe to calendar
+            </Link>
             <Link href="/impressum" className="font-sans text-[13px] font-semibold text-ink no-underline">
               Imprint
             </Link>
