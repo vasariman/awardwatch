@@ -42,6 +42,12 @@ export interface Competition {
    *  most editions won't have this researched. Never estimated, never
    *  carried over from a prior edition. */
   opensAt?: string | null;
+  /** Fields that were an honest placeholder/estimate at research time,
+   *  keyed by field name, valued by why + when to recheck. Kept through
+   *  merge (unlike the old behavior of stripping it) so the admin-only
+   *  audit view can surface entries that were published with unconfirmed
+   *  data — never rendered anywhere on the public site. */
+  sourcingNotes?: Record<string, string>;
 }
 
 export const CATEGORIES: Category[] = [
