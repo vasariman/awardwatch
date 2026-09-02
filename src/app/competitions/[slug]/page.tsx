@@ -245,14 +245,24 @@ export default async function CompetitionDetailPage({
           ))}
         </div>
 
-        <a
-          href={item.registrationUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-12 inline-block bg-accent px-8 py-5 font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline md:mt-12"
-        >
-          Go to entry page →
-        </a>
+        <div className="mt-12 flex flex-wrap items-center gap-5 md:mt-12">
+          <a
+            href={item.registrationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-accent px-8 py-5 font-sans text-sm font-bold uppercase tracking-[.02em] text-white no-underline"
+          >
+            Go to entry page →
+          </a>
+          {item.deadline !== null && (
+            <a
+              href={`/competitions/${item.slug}/event.ics`}
+              className="font-sans text-xs font-bold uppercase tracking-[.03em] text-black/50 underline decoration-black/25 underline-offset-4 hover:text-ink"
+            >
+              Add to calendar
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
