@@ -1519,5 +1519,70 @@
     "slug": "architecture-design-collection-awards-2026",
     "studentTag": true,
     "longDescription": "Now in its 5th edition, the Architecture & Design Collection Awards (ADCA) invites architects, designers, studios, artists, and students worldwide to submit work across 13 categories including architecture, interior, landscape, furniture, lighting, product, and communication and web design. The 2026 jury includes practitioners from firms such as Olson Kundig alongside creative directors and academics from the UK, US, China, and Ecuador. The prior edition drew submissions from more than 40 countries."
+  },
+  {
+    "title": "iF Design Student Award 2027",
+    "organizer": "iF International Forum Design GmbH",
+    "seriesId": "if-design-student-award",
+    "categories": [
+      "Sustainable Design"
+    ],
+    "targetAudience": "students",
+    "country": "Germany",
+    "entryFee": "Free",
+    "registrationUrl": "https://ifdesign.com/en/if-design-student-award",
+    "prizeMoney": "EUR 50,000 total prize fund shared among the winning student concepts, distributed by the jury",
+    "shortDescription": "A free-to-enter international student design award from iF, marking its 25th anniversary in 2027, for concepts that address one of the UN Sustainable Development Goals.",
+    "submissionFormat": "Online submission via the iF Design entry platform: a written concept description and supporting visuals addressing one of the 15 UN Sustainable Development Goals; exact file specifications are detailed in the downloadable Entry Guide",
+    "status": "open",
+    "deadline": "2027-02-03",
+    "resultDate": "2027-05-04",
+    "slug": "if-design-student-award-2027",
+    "studentTag": true,
+    "longDescription": "The iF Design Student Award is the sister competition to the professional iF Design Award, run by iF International Forum Design GmbH. Now in its 25th year, it invites students worldwide to submit design concepts (not necessarily market-ready products) that respond to one of the 15 UN Sustainable Development Goals covered by the competition. Entries are judged first by an online jury on problem-solving, ethical standards, design relevance, and economic feasibility, then by a final jury in Berlin that selects the winners of the EUR 50,000 prize fund. The 2027 awards ceremony takes place in New York City."
+  },
+  {
+    "title": "Vancouver Tall Challenge 2026",
+    "organizer": "Buildner, in partnership with the City of Vancouver and UBC School of Architecture and Landscape Architecture (SALA)",
+    "seriesId": "vancouver-tall-challenge",
+    "categories": [
+      "Architecture",
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "country": "Canada",
+    "entryFee": "Advanced tier (16 Jul – 9 Sep 2026): €52 per installment, payable as a single payment or in 3 monthly installments; Last Minute tier (10 Sep – 29 Oct 2026): €55 per installment, plus 4.5% VAT; registration closes 29 October 2026",
+    "registrationUrl": "https://architecturecompetitions.com/vancouvertallchallenge",
+    "prizeMoney": "$15,000 CAD total: 1st place $7,000, 2nd place $4,000, 3rd place $2,000, Student Award $1,000, Sustainability Award $1,000, plus 6 honorable mentions",
+    "shortDescription": "A Buildner ideas competition organized with the City of Vancouver and UBC's School of Architecture, inviting proposals for taller buildings in Vancouver's downtown core.",
+    "submissionFormat": "Digital submission via the Buildner platform: presentation panels and a supporting narrative in English; exact format specified in the downloadable competition brief",
+    "status": "open",
+    "deadline": "2026-11-30",
+    "resultDate": "2027-01-26",
+    "slug": "vancouver-tall-challenge-2026",
+    "studentTag": true,
+    "longDescription": "The Vancouver Tall Challenge: Building Higher Downtown is organized by Buildner in collaboration with the City of Vancouver and the University of British Columbia's School of Architecture and Landscape Architecture (SALA). It forms part of the city's Higher Buildings Policy Review, inviting architects, designers, planners, and creative thinkers to imagine how taller buildings can support a more vibrant, sustainable, and inclusive downtown Vancouver. The competition is open to all backgrounds, with no professional qualification required, and includes dedicated Student and Sustainability Awards alongside the main placings."
+  },
+  {
+    "title": "New York High Falls Riverfront Market",
+    "organizer": "Buildner, in partnership with AIA Rochester and Community Design Rochester",
+    "seriesId": "new-york-high-falls-riverfront-market",
+    "categories": [
+      "Architecture",
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Advanced tier (30 Jul – 7 Oct 2026): €52 per installment, payable as a single payment or in 3 monthly installments; Last Minute tier (8 Oct – 10 Dec 2026): €55 per installment, plus 4.5% VAT; registration closes 10 December 2026",
+    "registrationUrl": "https://architecturecompetitions.com/newyorkmarket",
+    "prizeMoney": "$10,000 USD total: 1st place $5,000, 2nd place $2,500, 3rd place $1,000, Student Award $1,000, Sustainability Award $500, plus 6 honorable mentions",
+    "shortDescription": "A Buildner competition presented with AIA Rochester, inviting proposals for a contemporary riverfront market and public space within Rochester's future High Falls State Park.",
+    "submissionFormat": "Digital submission via the Buildner platform: presentation panels and a supporting narrative in English; exact format specified in the downloadable competition brief",
+    "status": "open",
+    "deadline": "2027-01-18",
+    "resultDate": "2027-03-09",
+    "slug": "new-york-high-falls-riverfront-market-2026",
+    "studentTag": true,
+    "longDescription": "Presented by Buildner in partnership with AIA Rochester as part of its Designers Unleashed initiative, together with Community Design Rochester and Future Reality Services, this competition asks entrants to design a contemporary riverfront market and surrounding public space at the Smokestack Portal site, a future gateway into Rochester's High Falls State Park along the Genesee River gorge. The competition is open to architects, designers, and creative thinkers of any background, with dedicated Student and Sustainability Awards alongside the main placings."
   }
 ]
