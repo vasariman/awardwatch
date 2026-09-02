@@ -172,21 +172,21 @@
     "title": "Green Product Award 2027",
     "organizer": "Green Product Award / Green Future Club",
     "seriesId": "green-product-award",
-    "deadline": "2026-09-17",
+    "deadline": "2027-01-17",
     "categories": [
       "Sustainable Design"
     ],
     "targetAudience": "professionals",
     "studentTag": false,
     "country": "Germany",
-    "entryFee": "Tiered entry fee (early bird / regular / final pricing)",
+    "entryFee": "Tiered entry fee: Early Bird (17 Sep 2026), Regular Bird (17 Nov 2026), Final (17 Jan 2027) — earlier tiers cost less",
     "registrationUrl": "https://www.gp-award.com/en/gpaward",
     "prizeMoney": "Trophy, certification seal, and audience award (no cash prize)",
-    "resultDate": "2027-02-15",
+    "resultDate": "2027-02-17",
     "shortDescription": "An international award for sustainable products and services across 14 categories, from architecture to mobility.",
     "longDescription": "The Green Product Award has recognized sustainable products and services since 2012, inviting companies and start-ups to submit work across categories spanning architecture, consumer goods, mobility, and new materials. Nominees are published for public audience voting ahead of the final jury decision, with the award ceremony held in Berlin.",
     "submissionFormat": "Online submission: product images, a sustainability data sheet, and a written description",
-    "status": "closing-soon"
+    "status": "open"
   },
   {
     "slug": "international-design-awards-2026",
@@ -207,7 +207,7 @@
     "shortDescription": "A long-running Los Angeles-based award spanning architecture, interior, product, fashion, and graphic design.",
     "longDescription": "The International Design Awards recognize both professionals and students across five core disciplines: architecture, interior, product, fashion, and graphic design. Entries must have been completed within the last five years. Winners are graded Gold, Silver, or Bronze within each category, with top honorees also considered for Designer of the Year and Emerging Designer of the Year.",
     "submissionFormat": "Digital submission: images, technical details, and a project statement",
-    "status": "closing-soon"
+    "status": "open"
   },
   {
     "slug": "green-good-design-award-2027",
@@ -442,7 +442,7 @@
     "shortDescription": "International product design competition from Japanese stationery and furniture maker KOKUYO, open worldwide with a dedicated student category, themed 'dialogue' for 2027.",
     "longDescription": "KOKUYO DESIGN AWARD is an international product design competition run by KOKUYO Co., Ltd., a major Japanese stationery, office furniture, and workspace-tools manufacturer. Entries are open worldwide to individuals, groups, and corporations for original, previously unpublished designs of stationery, furniture, or tools used in working, learning, and living. The 2027 edition is themed 'dialogue,' accepts entries free of charge, and includes a New Generation Award judged separately from all student submissions (elementary school through graduate level). Submissions opened July 24, 2026 and close at noon JST on October 7, 2026, with results announced March 13, 2027.",
     "submissionFormat": "Online submission via the KOKUYO Design Award entry portal: entrant registration plus design proposal materials (visuals and a written description) uploaded through the site's ENTRY pages. Detailed file-format specifications are provided within the entry portal itself.",
-    "status": "closing-soon"
+    "status": "open"
   },
   {
     "slug": "aia-international-design-awards-2026",
@@ -697,7 +697,7 @@
     "resultDate": "2027-02-27",
     "shortDescription": "IIDA's flagship international interior design awards program, honoring interior design and interior architecture projects located outside the United States.",
     "submissionFormat": "Online submission via IIDA's official competition portal, including project imagery and a written project narrative",
-    "status": "closing-soon",
+    "status": "open",
     "studentTag": false,
     "longDescription": "Now in its 17th year, the IIDA Global Excellence Awards recognize originality and creativity in interior design and interior architecture across 19 categories, including corporate, hospitality, healthcare, education, retail, and residential spaces. Any interior designer, interior architect, or architect worldwide may submit, provided the project itself is located outside the United States and was completed within the previous two years. Winners are celebrated at an in-person ceremony in Paris."
   },
@@ -889,7 +889,7 @@
     "resultDate": "2026-11-20",
     "shortDescription": "A UN- and Türkiye-backed international competition recognizing energy-efficient, low-carbon, climate-resilient buildings, with winners honored at COP31 in Antalya.",
     "submissionFormat": "Online application via yesint.csb.gov.tr with 3–4 project photographs uploaded directly through the site",
-    "status": "closing-soon",
+    "status": "open",
     "studentTag": false,
     "longDescription": "Organized by UNEP, the Global Alliance for Buildings and Construction (GlobalABC), and Türkiye's Ministry of Environment, Urbanization and Climate Change, the International Sustainable Building Competition invites architects and building professionals worldwide to submit built projects and masterplans that demonstrate energy-efficient, low-carbon, and climate-resilient design. The competition is free to enter and is timed to coincide with COP31, the UN Climate Change Conference hosted in Antalya, Türkiye in November 2026, where winning projects will be honored."
   },
@@ -999,7 +999,7 @@
     "resultDate": "2026-12-31",
     "shortDescription": "A China-based, WDO-endorsed industrial design award with a roughly €500,000 total prize pool, spanning Product Group and Concept Group tracks across four sectors.",
     "submissionFormat": "Online registration with project documentation; video documentation is mandatory for non-physical products and required for all entries advancing to the second evaluation round",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": true,
     "longDescription": "The Design Intelligence Award (DIA) is endorsed by the World Design Organization and organized in China, evaluating entries across two groups, Product (market-ready designs) and Concept (forward-looking proposals, including a dedicated Young Talents track), spanning four sectors: Digital Economy, Industrial Equipment, Life Wisdom, and Cultural Innovation. The competition is open to enterprises, universities, institutions, and individuals worldwide, with free registration during an initial window followed by a paid late-registration period. The 2026 cycle offers a total prize pool of roughly €500,000, including a ¥1,000,000 Grand Award."
   },
@@ -1171,7 +1171,7 @@
     "resultDate": "2027-01-15",
     "shortDescription": "The world's most prestigious packaging design award, presented by the World Packaging Organisation, open only to packs that have already won a WPO-recognized national or regional packaging competition.",
     "submissionFormat": "Online submission via worldstar.org: category selection, a 500-word written justification of the pack, and up to 5 high-resolution images (combined file size under 5MB); payment due by November 2, 2026",
-    "status": "closing-soon",
+    "status": "open",
     "studentTag": false,
     "longDescription": "WorldStar is the global packaging awards program of the World Packaging Organisation (WPO), widely regarded as the pre-eminent international recognition for packaging design, innovation, and sustainability. Entry is restricted to packaging that has already won an award in one of roughly 75-85 WPO-recognized national or regional packaging competitions in the current or previous year. There is no direct-entry route for unproven packs. Categories span major packaging types alongside Special Awards for Sustainability, Marketing, Packaging that Saves Food, and Accessible Packaging. Around 200 winners are typically selected from 300+ qualifying entries spanning 30+ countries, with winners honored at an international gala tied to a major packaging trade fair."
   },
@@ -1321,7 +1321,7 @@
     "resultDate": "2027-02-15",
     "shortDescription": "The 6th edition of the Living Places – Simon Architecture Prize, organized by Simon with the Fundació Mies van der Rohe, recognizing built projects by architects, city planners, and landscapers across Europe, Mexico, Brazil, and Morocco.",
     "submissionFormat": "Online submission via simonprize.org following pre-registration, per the official rules (published in English and Spanish)",
-    "status": "closing-soon",
+    "status": "open",
     "studentTag": false,
     "longDescription": "Organized by the Simon brand in collaboration with the Fundació Mies van der Rohe, the Living Places – Simon Architecture Prize recognizes built projects, including interiors, public spaces, and landscaping, completed between January 2024 and December 2025. Now in its 6th edition, the prize is open to qualified architects, city planners, and landscapers from all European countries as well as Mexico, Brazil, and, new this year, Morocco. The competition distinctively incorporates video as a core tool for communicating the architectural work. Two winning projects each receive €10,000 and an exclusive piece designed by Andreu Carulla; finalists are announced in December, with the award ceremony in February."
   },
@@ -1468,7 +1468,7 @@
     "prizeMoney": "No cash prize: winners receive a personalized aluminum Award of Excellence, publication in the Communication Arts Interactive Annual (print and digital), and a certificate",
     "shortDescription": "International competition from Communication Arts magazine recognizing outstanding interactive design work across websites, apps, and digital installations.",
     "submissionFormat": "Online submission via URL for web-based work (must stay live for 3 months past the deadline) or video (MOV, MP4, MPG, MPEG; max 500MB, max 5 minutes for web video); no printed materials accepted",
-    "status": "closing-soon",
+    "status": "open",
     "deadline": "2026-10-09",
     "resultDate": null,
     "slug": "communication-arts-interactive-competition-2027",
