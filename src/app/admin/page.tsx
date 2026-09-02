@@ -148,6 +148,13 @@ export default function AdminPage() {
 
   const bySlug = new Map(entries.map((e: Record<string, unknown>) => [e.slug, e]));
 
+  // Every published entry, clean or not — the other sections only surface
+  // problems, so a fine entry is otherwise invisible on this page. Sorted
+  // alphabetically by title so a specific competition is easy to find.
+  const allPublished = [...entries].sort((a: Record<string, unknown>, b: Record<string, unknown>) =>
+    String(a.title ?? "").localeCompare(String(b.title ?? ""))
+  );
+
   return (
     <div className="border-t-2 border-ink px-6 pb-24 md:px-10">
       <div className="mx-auto max-w-[900px]">
@@ -317,6 +324,26 @@ export default function AdminPage() {
         >
           {farOutWithoutOpensAt.map((r: { slug: string; title: string; deadline: string; days: number }) => (
             <Row key={r.slug} slug={r.slug} title={r.title} detail={<>deadline {r.deadline} (in {r.days}d)</>} />
+          ))}
+        </Section>
+
+        <Section
+          title="All published entries"
+          subtitle="Everything above only lists problems — this is the full roster, clean entries included, A–Z by title."
+          count={allPublished.length}
+        >
+          {allPublished.map((e: Record<string, unknown>) => (
+            <Row
+              key={String(e.slug)}
+              slug={String(e.slug)}
+              title={String(e.title)}
+              registrationUrl={typeof e.registrationUrl === "string" ? e.registrationUrl : undefined}
+              detail={
+                <>
+                  {String(e.status ?? "")} · deadline {e.deadline ? String(e.deadline) : "null (pending)"}
+                </>
+              }
+            />
           ))}
         </Section>
       </div>
