@@ -15,45 +15,64 @@ import {
 
 const FAR_OUT_DAYS = 182; // ~6 months
 
-// Every series' newest edition is expired or closing-soon, with no other
-// edition (open/closing-soon/upcoming/pending) covering the gap.
-export function findSeriesWithoutCurrentEdition(entries, today) {
+// Shared grouping + "is there already something else covering this
+// series" logic used by both checks below.
+function groupBySeriesId(entries) {
   const bySeriesId = new Map();
   for (const e of entries) {
     if (isEmpty(e.seriesId)) continue;
     if (!bySeriesId.has(e.seriesId)) bySeriesId.set(e.seriesId, []);
     bySeriesId.get(e.seriesId).push(e);
   }
+  return bySeriesId;
+}
 
+function hasOtherCoverage(group, newest, today) {
+  return group
+    .filter((e) => e.slug !== newest.slug)
+    .some((e) => {
+      const s = isEmpty(e.deadline) ? "pending" : computeStatus(e.deadline, e.opensAt, today);
+      return s !== "expired";
+    });
+}
+
+// A series whose newest edition has actually EXPIRED, with nothing else
+// (open/closing-soon/upcoming/pending) covering it — a genuine dead end,
+// exactly what the seriesId/successor feature exists to catch.
+export function findSeriesWithNoCoverage(entries, today) {
   const report = [];
-  for (const [seriesId, group] of bySeriesId) {
+  for (const [seriesId, group] of groupBySeriesId(entries)) {
     const dated = group.filter((e) => !isEmpty(e.deadline));
     if (dated.length === 0) continue; // all-pending series: nothing has run out yet
 
     const newest = dated.reduce((a, b) => (a.deadline > b.deadline ? a : b));
-    const newestStatus = computeStatus(newest.deadline, newest.opensAt, today);
-    if (newestStatus !== "expired" && newestStatus !== "closing-soon") continue;
-
-    const hasCoverage = group
-      .filter((e) => e.slug !== newest.slug)
-      .some((e) => {
-        const s = isEmpty(e.deadline) ? "pending" : computeStatus(e.deadline, e.opensAt, today);
-        return s !== "expired";
-      });
-    if (hasCoverage) continue;
+    if (computeStatus(newest.deadline, newest.opensAt, today) !== "expired") continue;
+    if (hasOtherCoverage(group, newest, today)) continue;
 
     const days = daysUntil(newest.deadline, today);
-    report.push({
-      seriesId,
-      slug: newest.slug,
-      title: newest.title,
-      deadline: newest.deadline,
-      days,
-      sortKey: newestStatus === "expired" ? days : 1000 + days,
-    });
+    report.push({ seriesId, slug: newest.slug, title: newest.title, deadline: newest.deadline, days });
   }
+  return report.sort((a, b) => a.days - b.days); // most-expired first (most negative)
+}
 
-  return report.sort((a, b) => a.sortKey - b.sortKey);
+// A series whose newest edition is still live (closing-soon — so there IS
+// a current edition, unlike the check above) but nothing is queued up to
+// follow it once it closes. Proactive: a heads-up to research a successor
+// before this one lapses, not a claim that the series is already dead.
+export function findSeriesClosingSoonWithoutSuccessor(entries, today) {
+  const report = [];
+  for (const [seriesId, group] of groupBySeriesId(entries)) {
+    const dated = group.filter((e) => !isEmpty(e.deadline));
+    if (dated.length === 0) continue;
+
+    const newest = dated.reduce((a, b) => (a.deadline > b.deadline ? a : b));
+    if (computeStatus(newest.deadline, newest.opensAt, today) !== "closing-soon") continue;
+    if (hasOtherCoverage(group, newest, today)) continue;
+
+    const days = daysUntil(newest.deadline, today);
+    report.push({ seriesId, slug: newest.slug, title: newest.title, deadline: newest.deadline, days });
+  }
+  return report.sort((a, b) => a.days - b.days); // soonest-closing first
 }
 
 function implausibleSeriesIdReason(id) {

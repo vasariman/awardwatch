@@ -6,7 +6,8 @@
 // the two views can never disagree with each other.
 import { DATA_PATH, REQUIRED_FIELDS, DATE_FIELDS, loadCompetitions } from "./lib/util.mjs";
 import {
-  findSeriesWithoutCurrentEdition,
+  findSeriesWithNoCoverage,
+  findSeriesClosingSoonWithoutSuccessor,
   findImplausibleSeriesIds,
   findMissingFields,
   findPendingEntries,
@@ -29,7 +30,8 @@ function main() {
     process.exit(1);
   }
 
-  const seriesGaps = findSeriesWithoutCurrentEdition(entries, today);
+  const seriesNoCoverage = findSeriesWithNoCoverage(entries, today);
+  const seriesClosingSoonNoSuccessor = findSeriesClosingSoonWithoutSuccessor(entries, today);
   const missingFieldsReport = findMissingFields(entries, REQUIRED_FIELDS.concat(DATE_FIELDS));
   const implausibleSeriesIds = findImplausibleSeriesIds(entries);
   const pendingEntries = findPendingEntries(entries);
@@ -47,14 +49,23 @@ function main() {
   console.log("=".repeat(60));
   console.log(`\nTotal entries: ${entries.length}\n`);
 
-  console.log(`--- Series without a current edition (${seriesGaps.length}) ---`);
-  console.log("This is the research worklist: each series below has no open/closing-soon/upcoming/pending edition.");
-  if (seriesGaps.length === 0) {
-    console.log("None. Every series has a live or pending edition.");
+  console.log(`--- Series with no current edition (${seriesNoCoverage.length}) ---`);
+  console.log("Newest edition has expired and nothing (open/closing-soon/upcoming/pending) covers it. A genuine dead end.");
+  if (seriesNoCoverage.length === 0) {
+    console.log("None.");
   } else {
-    for (const g of seriesGaps) {
-      const status = g.days < 0 ? `expired ${-g.days}d ago` : `closes in ${g.days}d`;
-      console.log(`  - [${g.seriesId}] "${g.title}" (${g.slug}): deadline ${g.deadline}, ${status}`);
+    for (const g of seriesNoCoverage) {
+      console.log(`  - [${g.seriesId}] "${g.title}" (${g.slug}): deadline ${g.deadline}, expired ${-g.days}d ago`);
+    }
+  }
+
+  console.log(`\n--- Series closing soon, no successor queued (${seriesClosingSoonNoSuccessor.length}) ---`);
+  console.log("Newest edition is still live (closing-soon) but nothing is queued to follow it. Proactive heads-up, not a dead end yet.");
+  if (seriesClosingSoonNoSuccessor.length === 0) {
+    console.log("None.");
+  } else {
+    for (const g of seriesClosingSoonNoSuccessor) {
+      console.log(`  - [${g.seriesId}] "${g.title}" (${g.slug}): deadline ${g.deadline}, closes in ${g.days}d`);
     }
   }
 
@@ -146,7 +157,8 @@ function main() {
   console.log("SUMMARY");
   console.log("=".repeat(60));
   console.log(`Total entries:                        ${entries.length}`);
-  console.log(`Series without a current edition:     ${seriesGaps.length}`);
+  console.log(`Series with no current edition:       ${seriesNoCoverage.length}`);
+  console.log(`Series closing soon, no successor:    ${seriesClosingSoonNoSuccessor.length}`);
   console.log(`Entries with missing fields:          ${missingFieldsReport.length}`);
   console.log(`Missing/implausible seriesId:         ${implausibleSeriesIds.length}`);
   console.log(`Pending entries:                      ${pendingEntries.length}`);
