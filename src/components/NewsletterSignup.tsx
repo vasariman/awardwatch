@@ -131,12 +131,14 @@ export function NewsletterSignup() {
                 className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--color-ink)]"
               />
               <span>
-                I agree to receive the AwardWatch newsletter by email and have
-                read the{" "}
+                I agree to receive the AwardWatch newsletter by email.
+                Opening and click rates are measured to improve the
+                newsletter. I can withdraw this consent at any time via the
+                unsubscribe link in every email. See the{" "}
                 <Link href="/datenschutz" className="text-ink underline">
                   privacy policy
-                </Link>
-                . I can withdraw my consent at any time.
+                </Link>{" "}
+                for details.
               </span>
             </label>
 

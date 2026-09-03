@@ -138,6 +138,29 @@ export default function DatenschutzPage() {
           </p>
         </Section>
 
+        <Section title="Newsletter tracking">
+          <p>
+            Our newsletters contain a tracking pixel, a small image file
+            retrieved from the servers of our email service provider Brevo
+            when the email is opened. This records the time of retrieval
+            along with technical information such as IP address and email
+            client. Links contained in the newsletter are set up so that the
+            link clicked is recorded.
+          </p>
+          <p className="mt-4">
+            This data is evaluated in pseudonymised form only and is used to
+            tailor the newsletter content to recipients&apos; interests. It
+            is not combined with other personal data.
+          </p>
+          <p className="mt-4">
+            The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1)
+            TDDDG. You can withdraw this consent at any time by unsubscribing
+            via the link in every email. Opting out of tracking alone is not
+            technically possible; withdrawal therefore also ends your
+            newsletter subscription.
+          </p>
+        </Section>
+
         <Section title="Fonts">
           <p>
             Typefaces are self-hosted: font files are bundled with the site
