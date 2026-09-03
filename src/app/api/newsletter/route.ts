@@ -31,7 +31,7 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 // Bump this whenever the consent wording in NewsletterSignup.tsx changes, so
 // an old record still says which sentence that person actually agreed to.
-const CONSENT_VERSION = "2026-08-23";
+const CONSENT_VERSION = "2026-09-03";
 
 /**
  * Best-effort client IP. Vercel sets x-forwarded-for; the left-most entry is
