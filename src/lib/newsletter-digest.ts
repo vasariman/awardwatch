@@ -107,6 +107,16 @@ const FONT_SANS = "Arial, Helvetica, sans-serif";
 const FONT_SANS_BLACK = "'Arial Black', Arial, Helvetica, sans-serif";
 const FONT_MONO = "'Courier New', Courier, monospace";
 
+// Brevo's {{ unsubscribe }} campaign merge tag didn't actually remove the
+// test recipient from the list when clicked from a "send a test" email
+// (a known quirk: test sends don't fully process real subscriber actions
+// in Brevo). This is the stable, reusable URL of the Brevo-hosted
+// unsubscribe form (Contacts -> Forms in the Brevo dashboard) confirmed to
+// actually work -- same URL for every recipient, they enter their own
+// address on the page.
+const UNSUBSCRIBE_URL =
+  "https://0d3774b6.sibforms.com/serve/MUIFAJ4dRqMKeXSQHUemggcxfr8xaiDMNQ7FM0fUa2fLK3yJC37w0mwV4wcSF_YPMtt4gq2dkX_DAJrxG-xJOLRVZJ6RzdbY-6cdIKUXL1xWWT0BUYJ7rqwD0wdBKEKcTmtjdjSAnWep0OJqalsEzkDI0O1efRUA7oRAZXNFWv8H7Z1e14zCNf0Dl9YqpKls0eyHRpU8YsuuVqFW2Q==";
+
 // The header label next to the logo -- deliberately set in the same heading
 // font as sectionHeading()/entry titles, not the small mono eyebrow, per
 // explicit direction.
@@ -263,7 +273,7 @@ export function buildDigestHtml(selection: DigestSelection, utmCampaign: string)
                       &middot;
                       <a href="${SITE_URL}/datenschutz" style="color:rgba(0,0,0,0.45);">Privacy</a>
                       &middot;
-                      <a href="{{ unsubscribe }}" style="color:rgba(0,0,0,0.45);">Unsubscribe</a>
+                      <a href="${UNSUBSCRIBE_URL}" style="color:rgba(0,0,0,0.45);">Unsubscribe</a>
                     </td>
                   </tr>
                 </table>
