@@ -25,9 +25,9 @@ export default function NewsletterConfirmedPage() {
         </h1>
 
         <p className="mt-6 max-w-xl font-sans text-base leading-relaxed text-black/70 md:text-lg">
-          Every two weeks you&apos;ll get the competitions closing in the next
-          30 days. Every email has an unsubscribe link at the bottom — one
-          click, no questions.
+          Once a month you&apos;ll get the competitions closing soon, plus
+          what&apos;s coming up after that. Every email has an unsubscribe
+          link at the bottom — one click, no questions.
         </p>
 
         <div className="mt-16 border-t-2 border-ink pt-10">

@@ -73,8 +73,8 @@ export function NewsletterSignup() {
               Never miss a deadline.
             </h3>
             <p className="mt-3 font-sans text-sm leading-relaxed text-black/70">
-              Once a month: the design competitions closing in the next six
-              weeks, with fees and eligibility. No spam, unsubscribe in one
+              Once a month: the design competitions closing soon, plus
+              what&apos;s coming up after that. No spam, unsubscribe in one
               click.
             </p>
           </div>
