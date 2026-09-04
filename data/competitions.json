@@ -1930,5 +1930,31 @@
       "prizeMoney": "Next cycle's prize amounts not yet published; based on the prior cycle's structure. Recheck when the next call is issued.",
       "submissionFormat": "Next call for entries has not yet been issued; format described based on the prior cycle. Recheck when it opens."
     }
+  },
+  {
+    "title": "Eurobest Design Award 2026",
+    "organizer": "Eurobest (The One Club for Creativity)",
+    "seriesId": "eurobest-design-award",
+    "categories": [
+      "Graphic Design",
+      "Product/Industrial Design",
+      "UX/UI Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Europe",
+    "entryFee": "€500 until 17 September 2026, €605 from 18 September, €665 from 2 October until the 15 October deadline",
+    "registrationUrl": "https://www.eurobest.com/awards/design",
+    "prizeMoney": "Gold, Silver, and Bronze Eurobest trophies, awarded by jury vote requiring a two-thirds majority; no cash prize was stated on the pages checked this session",
+    "shortDescription": "The design-focused discipline of Eurobest, Europe's pan-continental advertising and communications festival, spanning brand identity, packaging, product, publication, and digital design.",
+    "submissionFormat": "Online submission via the Eurobest entry platform: a case film and/or supporting visuals per subcategory, in English or with English subtitles; physical samples are required for some subcategories (e.g. Packaging Design, Product Design)",
+    "status": "open",
+    "deadline": "2026-10-15",
+    "resultDate": "2026-12-04",
+    "slug": "eurobest-design-award-2026",
+    "studentTag": false,
+    "longDescription": "The Design Eurobest Award is one of several disciplines within Eurobest, the European sister festival to Cannes Lions, run by The One Club for Creativity. It spans twelve subcategories, from brand and corporate identity, packaging, and product design to publications, books, digital design, and branded environments, judged 40% on idea, 40% on execution, and 20% on results. Entries must be commercial work produced under a genuine paying brief, with the commissioning brand's senior executive confirming permission to submit, and must have been designed for or produced by companies in the European region. As with the wider Eurobest show, this is a professional advertising-industry award rather than an open design competition: it sits alongside five other Eurobest disciplines (Film, Digital Craft, Creative Data, and others) that are not design-specific.",
+    "sourcingNotes": {
+      "prizeMoney": "No official statement found this session confirming or ruling out a cash prize alongside the trophies; described based on what was directly confirmed (jury-voted Gold/Silver/Bronze trophies). Recheck via the Entry Kit: The Rules document if this matters."
+    }
   }
 ]
