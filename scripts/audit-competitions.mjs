@@ -17,6 +17,7 @@ import {
   findExactUrlDuplicates,
   findFuzzyDuplicates,
   findFarOutWithoutOpensAt,
+  findUnconfirmedPublishedFields,
 } from "./lib/audit-checks.mjs";
 
 function main() {
@@ -41,6 +42,7 @@ function main() {
   const exactUrlDupes = findExactUrlDuplicates(entries);
   const fuzzyDupes = findFuzzyDuplicates(entries);
   const farOutWithoutOpensAt = findFarOutWithoutOpensAt(entries, today);
+  const unconfirmedPublished = findUnconfirmedPublishedFields(entries);
 
   console.log("=".repeat(60));
   console.log("AwardWatch — competitions.json audit");
@@ -94,6 +96,16 @@ function main() {
   } else {
     for (const r of pendingEntries) {
       console.log(`  - ${r.slug}: "${r.title}"`);
+    }
+  }
+
+  console.log(`\n--- Live entries with unconfirmed (sourcingNotes) fields (${unconfirmedPublished.length}) ---`);
+  console.log("Worklist for a research pass: these fields were still an honest placeholder at merge time.");
+  if (unconfirmedPublished.length === 0) {
+    console.log("None.");
+  } else {
+    for (const r of unconfirmedPublished) {
+      console.log(`  - [${r.slug}] "${r.title}": ${Object.keys(r.notes).join(", ")}`);
     }
   }
 
@@ -162,6 +174,7 @@ function main() {
   console.log(`Entries with missing fields:          ${missingFieldsReport.length}`);
   console.log(`Missing/implausible seriesId:         ${implausibleSeriesIds.length}`);
   console.log(`Pending entries:                      ${pendingEntries.length}`);
+  console.log(`Live entries with unconfirmed fields: ${unconfirmedPublished.length}`);
   console.log(`Stored/live status mismatches:        ${statusMismatchReport.length}`);
   console.log(`opensAt contradictions:               ${opensAtContradictions.length}`);
   console.log(`opensAt invalid format:               ${opensAtInvalidFormat.length}`);

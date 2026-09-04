@@ -12,7 +12,10 @@
 // excused when status is "pending" — valid categories/audience/status
 // enums, a real future deadline when one is given, a well-formed URL, and
 // duplicate checks against both competitions.json and the rest of the
-// batch — same seriesId as an existing entry is never a duplicate). Only
+// batch — same seriesId as an existing entry is never a duplicate by
+// title+organizer, and a still-undated (pending) candidate reusing an
+// existing entry's registrationUrl is never a duplicate by URL either, as
+// long as it's the same series). Only
 // candidates with zero issues are appended to competitions.json — anything
 // flagged is left out and printed with its reasons so it can be fixed and
 // resubmitted. Existing entries are never deleted; any existing entry whose
@@ -163,7 +166,9 @@ function buildExistingIndex(existing) {
   const byTitleOrg = new Map();
   const bySlug = new Set();
   for (const e of existing) {
-    if (!isEmpty(e.registrationUrl)) byUrl.set(normalizeUrl(e.registrationUrl), e.slug);
+    if (!isEmpty(e.registrationUrl)) {
+      byUrl.set(normalizeUrl(e.registrationUrl), { slug: e.slug, seriesId: e.seriesId });
+    }
     const key = normalizeTitleOrganizer(e.title, e.organizer);
     if (key !== "|") byTitleOrg.set(key, { slug: e.slug, seriesId: e.seriesId });
     if (e.slug) bySlug.add(e.slug);
@@ -179,7 +184,20 @@ function findDuplicateIssue(candidate, index) {
     return `Duplicate slug: "${candidate.slug}" already exists in competitions.json`;
   }
   if (url && index.byUrl.has(url)) {
-    return `Duplicate: registrationUrl matches existing entry "${index.byUrl.get(url)}"`;
+    const match = index.byUrl.get(url);
+    // A pending candidate (no deadline yet) reusing the same organizer URL
+    // as an existing entry in the SAME series is the expected shape for "next
+    // edition, not yet dated" — not a duplicate. A candidate that already has
+    // a real deadline is still checked normally: that's exactly the shape a
+    // genuine accidental re-submission would have.
+    const isPendingSuccessorOfSameSeries =
+      isEmpty(candidate.deadline) &&
+      !isEmpty(candidate.seriesId) &&
+      !isEmpty(match.seriesId) &&
+      candidate.seriesId === match.seriesId;
+    if (!isPendingSuccessorOfSameSeries) {
+      return `Duplicate: registrationUrl matches existing entry "${match.slug}"`;
+    }
   }
   if (titleOrgKey !== "|" && index.byTitleOrg.has(titleOrgKey)) {
     const match = index.byTitleOrg.get(titleOrgKey);
@@ -218,7 +236,9 @@ function pickSchemaFields(candidate) {
 function registerInIndex(candidate, index) {
   const url = isEmpty(candidate.registrationUrl) ? null : normalizeUrl(candidate.registrationUrl);
   const titleOrgKey = normalizeTitleOrganizer(candidate.title, candidate.organizer);
-  if (url && !index.byUrl.has(url)) index.byUrl.set(url, candidate.slug);
+  if (url && !index.byUrl.has(url)) {
+    index.byUrl.set(url, { slug: candidate.slug, seriesId: candidate.seriesId });
+  }
   if (titleOrgKey !== "|" && !index.byTitleOrg.has(titleOrgKey)) {
     index.byTitleOrg.set(titleOrgKey, { slug: candidate.slug, seriesId: candidate.seriesId });
   }
