@@ -5,6 +5,7 @@ import { compareByUrgency, getAllCompetitions, getHeroCompetitions } from "@/lib
 import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
 import { SearchBar } from "@/components/SearchBar";
+import { ScrollPositionMemory } from "@/components/ScrollPositionMemory";
 import { CompetitionGrid } from "@/components/CompetitionGrid";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
@@ -50,6 +51,9 @@ export default async function HomePage({
 
   return (
     <>
+      <Suspense fallback={null}>
+        <ScrollPositionMemory />
+      </Suspense>
       <HeroSlider items={hero} />
 
       <section className="px-6 py-14 md:px-10 md:py-20">
