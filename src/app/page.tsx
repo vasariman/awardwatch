@@ -39,7 +39,10 @@ export default async function HomePage({
   const q = sp.q?.trim().toLowerCase();
   if (q) {
     items = items.filter(
-      (c) => c.title.toLowerCase().includes(q) || c.organizer.toLowerCase().includes(q)
+      (c) =>
+        c.title.toLowerCase().includes(q) ||
+        c.organizer.toLowerCase().includes(q) ||
+        c.country.toLowerCase().includes(q)
     );
   }
 
