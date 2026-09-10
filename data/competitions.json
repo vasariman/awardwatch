@@ -270,7 +270,7 @@
     "shortDescription": "An international product design award from Farmani Group recognizing innovation across categories like automotive, consumer electronics, and eco design.",
     "longDescription": "The European Product Design Award (EPDA) is organized by Farmani Group, the same organization behind the International Design Awards and Architecture MasterPrize. The competition draws entries from more than 58 countries across categories spanning automotive, consumer electronics, food and beverage, and eco design, judged by a jury of more than 30 international design leaders. The 2026 awards ceremony takes place in Venice.",
     "submissionFormat": "Online submission: 6–10 project images (professional photography preferred) plus a written project description; a supporting PDF may also be uploaded. A physical product sample is not required.",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "tokyo-tdc-2027",
@@ -1983,5 +1983,115 @@
     "sourcingNotes": {
       "entryFee": "The organizer's About page (£150/£50 first entry) and FAQ page (£120/£45 first entry) list slightly different professional/student first-entry figures. Recheck the live fees page on designdiscoveryawards.com closer to the entry deadlines to resolve the discrepancy."
     }
+  },
+  {
+    "title": "Poster for Tomorrow 2026–2027: \"Dignity\"",
+    "organizer": "4tomorrow",
+    "seriesId": "poster-for-tomorrow",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "France",
+    "entryFee": "Free to enter",
+    "registrationUrl": "https://www.posterfortomorrow.org/en/projects/dignity",
+    "prizeMoney": "No cash prize: the top 100 posters are exhibited publicly, with the top 10 shown in this cycle's host city, Lecce, Italy.",
+    "shortDescription": "A free, non-commercial international poster competition run by the Paris nonprofit 4tomorrow, now in its 14th edition, using graphic design to spotlight human-rights themes.",
+    "submissionFormat": "Digital submission of up to 6 unpublished posters, created specifically for this edition's \"Dignity\" theme.",
+    "status": "closing-soon",
+    "deadline": "2026-09-20",
+    "resultDate": null,
+    "slug": "poster-for-tomorrow-2026-2027",
+    "studentTag": true,
+    "longDescription": "Poster for Tomorrow invites designers and students worldwide to submit original posters responding to a social theme, this edition's being \"Dignity.\" Entry is free and non-commercial, and the best works are exhibited publicly, this cycle in Lecce, Italy. Results are expected in January 2027."
+  },
+  {
+    "title": "Jacques Rougerie Foundation International Architecture and Innovation Competition 2026",
+    "organizer": "Fondation Jacques Rougerie, Académie des Beaux-Arts (Institut de France)",
+    "seriesId": "jacques-rougerie-international-competition",
+    "categories": [
+      "Architecture",
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "country": "France",
+    "entryFee": "Free to enter",
+    "registrationUrl": "https://fjr.wiin.io/en/applications/2026-international-architecture-competition",
+    "prizeMoney": "Six International Grand Prizes of €7,000 each (€42,000 total).",
+    "shortDescription": "A free international architecture and innovation competition endorsed by the Académie des Beaux-Arts, focused on design for the sea, space, and flood-prone lands.",
+    "submissionFormat": "A single A0 portrait panel submitted as a PDF (max 30MB), using the foundation's mandatory template, in French and English.",
+    "status": "closing-soon",
+    "deadline": "2026-09-24",
+    "resultDate": null,
+    "slug": "jacques-rougerie-competition-2026",
+    "studentTag": true,
+    "longDescription": "Run by the Jacques Rougerie Foundation under the Académie des Beaux-Arts, this competition invites architects, designers, engineers, and students worldwide to submit projects addressing sea, space, or flood-prone environments. Six Grand Prizes of €7,000 each are awarded by an international jury, with a ceremony held in Paris at year's end."
+  },
+  {
+    "title": "AIA Architecture Award",
+    "organizer": "The American Institute of Architects (AIA)",
+    "seriesId": "aia-architecture-award",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States",
+    "entryFee": "$450 for a single project submission; $100 for each additional program submission of the same project",
+    "registrationUrl": "https://www.aia.org/design-excellence/awards/architecture-award",
+    "prizeMoney": "No cash prize: recipients receive a national AIA Institute Honor Award.",
+    "shortDescription": "The AIA's flagship national Architecture Award, one of its Institute Honor Awards, recognizes outstanding contemporary architecture designed by a U.S.-licensed AIA member architect.",
+    "submissionFormat": "Online application through the AIA awards portal: project images, supporting documents, and required forms, with an Image Copyright Release required for winners.",
+    "status": "open",
+    "deadline": "2026-11-03",
+    "resultDate": null,
+    "slug": "aia-architecture-award-2027",
+    "studentTag": false,
+    "longDescription": "Presented by the American Institute of Architects, the Architecture Award is one of AIA's Institute Honor Awards and is open to projects of any budget, size, style, or type completed after January 1, 2021, anywhere in the world, provided a U.S.-licensed AIA member architect is affiliated with the design. Recipients are typically announced in June."
+  },
+  {
+    "title": "Epica Awards 2026",
+    "organizer": "Epica (Maydream)",
+    "seriesId": "epica-awards",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "France",
+    "entryFee": "Fee varies by category; a discounted rate of €100 is confirmed for select categories (e.g. independent photographers), with a 10% late surcharge for entries not finalized by October 19. Full category-by-category fee schedule not yet published.",
+    "registrationUrl": "https://www.epica-awards.com/enter",
+    "prizeMoney": "No cash prize confirmed: Grand Prix and category winners are recognized at an in-person jury session in Brussels.",
+    "shortDescription": "Founded in 1987, Epica is judged entirely by journalists from marketing and design trade publications worldwide, with a dedicated Design category.",
+    "submissionFormat": "Online entry of work published or used between July 1, 2024 and November 15, 2026.",
+    "status": "open",
+    "deadline": "2026-11-02",
+    "resultDate": null,
+    "slug": "epica-awards-2026",
+    "studentTag": false,
+    "longDescription": "Epica Awards is a Paris-based competition open to design studios, agencies, and advertisers worldwide, covering work published or used between July 2024 and November 2026. Unlike most creative awards judged by industry peers, Epica's jury is composed of trade journalists, including specialists who vote specifically on the Design category. The entry deadline was extended from October 15 to November 2, 2026, with no late fee.",
+    "sourcingNotes": {
+      "entryFee": "Only a partial fee figure (the discounted independent-photographer rate) was published on the pages checked this session; the full per-category fee schedule wasn't found. Recheck epica-awards.com closer to the November 2 deadline."
+    }
+  },
+  {
+    "title": "European Design Awards 2026",
+    "organizer": "Design Federation OÜ",
+    "seriesId": "european-design-awards",
+    "categories": [
+      "Graphic Design",
+      "UX/UI Design"
+    ],
+    "targetAudience": "open",
+    "country": "Estonia",
+    "entryFee": "€169 standard per entry (20% discount to €135.20/entry when submitting 5 or more); €40 for the student \"School projects\" category",
+    "registrationUrl": "https://awards.europeandesign.org/user/add-submission",
+    "prizeMoney": "No cash prize confirmed: winners are recognized across 8 creative disciplines, announced at the organizer's annual festival.",
+    "shortDescription": "A long-running (since 2003) pan-European design competition spanning branding, packaging, digital, editorial, and typographic disciplines.",
+    "submissionFormat": "Online submission via the awards platform, with an optional physical print/return service available for an added fee.",
+    "status": "open",
+    "deadline": "2026-12-01",
+    "resultDate": null,
+    "slug": "european-design-awards-2026",
+    "studentTag": true,
+    "longDescription": "European Design Awards recognizes work across 8 creative disciplines, including branding and packaging, digital applications, and typography. European-based designers may enter any client work; designers outside Europe may only submit projects created for the European market. The 2026 cycle closes December 1, with an annual festival held in Sofia."
   }
 ]
