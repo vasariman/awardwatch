@@ -60,7 +60,7 @@
     "shortDescription": "A cross-disciplinary award from the German Design Council, judged this cycle with a focus on communication design.",
     "longDescription": "Presented by the German Design Council, the German Design Award recognizes outstanding design work across product, communication, and architecture disciplines. Entrants must first be nominated before submitting; nominated work is judged by an independent jury of design experts, with winners announced at the awards show in Frankfurt.",
     "submissionFormat": "Online submission via the nomination platform: visuals plus a written project description",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "muse-design-awards-2026",
@@ -144,7 +144,7 @@
     "shortDescription": "A long-running US interiors award covering completed projects and furniture/product design across many typologies.",
     "longDescription": "Interior Design's Best of Year Awards honor standout interiors and the products that furnish them, judged by a panel of practicing designers and editors. Categories span workplace, hospitality, residential, and healthcare interiors alongside furniture, lighting, and materials, with winners celebrated at an in-person ceremony.",
     "submissionFormat": "Digital submission: project or product photography, plans, and a written narrative",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "bundespreis-ecodesign-2026",
@@ -207,7 +207,7 @@
     "shortDescription": "A long-running Los Angeles-based award spanning architecture, interior, product, fashion, and graphic design.",
     "longDescription": "The International Design Awards recognize both professionals and students across five core disciplines: architecture, interior, product, fashion, and graphic design. Entries must have been completed within the last five years. Winners are graded Gold, Silver, or Bronze within each category, with top honorees also considered for Designer of the Year and Emerging Designer of the Year.",
     "submissionFormat": "Digital submission: images, technical details, and a project statement",
-    "status": "open"
+    "status": "closing-soon"
   },
   {
     "slug": "green-good-design-award-2027",
@@ -249,7 +249,7 @@
     "shortDescription": "One of the most prestigious competitions for typographic excellence, covering hand-lettering, calligraphy, and type design.",
     "longDescription": "Selected by a jury of distinguished designers and art directors, winning entries in the Communication Arts Typography Competition are published in the Typography Annual, included in the magazine's January/February issue and distributed worldwide. Entrants are notified within roughly two months of the deadline; entry fees vary by category with a discount for student submissions.",
     "submissionFormat": "Digital upload of high-resolution images or PDF documents showing the typographic work in context",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "european-product-design-award-2026",
@@ -291,7 +291,7 @@
     "shortDescription": "A prestigious international typography and graphic design competition from the Tokyo Type Directors Club, open to designers worldwide.",
     "longDescription": "Tokyo TDC is one of the most respected typography and graphic design competitions internationally, evaluating work across multiple categories including typography, logotypes, packaging, and moving type. Entrants need not be professional type directors (applicants just need to have served as the type director on the submitted work), and a discounted student rate is available. Prize winners are notified in early December 2026, with results published online in mid-December 2026; the formal award ceremony (where prize money and diplomas are presented) and the accompanying exhibition run May 27 – July 8, 2027 at Ginza Graphic Gallery in Tokyo.",
     "submissionFormat": "Digital submission via the Tokyo TDC entry platform; category-specific image counts or PDF page counts depending on entry type",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "ux-design-awards-2027",
@@ -333,7 +333,7 @@
     "shortDescription": "An open international architecture prize for unbuilt (conceptual) projects, judged across small, medium, and large project scales with a dedicated student prize track.",
     "longDescription": "Organized by Buildner (formerly Bee Breeders), an established architecture-competition platform, the Unbuilt Award recognizes conceptual and unrealized architecture, interior, landscape, and furniture projects. Now in its third edition, entrants compete in Small, Medium, and Large categories, each with a €20,000 top prize, alongside honorable mentions, dedicated student prizes, and a best-presentation award, for a combined €100,000 prize fund. The competition is open to anyone regardless of professional qualification, entering individually or in teams of up to four.",
     "submissionFormat": "One anonymous A2 landscape panel (max 10MB) with visuals and explanatory text in English; video and animation are not permitted",
-    "status": "open"
+    "status": "closing-soon"
   },
   {
     "slug": "communication-arts-illustration-competition-2027",
@@ -590,7 +590,7 @@
     "resultDate": "2026-10-31",
     "shortDescription": "A binational academic design competition from Kyushu University (Japan) and Dongseo University (Korea) for student ideas addressing the UN Sustainable Development Goals.",
     "submissionFormat": "Word or PDF application form submitted by email to the organizing committee, per the format specified in the official call for entries",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": true,
     "longDescription": "The SDGs Design International Awards invite university, graduate school, vocational, and high school students worldwide (including those outside design programs) to propose creative design solutions to the UN Sustainable Development Goals. Entries fall under four themes: Resilient Cities and Communities, Sustainable Green Design and Climate Action, Blue Sustainability (Oceans and Water), and other related topics. The competition is jointly organized by the design faculties of Kyushu University and Dongseo University."
   },
@@ -611,7 +611,7 @@
     "resultDate": "2026-12-08",
     "shortDescription": "An international conceptual pavilion design competition from Buildner and ArchDaily, open to architects, artists, and creatives of all backgrounds.",
     "submissionFormat": "Digital submission of a conceptual pavilion design and supporting narrative, submitted in English via the Buildner platform",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": true,
     "longDescription": "Pavilion Atlas, organized by Buildner in partnership with ArchDaily, invites entrants to design a conceptual pavilion for a country of their choice, conveying a spatial narrative about that place. Open to architects, artists, and creatives regardless of professional qualification, entries are judged with dedicated prizes for students and for sustainability-focused designs, alongside the main placings. All submissions must be in English."
   },
@@ -697,7 +697,7 @@
     "resultDate": "2027-02-27",
     "shortDescription": "IIDA's flagship international interior design awards program, honoring interior design and interior architecture projects located outside the United States.",
     "submissionFormat": "Online submission via IIDA's official competition portal, including project imagery and a written project narrative",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "Now in its 17th year, the IIDA Global Excellence Awards recognize originality and creativity in interior design and interior architecture across 19 categories, including corporate, hospitality, healthcare, education, retail, and residential spaces. Any interior designer, interior architect, or architect worldwide may submit, provided the project itself is located outside the United States and was completed within the previous two years. Winners are celebrated at an in-person ceremony in Paris."
   },
@@ -782,7 +782,7 @@
     "resultDate": "2027-04-20",
     "shortDescription": "The Webby Awards, presented by the International Academy of Digital Arts and Sciences, honor excellence across websites, apps, and other digital experiences, with a dedicated Websites & Mobile Sites category judged partly on UX/UI design.",
     "submissionFormat": "Online submission via webbyawards.com: a live URL or app link plus a written project description, per category-specific entry guidelines",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "Founded in 1998, the Webby Awards are presented by the International Academy of Digital Arts and Sciences (IADAS), a 3,000+ member judging body of internet and digital-media professionals. Entries span eight media types including Websites & Mobile Sites and Apps, Software & Immersive, evaluated on criteria that include usability and user experience alongside content and creativity. The competition is open globally to individuals, brands, and organizations, with an early-bird pricing window and a final entry deadline each fall; winners are announced the following spring and celebrated at a ceremony in New York."
   },
@@ -889,7 +889,7 @@
     "resultDate": "2026-11-20",
     "shortDescription": "A UN- and Türkiye-backed international competition recognizing energy-efficient, low-carbon, climate-resilient buildings, with winners honored at COP31 in Antalya.",
     "submissionFormat": "Online application via yesint.csb.gov.tr with 3–4 project photographs uploaded directly through the site",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "Organized by UNEP, the Global Alliance for Buildings and Construction (GlobalABC), and Türkiye's Ministry of Environment, Urbanization and Climate Change, the International Sustainable Building Competition invites architects and building professionals worldwide to submit built projects and masterplans that demonstrate energy-efficient, low-carbon, and climate-resilient design. The competition is free to enter and is timed to coincide with COP31, the UN Climate Change Conference hosted in Antalya, Türkiye in November 2026, where winning projects will be honored."
   },
@@ -910,7 +910,7 @@
     "resultDate": "2026-11-06",
     "shortDescription": "An International Awards Associate program recognizing product design across 17 categories including lighting, automotive, furniture, and wearable technology.",
     "submissionFormat": "Fully online submission: flattened JPEG/JPG images (under 4MB, ~1,200px wide, 300dpi, RGB), a project synopsis of roughly 350 words, and optional video/audio via a Vimeo/YouTube/Youku URL; physical product samples are optional",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "The NY Product Design Awards is organized by International Awards Associate (IAA), the organization behind the MUSE Design Awards and London Design Awards. Season 2 of the 2026 program spans 17 categories, from lighting and automotive/transport to furniture, packaging, digital devices, medical equipment, and wearable technology, and is open to product designers, design teams, and manufacturers worldwide. Winners receive the 'Ava' statuette along with marketing and publicity benefits."
   },
@@ -956,7 +956,7 @@
     "resultDate": "2027-06-01",
     "shortDescription": "An international lighting design competition covering lighting products, architectural lighting, and entertainment lighting, marking its 10-year anniversary in 2026.",
     "submissionFormat": "Online submission via the LIT Awards entry portal: project images/renders and a written description, per category-specific requirements",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": true,
     "longDescription": "Organized by Farmani Group (the same organization behind the International Design Awards, Architecture MasterPrize, and European Product Design Award), the LIT Lighting Design Awards recognize excellence in Lighting Product Design, Entertainment Lighting Design, and Architectural Lighting Design, alongside special Lifetime Achievement and Spotlight prizes. Now marking its 10th anniversary, the 2025 edition drew entries from 62 countries. Winners are celebrated at an in-person gala (Paris hosted the 2024 and 2025 ceremonies) and featured in the annual LIT catalogue."
   },
@@ -1022,7 +1022,7 @@
     "resultDate": "2026-10-31",
     "shortDescription": "An Italian product design competition from Archiproducts recognizing furniture, lighting, bathroom, kitchen, and building-material design, with a dedicated Sustainability category.",
     "submissionFormat": "Online nomination via the Archiproducts Design Awards portal: product images and supporting details, submitted by the manufacturer or brand (1 to 5 products per brand, launched or presented between June 2025 and September 2026)",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": false,
     "longDescription": "Now in its 11th edition, the Archiproducts Design Awards is an international product design competition run by Archiproducts, the Italian architecture and design products platform headquartered in Bari, Italy. Brands and manufacturers nominate products across categories including furniture, bathroom, kitchen, outdoor, office, contract, lighting, wellness, décor, finishes, building shell, construction, and systems/materials, plus a dedicated Sustainability category judged separately with an additional fee. The jury has included figures such as the Head of Design at David Chipperfield Architects and leadership from Zaha Hadid Architects. Winners are celebrated at an in-person ceremony, with past editions held at Superstudio Più in Milan."
   },
@@ -1044,7 +1044,7 @@
     "resultDate": "2026-11-30",
     "shortDescription": "An annual awards program from The Architect's Newspaper honoring standout architecture and interiors projects across more than 50 categories reflecting AN's editorial coverage.",
     "submissionFormat": "Online submission via the AN Best of Design registration portal: project images, a written description, and supporting materials per category",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": false,
     "longDescription": "The Architect's Newspaper's Best of Design Awards recognize outstanding work across more than 50 categories spanning infrastructure, landscape, facades, civic and cultural buildings, homes, ADUs, and interiors. Entries are judged on strength of presentation, evidence of innovation, creative use of technology, sustainability, and overall design quality. Projects must have been completed within two years of the submission deadline (landscape, public, and unbuilt projects within three years). Winners are published in AN's print Best of Design issue and promoted across the publication's editorial platforms."
   },
@@ -1171,7 +1171,7 @@
     "resultDate": "2027-01-15",
     "shortDescription": "The world's most prestigious packaging design award, presented by the World Packaging Organisation, open only to packs that have already won a WPO-recognized national or regional packaging competition.",
     "submissionFormat": "Online submission via worldstar.org: category selection, a 500-word written justification of the pack, and up to 5 high-resolution images (combined file size under 5MB); payment due by November 2, 2026",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": false,
     "longDescription": "WorldStar is the global packaging awards program of the World Packaging Organisation (WPO), widely regarded as the pre-eminent international recognition for packaging design, innovation, and sustainability. Entry is restricted to packaging that has already won an award in one of roughly 75-85 WPO-recognized national or regional packaging competitions in the current or previous year. There is no direct-entry route for unproven packs. Categories span major packaging types alongside Special Awards for Sustainability, Marketing, Packaging that Saves Food, and Accessible Packaging. Around 200 winners are typically selected from 300+ qualifying entries spanning 30+ countries, with winners honored at an international gala tied to a major packaging trade fair."
   },
@@ -1299,7 +1299,7 @@
     "resultDate": "2026-12-10",
     "shortDescription": "A 25th-anniversary international furniture design contest from Spanish manufacturer Andreu World, open to students and professionals worldwide, themed 'Manufacturing the Future' for the circular economy.",
     "submissionFormat": "A physical 1:5 scale model of the design plus a technical report and/or video, submitted by email following online registration",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": true,
     "longDescription": "Now marking its 25th edition, the Andreu World International Design Contest invites students and professionals worldwide to design seating and tables referencing Andreu World's product lines. This anniversary edition, themed 'Manufacturing the Future,' challenges entrants to design for the circular economy and positive environmental impact. A jury of leading design professionals, including figures from Foster & Partners and the World Design Organization, judges submissions, which require a 1:5 scale physical model plus a technical report."
   },
@@ -1513,7 +1513,7 @@
     "prizeMoney": "No cash prize: winners receive international recognition, an electronic certificate, personalized winner logos and promotional visuals, a dedicated winner's landing page, and the option to purchase an official ADCA trophy",
     "shortDescription": "International multi-category design awards for architecture, interior, product, and communication design, judged by a jury of working professionals.",
     "submissionFormat": "Online submission through the organizer's platform; specific file and format requirements were not accessible this session",
-    "status": "open",
+    "status": "closing-soon",
     "deadline": "2026-10-19",
     "resultDate": "2026-11-18",
     "slug": "architecture-design-collection-awards-2026",
@@ -1947,7 +1947,7 @@
     "prizeMoney": "Gold, Silver, and Bronze Eurobest trophies, awarded by jury vote requiring a two-thirds majority; no cash prize was stated on the pages checked this session",
     "shortDescription": "The design-focused discipline of Eurobest, Europe's pan-continental advertising and communications festival, spanning brand identity, packaging, product, publication, and digital design.",
     "submissionFormat": "Online submission via the Eurobest entry platform: a case film and/or supporting visuals per subcategory, in English or with English subtitles; physical samples are required for some subcategories (e.g. Packaging Design, Product Design)",
-    "status": "open",
+    "status": "closing-soon",
     "deadline": "2026-10-15",
     "resultDate": "2026-12-04",
     "slug": "eurobest-design-award-2026",
@@ -1998,7 +1998,7 @@
     "prizeMoney": "No cash prize: the top 100 posters are exhibited publicly, with the top 10 shown in this cycle's host city, Lecce, Italy.",
     "shortDescription": "A free, non-commercial international poster competition run by the Paris nonprofit 4tomorrow, now in its 14th edition, using graphic design to spotlight human-rights themes.",
     "submissionFormat": "Digital submission of up to 6 unpublished posters, created specifically for this edition's \"Dignity\" theme.",
-    "status": "closing-soon",
+    "status": "expired",
     "deadline": "2026-09-20",
     "resultDate": null,
     "slug": "poster-for-tomorrow-2026-2027",
@@ -2093,5 +2093,54 @@
     "slug": "european-design-awards-2026",
     "studentTag": true,
     "longDescription": "European Design Awards recognizes work across 8 creative disciplines, including branding and packaging, digital applications, and typography. European-based designers may enter any client work; designers outside Europe may only submit projects created for the European market. The 2026 cycle closes December 1, with an annual festival held in Sofia."
+  },
+  {
+    "title": "International Furniture Design Competition Asahikawa 2027 (IFDA 2027)",
+    "organizer": "IFDA Organizing Committee (Asahikawa Furniture Industry Cooperative)",
+    "seriesId": "ifda-furniture-design-competition-asahikawa",
+    "categories": [
+      "Interior/Furniture Design"
+    ],
+    "targetAudience": "open",
+    "country": "Japan",
+    "entryFee": "JPY 10,000 (approx. $65 USD) per entry",
+    "registrationUrl": "https://ifda.jp/en/",
+    "prizeMoney": "Gold Leaf Award: JPY 3,000,000; Silver Leaf Award: JPY 500,000; Bronze Leaf Award: JPY 300,000; four Special Jury Prizes of JPY 100,000 each",
+    "shortDescription": "A long-running (since 1990) international wooden-furniture design competition hosted by Japan's furniture-making city of Asahikawa, judged by a jury including Ronan Bouroullec and Cecilie Manz.",
+    "submissionFormat": "Entrants submit design drawings/renderings and a written proposal for a new wooden furniture piece through the official online application system; the exact deliverable specifications are detailed in the competition's downloadable Application Requirements document.",
+    "status": "open",
+    "deadline": "2026-12-11",
+    "resultDate": "2027-05-19",
+    "slug": "ifda-2027",
+    "studentTag": false,
+    "longDescription": "Now in its 13th edition since launching in 1990, the International Furniture Design Competition Asahikawa (IFDA) is one of Japan's longest-running furniture design competitions, hosted by the historic furniture-making city of Asahikawa in Hokkaido. Open to designers worldwide, IFDA 2027 asks entrants to create newly conceived, previously unpublished wooden furniture around the theme \"Origin,\" judged by a panel led by chief judge Jin Kuramoto and including Ronan Bouroullec, Cecilie Manz and Tsuyoshi Tane. Across its previous 12 editions the competition has received more than 10,000 entries from 79 countries, and over 50 winning designs have gone on to commercial production in Japan and abroad.",
+    "opensAt": "2026-07-01",
+    "sourcingNotes": {
+      "submissionFormat": "Could not access the full Application Requirements PDF this session to confirm exact file formats/page counts required; recheck at https://ifda.jp/en/ before publishing."
+    }
+  },
+  {
+    "title": "Clio Awards: Design",
+    "organizer": "Clio Awards, LLC (The Clios)",
+    "seriesId": "clio-awards-design",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "United States (international entries accepted)",
+    "entryFee": "Tiered by deadline: $525 (Deadline 1, through Oct 23, 2026) rising to $625, $750 and $800 (Final Deadline, Feb 19, 2027)",
+    "registrationUrl": "https://clios.com/the-clio-awards/entry-information/mediums/",
+    "prizeMoney": "No cash prize; recognition is via Bronze, Silver, Gold and Grand Clio trophies awarded across categories, plus editorial coverage and industry ranking points",
+    "shortDescription": "The Design medium of the long-running Clio Awards (since 1959), covering brand identity, packaging, editorial, retail/spatial design and more, judged by an international creative jury.",
+    "submissionFormat": "Online submission through clios.com: one cover image plus up to 10 execution images per entry; campaign entries are not eligible for the Design medium.",
+    "status": "open",
+    "deadline": "2027-02-19",
+    "resultDate": null,
+    "slug": "clio-awards-design-2027",
+    "studentTag": false,
+    "longDescription": "The Clio Awards is one of advertising and marketing's oldest and most recognized global award programs, running since 1959. Its Design medium recognizes the visual craft used to build brand and product recognition across 15 categories, including brand identity (new and refresh), packaging, editorial and publishing, logo, retail design, spatial design, data visualization and sustainability-focused design work. Entries are evaluated by an international panel of creative directors and are open to agencies, in-house teams and independent designers worldwide; campaign-style, multi-execution entries are not eligible for this particular medium.",
+    "sourcingNotes": {
+      "prizeMoney": "Could not confirm this session whether any Design-medium category carries a cash prize beyond the trophy; Clio's program is historically trophy/recognition-based. Recheck the current entry kit PDF at clios.com before publishing."
+    }
   }
 ]
