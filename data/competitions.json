@@ -2142,5 +2142,112 @@
     "sourcingNotes": {
       "prizeMoney": "Could not confirm this session whether any Design-medium category carries a cash prize beyond the trophy; Clio's program is historically trophy/recognition-based. Recheck the current entry kit PDF at clios.com before publishing."
     }
+  },
+  {
+    "title": "French Design Awards 2027",
+    "organizer": "International Awards Associate (IAA)",
+    "seriesId": "french-design-awards",
+    "categories": [
+      "Product/Industrial Design",
+      "Architecture",
+      "Interior/Furniture Design",
+      "UX/UI Design",
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "$30 annual administrative fee per entrant plus a per-category entry fee tiered by submission period (the official FAQ lists $229 for a first entry; the launch press release cites $219 regular); each additional category for the same work is charged separately",
+    "registrationUrl": "https://frenchdesignawards.com/",
+    "prizeMoney": "No cash prize: Design of the Year winners receive a complimentary Maia trophy and certificate; Platinum/Gold/Silver winners receive a certificate, with top tiers featured in the online gallery and on social media. Additional statuettes are available for purchase.",
+    "shortDescription": "International multi-discipline design competition from International Awards Associate (the MUSE and London Design Awards organizer), covering interior, architectural, product, packaging, landscape, UX and UI design.",
+    "submissionFormat": "Fully online submission: an entry brief of roughly 350 words, JPEG/JPG images (under 4MB, around 1,200px wide, 300dpi, RGB), with video or audio submitted as a Vimeo/YouTube/Youku URL. No limit on the number of entries.",
+    "status": "open",
+    "deadline": "2027-01-21",
+    "resultDate": "2027-03-08",
+    "slug": "french-design-awards-2027",
+    "studentTag": false,
+    "longDescription": "The French Design Awards is run by International Awards Associate (IAA), the organization behind the MUSE Design Awards and London Design Awards. The 2027 edition accepts work from designers, studios, brands and students worldwide across nine categories: interior, architectural, product, packaging, conceptual, landscape, fashion, user experience (UX) and user interface (UI) design. Entries are accepted in four tiers (Early Bird 22 October 2026, Regular 26 November 2026, Final 24 December 2026 and a Final Extension on 21 January 2027), and all 2027 winners are announced on 8 March 2027. The top Design of the Year honorees receive the Maia statuette.",
+    "sourcingNotes": {
+      "entryFee": "Official FAQ (frenchdesignawards.com/content.php?pg=faq) says $229 first entry + $30 admin fee; the EIN Presswire launch release says $219 regular. Per-tier amounts not confirmed. Recheck the live fees page before merging."
+    }
+  },
+  {
+    "title": "Asia Design Prize 2027",
+    "organizer": "Asia Design Prize (ADP) organizing secretariat, South Korea",
+    "seriesId": "asia-design-prize",
+    "categories": [
+      "Product/Industrial Design",
+      "Architecture",
+      "Interior/Furniture Design",
+      "Graphic Design"
+    ],
+    "targetAudience": "open",
+    "country": "South Korea",
+    "entryFee": "Tiered by phase: Early (6-30 Oct 2026) US$240 company / US$200 professional / free for students; Standard (31 Oct-2 Dec) US$280 / US$240 / US$60; Late (3-30 Dec) US$320 / US$290 / US$75. Entries that reach the finalist stage pay an additional finalist judging fee of US$690 company / US$640 professional / US$185 student.",
+    "registrationUrl": "https://asiadesignprize.com/rules",
+    "prizeMoney": "No cash prize: awards are Design of the Year (one team), Grand Prize (top 1%), Gold Winner (3%) and Winner (10%), with an online exhibition, winner-logo license, and a certificate and yearbook (shipping charged separately)",
+    "shortDescription": "A Seoul-based international design award, running since 2016, judged in three rounds across industrial, space/architecture and communication design, with free early entry for students.",
+    "submissionFormat": "Online upload. Industrial and Space entries: 2-3 mandatory image panels (250x180mm or 180x250mm, 150-300 resolution, JPG, RGB, max 2MB each, no text or lines) plus up to 3 optional panels and an optional YouTube/Youku video. Communication entries: 2-6 panels of the same spec plus an optional video. English summary (max 300 characters) and description (max 650 characters), plus native-language versions.",
+    "status": "upcoming",
+    "deadline": "2026-12-30",
+    "resultDate": "2027-01-27",
+    "slug": "asia-design-prize-2027",
+    "studentTag": true,
+    "longDescription": "Launched in 2016, the Asia Design Prize is a Korea-based international design award open to designers, companies and students worldwide (students remain eligible for one year after graduation), with teams of up to five members. The 2027 edition judges entries in three categories (Industrial, Space/Architecture and Communication) over three rounds of screening, rating them on aesthetics, uniqueness and practicality. Finalists are announced on 13 January 2027 and winners on 27 January 2027, followed by an online exhibition and a ceremony in Seoul in March 2027. Note that entries reaching the finalist stage pay a separate finalist judging fee on top of the entry fee.",
+    "opensAt": "2026-10-06",
+    "sourcingNotes": {
+      "organizer": "The official site lists an organizer address in Anyang-si, Gyeonggi-do, Korea but no clearly stated legal entity name on the pages checked. Recheck the site footer/about page for the operating company's name."
+    }
+  },
+  {
+    "title": "Red Dot Award: Design Concept 2027",
+    "organizer": "Red Dot GmbH & Co. KG",
+    "seriesId": "red-dot-award-design-concept",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "Singapore",
+    "entryFee": "Tiered submission fee by phase (early 1 Dec-20 Jan, standard 21 Jan-17 Mar, late 18 Mar-28 Apr); Next Gen entrants receive 30% off. Exact 2027 amounts not yet published, and winners must book a paid Winner Package (Light, Regular or Bold).",
+    "registrationUrl": "https://www.red-dot.org/design-concept/participate",
+    "prizeMoney": "No cash prize stated: winners receive the Red Dot label and are presented at an October awards ceremony in Singapore, with a museum exhibition, yearbook publication and online exhibition (via a mandatory paid Winner Package)",
+    "shortDescription": "The Red Dot competition for design concepts, prototypes and not-yet-launched products, with a discounted Next Gen track for students and young designers and an awards ceremony in Singapore.",
+    "submissionFormat": "Online registration and submission via the Red Dot portal in one of three fee phases; optional delivery of a prototype or model between 19 April and 3 May 2027 for judging",
+    "status": "upcoming",
+    "deadline": "2027-04-28",
+    "resultDate": null,
+    "slug": "red-dot-award-design-concept-2027",
+    "studentTag": true,
+    "longDescription": "Red Dot Award: Design Concept is the branch of the Red Dot Design Award dedicated to ideas that have not yet reached the market. Companies, design studios, professionals, students, universities, research labs and inventors can enter in two tracks, Professional and Next Gen, under either \"Concept\" (early-stage ideas and prototypes) or \"Ready For Market\" (nearly finished products or services not available before 2 July 2027). Registration opens 1 December 2026, with early, standard and late submission phases running through 28 April 2027; prototypes or models are delivered 19 April to 3 May. Judging concludes in May, results are sent in June, and the award ceremony, museum exhibition and yearbook follow in October in Singapore. Next Gen entries receive 30% off both the submission fee and the Winner Package.",
+    "opensAt": "2026-12-01",
+    "sourcingNotes": {
+      "entryFee": "red-dot.org/design-concept/dates-fees says 'Details regarding the costs will be made available here shortly'. Recheck amounts closer to the 1 Dec 2026 opening.",
+      "submissionFormat": "Whether a prototype/model is mandatory or optional wasn't stated explicitly on the pages checked; only the delivery window (19 April to 3 May) was. Recheck the participation conditions."
+    }
+  },
+  {
+    "title": "European Product Design Award 2027",
+    "organizer": "Farmani Group",
+    "seriesId": "european-product-design-award",
+    "categories": [
+      "Product/Industrial Design"
+    ],
+    "targetAudience": "open",
+    "country": "United States",
+    "entryFee": "Per-entry fee with a student (Emerging) discount and a discount for additional categories in prior cycles; 2027 amounts not yet published on the official site",
+    "registrationUrl": "https://www.productdesignaward.eu/",
+    "prizeMoney": "Historically trophy and certificate recognition (Product Design of the Year, Emerging Product Design of the Year, Innovation of the Year, Design for Humanity) with no cash prize; 2027 specifics not yet published",
+    "shortDescription": "Farmani Group's international product design award, whose 2027 edition the organizer has announced as open, with deadlines still to be published.",
+    "submissionFormat": "Online submission via the EPDA portal; the official site recommends uploading a minimum of 6 and a maximum of 10 images per entry",
+    "status": "pending",
+    "deadline": null,
+    "resultDate": null,
+    "slug": "european-product-design-award-2027",
+    "studentTag": true,
+    "longDescription": "The European Product Design Award (EPDA), launched in 2016 by Farmani Group (also behind the International Design Awards and Architecture MasterPrize), recognizes product and industrial design across hundreds of categories, from consumer electronics and automotive to eco design and packaging. The official site announces that submissions are open for the 2027 edition, with separate programs for professionals, students and universities (Emerging) and a fast-tracked Express award. Deadlines and fees for 2027 had not been published at the time of research.",
+    "sourcingNotes": {
+      "entryFee": "Only the 2026 InfoGuide (EUR 400 professional / EUR 200 student) was available; no 2027 fee schedule found. Recheck productdesignaward.eu for a 2027 InfoGuide.",
+      "prizeMoney": "Award titles taken from the 2026 InfoGuide; 2027 prize details not yet published."
+    }
   }
 ]
