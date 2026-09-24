@@ -1725,21 +1725,18 @@
     ],
     "targetAudience": "open",
     "country": "Austria",
-    "entryFee": "Historically from €55 for students in the early-bird phase, with higher regular/professional rates; the 2027 fee schedule was marked 'Coming Soon' on the entry platform as of this research",
+    "entryFee": "First entry €105 regular / €79 members / €55 students; each further entry €79 / €59 / €45 (excl. 20% VAT); 10% early-bird discount until 25 September 2026; nominated entries pay a €360 catalogue/exhibition fee (waived for Design Fiction)",
     "registrationUrl": "https://www.josephbinderaward.com/submission",
     "prizeMoney": "Gold, Silver, and Bronze trophies plus merit awards across the Graphic Design, Illustration, and Design Fiction categories; the Design Fiction category also awards a combined €10,000 in cash prizes across five projects, and the Henry Steiner Prize honors a project connecting East and West",
     "shortDescription": "A prestigious Austrian international competition for graphic design and illustration, run by designaustria since 1996, themed 'Under Pressure' for its 17th edition.",
-    "submissionFormat": "Online submission via the Joseph Binder Award platform; exact file/technical specifications not yet published as of this research",
+    "submissionFormat": "Online registration form per entry: a short description (max. 1,000 characters) plus printable images and/or videos (mp4/flv/mov), max. 10 files; students add a confirmation of studies. Entries nominated by the jury are notified in December 2026 and then submitted physically for the second round.",
     "status": "open",
     "deadline": "2026-10-31",
     "resultDate": "2027-04-29",
     "slug": "joseph-binder-award-2027",
     "studentTag": true,
     "longDescription": "The Joseph Binder Award (JBA), organized by designaustria, is one of the more prestigious international competitions for graphic design and illustration, alongside a dedicated Design Fiction category for speculative work. The 17th edition, themed 'Under Pressure,' explores challenges shaping the creative industry, from AI to economic uncertainty. Winners are announced at a Symposium and Award Show in Vienna, and honored designers/illustrators are celebrated in a dedicated exhibition.",
-    "opensAt": "2026-09-07",
-    "sourcingNotes": {
-      "entryFee": "2027 fee schedule not yet published (entry platform showed 'Coming Soon' for fees at time of research). Recheck once early-bird submission opens 7 September 2026."
-    }
+    "opensAt": "2026-09-07"
   },
   {
     "title": "Design Preis Schweiz 2027",
@@ -2057,20 +2054,17 @@
     ],
     "targetAudience": "professionals",
     "country": "France",
-    "entryFee": "Fee varies by category; a discounted rate of €100 is confirmed for select categories (e.g. independent photographers), with a 10% late surcharge for entries not finalized by October 19. Full category-by-category fee schedule not yet published.",
+    "entryFee": "€200 company registration fee (waived during the early-bird period); per entry: Print €339, Film/Radio €390, Alternative/Digital €439, Integrated Campaigns €649; independent photographers €100 in Advertising Photography (company fee waived); 10% surcharge on entries not finalized by October 19",
     "registrationUrl": "https://www.epica-awards.com/enter",
     "prizeMoney": "No cash prize confirmed: Grand Prix and category winners are recognized at an in-person jury session in Brussels.",
     "shortDescription": "Founded in 1987, Epica is judged entirely by journalists from marketing and design trade publications worldwide, with a dedicated Design category.",
     "submissionFormat": "Online entry of work published or used between July 1, 2024 and November 15, 2026.",
     "status": "open",
-    "deadline": "2026-11-02",
-    "resultDate": null,
+    "deadline": "2026-10-30",
+    "resultDate": "2026-12-16",
     "slug": "epica-awards-2026",
     "studentTag": false,
-    "longDescription": "Epica Awards is a Paris-based competition open to design studios, agencies, and advertisers worldwide, covering work published or used between July 2024 and November 2026. Unlike most creative awards judged by industry peers, Epica's jury is composed of trade journalists, including specialists who vote specifically on the Design category. The entry deadline was extended from October 15 to November 2, 2026, with no late fee.",
-    "sourcingNotes": {
-      "entryFee": "Only a partial fee figure (the discounted independent-photographer rate) was published on the pages checked this session; the full per-category fee schedule wasn't found. Recheck epica-awards.com closer to the November 2 deadline."
-    }
+    "longDescription": "Epica Awards is a Paris-based competition open to design studios, agencies, and advertisers worldwide, covering work published or used between July 2024 and November 2026. Unlike most creative awards judged by industry peers, Epica's jury is composed of trade journalists, including specialists who vote specifically on the Design category. Entries close on October 30, 2026 (a 10% surcharge applies from October 19), the shortlist is published on November 25, and final results follow the December 15 ceremony on December 16, 2026."
   },
   {
     "title": "European Design Awards 2026",
