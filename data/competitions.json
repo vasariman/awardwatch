@@ -81,7 +81,7 @@
     "shortDescription": "A New York-based multidisciplinary design award spanning architecture, product, packaging, and graphic design.",
     "longDescription": "The MUSE Design Awards evaluate entries across dozens of subcategories, from architectural design to packaging and conceptual work. Judging is handled by a panel of design, media, and marketing professionals, and results include tiered Platinum, Gold, and Silver recognition rather than a single winner per category.",
     "submissionFormat": "Digital submission: images, a written description, and category-specific supporting material",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "a-design-award-2026-27",
@@ -728,7 +728,7 @@
     "title": "2026 Brick in Architecture Awards",
     "organizer": "Brick Industry Association (BIA)",
     "seriesId": "brick-in-architecture-awards",
-    "deadline": "2026-09-25",
+    "deadline": "2026-10-02",
     "categories": [
       "Architecture"
     ],
@@ -2017,7 +2017,7 @@
     "prizeMoney": "Six International Grand Prizes of €7,000 each (€42,000 total).",
     "shortDescription": "A free international architecture and innovation competition endorsed by the Académie des Beaux-Arts, focused on design for the sea, space, and flood-prone lands.",
     "submissionFormat": "A single A0 portrait panel submitted as a PDF (max 30MB), using the foundation's mandatory template, in French and English.",
-    "status": "closing-soon",
+    "status": "expired",
     "deadline": "2026-09-24",
     "resultDate": null,
     "slug": "jacques-rougerie-competition-2026",
@@ -2167,7 +2167,7 @@
   },
   {
     "title": "Asia Design Prize 2027",
-    "organizer": "Asia Design Prize (ADP) organizing secretariat, South Korea",
+    "organizer": "DESIGNSORI Co., Ltd.",
     "seriesId": "asia-design-prize",
     "categories": [
       "Product/Industrial Design",
@@ -2188,10 +2188,7 @@
     "slug": "asia-design-prize-2027",
     "studentTag": true,
     "longDescription": "Launched in 2016, the Asia Design Prize is a Korea-based international design award open to designers, companies and students worldwide (students remain eligible for one year after graduation), with teams of up to five members. The 2027 edition judges entries in three categories (Industrial, Space/Architecture and Communication) over three rounds of screening, rating them on aesthetics, uniqueness and practicality. Finalists are announced on 13 January 2027 and winners on 27 January 2027, followed by an online exhibition and a ceremony in Seoul in March 2027. Note that entries reaching the finalist stage pay a separate finalist judging fee on top of the entry fee.",
-    "opensAt": "2026-10-06",
-    "sourcingNotes": {
-      "organizer": "The official site lists an organizer address in Anyang-si, Gyeonggi-do, Korea but no clearly stated legal entity name on the pages checked. Recheck the site footer/about page for the operating company's name."
-    }
+    "opensAt": "2026-10-06"
   },
   {
     "title": "Red Dot Award: Design Concept 2027",
@@ -2242,6 +2239,31 @@
     "sourcingNotes": {
       "entryFee": "Only the 2026 InfoGuide (EUR 400 professional / EUR 200 student) was available; no 2027 fee schedule found. Recheck productdesignaward.eu for a 2027 InfoGuide.",
       "prizeMoney": "Award titles taken from the 2026 InfoGuide; 2027 prize details not yet published."
+    }
+  },
+  {
+    "title": "Young Ones 2027 Student Awards",
+    "organizer": "The One Club for Creativity",
+    "seriesId": "young-ones-student-awards",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "students",
+    "country": "United States",
+    "entryFee": "Tiered by deadline: US$45 (Early, 11 December 2026), US$55 (Standard, 12 March 2027), US$65 (Final, 19 March 2027), and US$75 for late submissions after 19 March",
+    "registrationUrl": "https://youngones.org/",
+    "prizeMoney": "No cash prize stated: Gold, Silver and Bronze winners in the ADC, One Show, TDC and Portfolio competitions receive one physical award engraved with their school's name; finalists are featured in the Young Ones archive and receive a free one-year One Club membership, and Merit finalists receive a digital certificate. TDC winners may also be included in the TDC exhibition and annual.",
+    "shortDescription": "The One Club for Creativity's student competition, spanning four shows (ADC, One Show, TDC and Portfolio) across design, typography and advertising, open to college students and recent graduates.",
+    "submissionFormat": "Digital entries only: images at 2,400 to 4,800 pixels on the longest side (JPEG/PNG, max 5 MB), video preferably 1920x1080 (MP4/MOV, max 200 MB), audio as MP3 (max 200 MB), and PDFs with high-resolution compression and no printer marks",
+    "status": "open",
+    "deadline": "2027-03-19",
+    "resultDate": "2027-05-17",
+    "slug": "young-ones-2027",
+    "studentTag": true,
+    "longDescription": "Young Ones is the student awards program of The One Club for Creativity, the New York organization behind the ADC Annual Awards, The One Show and the Type Directors Club. The 2027 edition, which launched on 22 September 2026, runs four student competitions: Young Ones ADC (the same disciplines and categories as the ADC Annual Awards, with an ADC Cube at stake), Young Ones One Show (client briefs competing for a One Show Pencil), Young Ones TDC (typography) and a Portfolio competition, plus two special awards, the Client Pitch Competition and the Ari Weiss Award. Entrants must be 18 or older and enrolled in an undergraduate, graduate or portfolio program; recent graduates who finished after 18 March 2026 are also eligible, provided they have less than two years of professional experience. Winners are announced in the Young Ones archive and at the Young Ones Ceremony on 17 May 2027.",
+    "opensAt": "2026-09-22",
+    "sourcingNotes": {
+      "entryFee": "youngones.org lists $45/$55/$65/$75 by deadline but the pages fetched this session didn't state explicitly whether that is per entry or per entrant (per entry is the likely reading). Recheck the youngones.org fees/FAQ page."
     }
   }
 ]
