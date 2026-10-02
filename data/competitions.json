@@ -2396,5 +2396,47 @@
     "sourcingNotes": {
       "entryFee": "Official page gives the $50 to $150 range but doesn't state the currency (likely CAD) or per-category amounts. Recheck the 2027 entry kit after the call opens on 23 Nov 2026."
     }
+  },
+  {
+    "title": "Winter Stations 2027: Monument",
+    "organizer": "Winter Stations",
+    "seriesId": "winter-stations",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "Canada",
+    "entryFee": "Free to enter",
+    "registrationUrl": "https://winterstations.com/competition/",
+    "prizeMoney": "CAD $2,000 honorarium for each winning artist or team and CAD $500 for runners-up; winning installations are built with a budget of CAD $5,000 for materials and CAD $10,000 for labour",
+    "shortDescription": "A free, open international design competition for temporary winter installations on Toronto's beachfront, themed \"Monument\" for 2027.",
+    "submissionFormat": "A single PDF (max 10 MB): two design proposal pages with no identifying information, plus the four-page application form",
+    "status": "closing-soon",
+    "deadline": "2026-10-15",
+    "resultDate": null,
+    "slug": "winter-stations-2027",
+    "studentTag": true,
+    "longDescription": "Winter Stations is a Toronto-based not-for-profit that has run an annual design competition since 2015, turning the lifeguard stations along the city's eastern beaches into temporary art and architecture installations. The 2027 theme, \"Monument\", asks entrants to question what deserves commemoration today and to challenge traditional ideas of permanence and significance. The competition is open to anyone from any country, at any age and level of experience, entering individually or as a team. Winning teams receive an honorarium and a materials and labour budget to build their installation."
+  },
+  {
+    "title": "2027 Steel Design Student Competition",
+    "organizer": "Association of Collegiate Schools of Architecture (ACSA) and American Institute of Steel Construction (AISC)",
+    "seriesId": "acsa-steel-design-student-competition",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "students",
+    "country": "United States",
+    "entryFee": "Free: no entry or submission fee",
+    "registrationUrl": "https://www.acsa-arch.org/competitions/2027-steel-competition/",
+    "prizeMoney": "$20,000 total across two categories. In each category: 1st place $4,000 to students and $1,500 to faculty sponsor, 2nd $2,000 and $1,000, 3rd $1,000 and $500",
+    "shortDescription": "The 27th annual ACSA/AISC student competition challenging architecture students to design with steel as the primary structural material.",
+    "submissionFormat": "Four 20\" x 20\" digital boards (BMP, GIF, JPEG or PNG) plus a design essay of up to 300 words",
+    "status": "open",
+    "deadline": "2027-04-07",
+    "resultDate": null,
+    "slug": "acsa-steel-design-student-competition-2027",
+    "studentTag": true,
+    "longDescription": "Administered by the Association of Collegiate Schools of Architecture and sponsored by the American Institute of Steel Construction, this annual competition asks undergraduate and graduate architecture students to explore design with steel. Category I is a Community Youth Center that becomes an integral part of its neighborhood; Category II is open, letting students choose their own site and program (except community or recreational centers). Every project must use steel as the primary structural material and include at least one space requiring a long-span steel structure. It is open to students and teams of up to five from ACSA full, candidate and affiliate member schools in the U.S., Canada and Mexico, and a faculty sponsor must enroll entrants. Registration closes on 7 April 2027 and submissions are due on 2 June 2027; winners are announced in fall 2027."
   }
 ]
