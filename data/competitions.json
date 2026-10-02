@@ -2271,5 +2271,27 @@
     "sourcingNotes": {
       "entryFee": "youngones.org lists $45/$55/$65/$75 by deadline but the pages fetched this session didn't state explicitly whether that is per entry or per entrant (per entry is the likely reading). Recheck the youngones.org fees/FAQ page."
     }
+  },
+  {
+    "title": "Buildner's Unbuilt Award 2027",
+    "organizer": "Buildner",
+    "seriesId": "buildner-s-unbuilt-award",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "Latvia",
+    "entryFee": "Tiered registration fee incl. 4.5% VAT: professional/company €75 (Early Bird, 24 Sep 2026 to 4 Feb 2027), €105 (Advanced, 5 Feb to 6 May 2027), €140 (Last Minute, 7 May to 15 Sep 2027); students €40 / €50 / €62. Payment in three monthly installments is also offered at slightly higher totals.",
+    "registrationUrl": "https://architecturecompetitions.com/unbuilt2027/",
+    "prizeMoney": "€50,000 total: 3 category winners (Small/Medium/Large) €10,000 each, 3 student prizes €2,500 each, 15 honourable mentions €500 each, and a €5,000 best presentation award, plus the Continuum Trophy by Germans Ermičs, an ArchDaily feature and inclusion in the annual Unbuilt Book",
+    "shortDescription": "An open international architecture prize for unbuilt (conceptual) projects, judged across small, medium, and large project scales with a dedicated student prize track.",
+    "submissionFormat": "One anonymous A2 landscape panel (max 10MB) with visuals and explanatory text in English; video and animation are not permitted",
+    "status": "open",
+    "deadline": "2027-09-15",
+    "resultDate": "2027-12-07",
+    "slug": "buildners-unbuilt-award-2027",
+    "studentTag": true,
+    "longDescription": "Organized by Buildner (formerly Bee Breeders), an established architecture-competition platform, the Unbuilt Award recognizes conceptual and unrealized architecture, interior, landscape, and furniture projects. Entrants compete in three categories by area: Small Wonders (up to 100 m²), Medium Marvels (101 to 999 m²) and Large Visions (over 1,000 m²), each with a €10,000 top prize, alongside honourable mentions, dedicated student prizes and a best-presentation award, for a combined €50,000 prize fund. The competition is open to anyone regardless of professional qualification, entering individually or in teams of up to four. Registration closes on 15 September 2027, projects are submitted by 18 October 2027, and winners are announced on 7 December 2027.",
+    "opensAt": "2026-09-24"
   }
 ]
