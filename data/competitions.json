@@ -67,7 +67,7 @@
     "title": "MUSE Design Awards 2026 (Season 2)",
     "organizer": "International Awards Associate",
     "seriesId": "muse-design-awards",
-    "deadline": "2026-09-24",
+    "deadline": "2026-10-14",
     "categories": [
       "Graphic Design"
     ],
@@ -81,7 +81,7 @@
     "shortDescription": "A New York-based multidisciplinary design award spanning architecture, product, packaging, and graphic design.",
     "longDescription": "The MUSE Design Awards evaluate entries across dozens of subcategories, from architectural design to packaging and conceptual work. Judging is handled by a panel of design, media, and marketing professionals, and results include tiered Platinum, Gold, and Silver recognition rather than a single winner per category.",
     "submissionFormat": "Digital submission: images, a written description, and category-specific supporting material",
-    "status": "expired"
+    "status": "closing-soon"
   },
   {
     "slug": "a-design-award-2026-27",
@@ -2256,7 +2256,7 @@
     ],
     "targetAudience": "students",
     "country": "United States",
-    "entryFee": "Tiered by deadline: US$45 (Early, 11 December 2026), US$55 (Standard, 12 March 2027), US$65 (Final, 19 March 2027), and US$75 for late submissions after 19 March",
+    "entryFee": "US$45 per entry (Early, 11 December 2026), US$55 (Standard, 12 March 2027), US$65 (Final, 19 March 2027), US$75 after 19 March",
     "registrationUrl": "https://youngones.org/",
     "prizeMoney": "No cash prize stated: Gold, Silver and Bronze winners in the ADC, One Show, TDC and Portfolio competitions receive one physical award engraved with their school's name; finalists are featured in the Young Ones archive and receive a free one-year One Club membership, and Merit finalists receive a digital certificate. TDC winners may also be included in the TDC exhibition and annual.",
     "shortDescription": "The One Club for Creativity's student competition, spanning four shows (ADC, One Show, TDC and Portfolio) across design, typography and advertising, open to college students and recent graduates.",
@@ -2267,10 +2267,7 @@
     "slug": "young-ones-2027",
     "studentTag": true,
     "longDescription": "Young Ones is the student awards program of The One Club for Creativity, the New York organization behind the ADC Annual Awards, The One Show and the Type Directors Club. The 2027 edition, which launched on 22 September 2026, runs four student competitions: Young Ones ADC (the same disciplines and categories as the ADC Annual Awards, with an ADC Cube at stake), Young Ones One Show (client briefs competing for a One Show Pencil), Young Ones TDC (typography) and a Portfolio competition, plus two special awards, the Client Pitch Competition and the Ari Weiss Award. Entrants must be 18 or older and enrolled in an undergraduate, graduate or portfolio program; recent graduates who finished after 18 March 2026 are also eligible, provided they have less than two years of professional experience. Winners are announced in the Young Ones archive and at the Young Ones Ceremony on 17 May 2027.",
-    "opensAt": "2026-09-22",
-    "sourcingNotes": {
-      "entryFee": "youngones.org lists $45/$55/$65/$75 by deadline but the pages fetched this session didn't state explicitly whether that is per entry or per entrant (per entry is the likely reading). Recheck the youngones.org fees/FAQ page."
-    }
+    "opensAt": "2026-09-22"
   },
   {
     "title": "Buildner's Unbuilt Award 2027",
@@ -2293,5 +2290,111 @@
     "studentTag": true,
     "longDescription": "Organized by Buildner (formerly Bee Breeders), an established architecture-competition platform, the Unbuilt Award recognizes conceptual and unrealized architecture, interior, landscape, and furniture projects. Entrants compete in three categories by area: Small Wonders (up to 100 m²), Medium Marvels (101 to 999 m²) and Large Visions (over 1,000 m²), each with a €10,000 top prize, alongside honourable mentions, dedicated student prizes and a best-presentation award, for a combined €50,000 prize fund. The competition is open to anyone regardless of professional qualification, entering individually or in teams of up to four. Registration closes on 15 September 2027, projects are submitted by 18 October 2027, and winners are announced on 7 December 2027.",
     "opensAt": "2026-09-24"
+  },
+  {
+    "title": "AZ Awards 2027",
+    "organizer": "AZURE Magazine",
+    "seriesId": "az-awards",
+    "categories": [
+      "Architecture",
+      "Interior/Furniture Design",
+      "Product/Industrial Design",
+      "Sustainable Design"
+    ],
+    "targetAudience": "open",
+    "country": "Canada",
+    "entryFee": "Per-submission fee that steps up after the 11 December 2026 Early Bird deadline, with a lower fee for the A+ Student Work category; 2027 amounts not yet published",
+    "registrationUrl": "https://awards.azuremagazine.com/",
+    "prizeMoney": "No cash prize for the main categories: winners receive the AZ Awards trophy and coverage in AZURE. The A+ Award for Student Work carries a cash prize (CAD $5,000 in the 2026 cycle).",
+    "shortDescription": "AZURE Magazine's international architecture and design awards, covering built projects, products, interiors, landscape and student work.",
+    "submissionFormat": "Online submission: project images, optional video, a written project description and specifications (dimensions, materials, fabrication)",
+    "status": "upcoming",
+    "deadline": "2027-02-26",
+    "resultDate": null,
+    "slug": "az-awards-2027",
+    "studentTag": true,
+    "longDescription": "Founded by Toronto-based AZURE Magazine in 2011, the AZ Awards recognize architecture, interiors, landscape architecture, urbanism and product design from around the world. Built work must be recently completed and products must be prototyped or in production; the program also has dedicated awards for student work, social good and environmental leadership. Submissions open on 9 November 2026, the Early Bird deadline is 11 December 2026, and entries close on 26 February 2027.",
+    "opensAt": "2026-11-09",
+    "sourcingNotes": {
+      "entryFee": "awards.azuremagazine.com confirms 2027 dates only; the fee table on /details/ still shows the 2026 cycle (USD/CAD 250-275 per first submission, students 35-45). Recheck /details/ once submissions open on 9 Nov 2026.",
+      "prizeMoney": "Student A+ cash prize amount (CAD $5,000) is from the 2026 details page and a ContestWatchers listing for 2027; not yet on an official 2027 page. Recheck /details/ after 9 Nov 2026.",
+      "submissionFormat": "Described from the 2026 details page (up to 30 JPG images at 300 dpi, optional video). Confirm the 2027 requirements once submissions open."
+    }
+  },
+  {
+    "title": "Kaira Looro Architecture Competition 2027: Health Center",
+    "organizer": "Balouo Salo",
+    "seriesId": "kaira-looro-architecture-competition",
+    "categories": [
+      "Architecture",
+      "Sustainable Design"
+    ],
+    "targetAudience": "students",
+    "country": "Italy",
+    "entryFee": "Per-team registration fee by period: €60 Early Bird (8 Jan to 28 Feb 2027), €90 Normal (1 Mar to 12 Apr 2027), €120 Late (13 Apr to 26 May 2027). Fees are donated to Balouo Salo's humanitarian projects.",
+    "registrationUrl": "https://www.kairalooro.com/",
+    "prizeMoney": "1st €6,000 plus an internship at Kengo Kuma & Associates; 2nd €2,000 and 3rd €1,000, each with internship options at studios including EMBT, Adjaye Associates and SBGA; around 50 projects receive further mentions",
+    "shortDescription": "A humanitarian architecture competition for students and young architects, asking for a sustainable rural health center in southern Senegal.",
+    "submissionFormat": "Anonymous A1 layouts plus a cover, submitted in English via the online project submission form; scale and level of detail are left to the entrant",
+    "status": "upcoming",
+    "deadline": "2027-05-26",
+    "resultDate": "2027-07-06",
+    "slug": "kaira-looro-architecture-competition-2027",
+    "studentTag": true,
+    "longDescription": "Run as a non-profit event by the humanitarian organization Balouo Salo, the Kaira Looro competition asks teams to design a real-world facility for rural Africa. The 2027 brief is a roughly 700 m² health center in southern Senegal that responds to the local climate, respects the community's cultural identity and brings primary care to the area. Teams of one to five may enter, all members must be 18 or older and at least one must be 35 or younger. Registration runs from 8 January to 26 May 2027, projects are due on 6 June 2027, and winners are announced on 6 July 2027.",
+    "opensAt": "2027-01-08",
+    "sourcingNotes": {
+      "submissionFormat": "The FAQ confirms A1 layouts, a cover, English and anonymity, but the number of boards isn't stated; the full 2027 brief is only published in December. Recheck kairalooro.com after the brief release."
+    }
+  },
+  {
+    "title": "The Oak Moon Pavilion",
+    "organizer": "Buildner",
+    "seriesId": "oak-moon-pavilion",
+    "categories": [
+      "Architecture"
+    ],
+    "targetAudience": "open",
+    "country": "Latvia",
+    "entryFee": "Professionals/companies €120 (Advanced, 28 Aug to 5 Nov 2026) or €140 (Last Minute, 6 Nov 2026 to 28 Jan 2027); students €110 / €120. Installment payment available at a higher total; plus 4.5% VAT.",
+    "registrationUrl": "https://architecturecompetitions.com/oakmoonpavilion/",
+    "prizeMoney": "€8,000 total: 1st €3,500, 2nd €2,000, 3rd €1,000, Buildner Student Award €1,000, Buildner Sustainability Award €500, plus honourable mention certificates",
+    "shortDescription": "A Buildner ideas competition for an open-air timber yoga pavilion set beneath a historic oak tree in central Italy.",
+    "submissionFormat": "Digital submission of presentation boards via the Buildner platform, with all material in English; exact board requirements are set out in the competition brief",
+    "status": "open",
+    "deadline": "2027-01-28",
+    "resultDate": "2027-04-20",
+    "slug": "oak-moon-pavilion-2027",
+    "studentTag": true,
+    "longDescription": "Organized by Buildner, The Oak Moon Pavilion asks entrants to design an open-air timber yoga pavilion for Yoga Farm Italy, a retreat in central Italy, sited beneath a historic oak tree. No professional qualification is required, and entrants may work alone or in teams of up to four. Alongside the three main placings there are dedicated student and sustainability awards. Registration closes on 28 January 2027, projects are due on 1 March 2027, and winners are announced on 20 April 2027.",
+    "opensAt": "2026-08-28",
+    "sourcingNotes": {
+      "submissionFormat": "Third-party listings (archup.net) say four A2 landscape boards, but the official page fetched this session didn't state the board count. Recheck the brief on architecturecompetitions.com/oakmoonpavilion."
+    }
+  },
+  {
+    "title": "Applied Arts 2027 Design Awards",
+    "organizer": "Applied Arts Magazine",
+    "seriesId": "applied-arts-design-awards",
+    "categories": [
+      "Graphic Design"
+    ],
+    "targetAudience": "professionals",
+    "country": "Canada",
+    "entryFee": "$50 to $150 per entry depending on category and entry type (single, series or campaign)",
+    "registrationUrl": "https://www.appliedartsmag.com/design_awards/",
+    "prizeMoney": "No cash prize: winners are published in the Applied Arts Awards Annual and the online winners gallery and receive a certificate and digital badge",
+    "shortDescription": "Applied Arts Magazine's annual awards for communication design, from branding and packaging to typography, editorial and digital work.",
+    "submissionFormat": "Digital only, no hard copies: PDF, JPG, PNG or GIF files at 8 in (2,400 px) on the longest side, 300 DPI",
+    "status": "upcoming",
+    "deadline": "2027-03-12",
+    "resultDate": "2027-04-14",
+    "slug": "applied-arts-design-awards-2027",
+    "studentTag": false,
+    "longDescription": "Run by Canada's Applied Arts Magazine, the Design Awards recognize professional communication design across disciplines including design, editorial, packaging, promotional, typeface, typography, craft, digital and motion design. Professionals and studios from Canada, the US and internationally can enter work created between March 2026 and March 2027; a Young Blood category covers designers with five years' experience or less, while students enter a separate Student Awards competition. The call for entries launches on 23 November 2026, submissions close on 12 March 2027, and results are announced on 14 April 2027.",
+    "opensAt": "2026-11-23",
+    "sourcingNotes": {
+      "entryFee": "Official page gives the $50 to $150 range but doesn't state the currency (likely CAD) or per-category amounts. Recheck the 2027 entry kit after the call opens on 23 Nov 2026."
+    }
   }
 ]
