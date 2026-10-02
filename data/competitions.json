@@ -102,7 +102,7 @@
     "shortDescription": "One of the largest global design competitions, covering over 100 categories including digital products and UX/UI.",
     "longDescription": "A' Design Award and Competition accepts entries across an unusually broad set of categories, including interface, interaction, and digital product design. Registration and initial submission are free; a nomination fee is only charged for entries that advance past preliminary review. Winners are announced annually on World Design Day, April 15.",
     "submissionFormat": "Digital submission: images, technical drawings, and a written design statement",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "architecture-masterprize-2026",
@@ -319,7 +319,7 @@
     "title": "Buildner's Unbuilt Award 2026",
     "organizer": "Buildner",
     "seriesId": "buildner-s-unbuilt-award",
-    "deadline": "2026-10-20",
+    "deadline": "2026-09-23",
     "categories": [
       "Architecture"
     ],
@@ -333,7 +333,7 @@
     "shortDescription": "An open international architecture prize for unbuilt (conceptual) projects, judged across small, medium, and large project scales with a dedicated student prize track.",
     "longDescription": "Organized by Buildner (formerly Bee Breeders), an established architecture-competition platform, the Unbuilt Award recognizes conceptual and unrealized architecture, interior, landscape, and furniture projects. Now in its third edition, entrants compete in Small, Medium, and Large categories, each with a €20,000 top prize, alongside honorable mentions, dedicated student prizes, and a best-presentation award, for a combined €100,000 prize fund. The competition is open to anyone regardless of professional qualification, entering individually or in teams of up to four.",
     "submissionFormat": "One anonymous A2 landscape panel (max 10MB) with visuals and explanatory text in English; video and animation are not permitted",
-    "status": "closing-soon"
+    "status": "expired"
   },
   {
     "slug": "communication-arts-illustration-competition-2027",
@@ -569,7 +569,7 @@
     "resultDate": "2027-05-01",
     "shortDescription": "A sustainability-focused track of the long-running A' Design Award, recognizing sustainable products, projects, and green design across a broad range of industries.",
     "submissionFormat": "Online submission via the A' Design Award competition platform: images, technical details, and a written design statement",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": false,
     "longDescription": "Run by the same organization behind the flagship A' Design Award & Competition, the A' Sustainable Products, Projects and Green Design Award evaluates entries spanning eco-friendly furniture, sustainable architecture and interiors, renewable energy projects, green industrial design, and dozens of related categories. Professional-edition laureates receive the A' Design Prize, a package of PR, marketing, and publicity tools, and are celebrated at the annual gala presentation."
   },
@@ -599,7 +599,7 @@
     "title": "Pavilion Atlas 2026",
     "organizer": "Buildner (in partnership with ArchDaily)",
     "seriesId": "pavilion-atlas",
-    "deadline": "2026-10-19",
+    "deadline": "2026-09-16",
     "categories": [
       "Architecture"
     ],
@@ -611,7 +611,7 @@
     "resultDate": "2026-12-08",
     "shortDescription": "An international conceptual pavilion design competition from Buildner and ArchDaily, open to architects, artists, and creatives of all backgrounds.",
     "submissionFormat": "Digital submission of a conceptual pavilion design and supporting narrative, submitted in English via the Buildner platform",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": true,
     "longDescription": "Pavilion Atlas, organized by Buildner in partnership with ArchDaily, invites entrants to design a conceptual pavilion for a country of their choice, conveying a spatial narrative about that place. Open to architects, artists, and creatives regardless of professional qualification, entries are judged with dedicated prizes for students and for sustainability-focused designs, alongside the main placings. All submissions must be in English."
   },
@@ -620,7 +620,7 @@
     "title": "Kingspan MICROHOME 2026",
     "organizer": "Buildner (in partnership with Kingspan)",
     "seriesId": "kingspan-microhome",
-    "deadline": "2026-11-02",
+    "deadline": "2026-09-30",
     "categories": [
       "Architecture",
       "Sustainable Design"
@@ -633,7 +633,7 @@
     "resultDate": "2026-12-15",
     "shortDescription": "A Buildner and Kingspan-sponsored international competition to design a sustainable, energy-efficient microhome under 25m², open to all backgrounds.",
     "submissionFormat": "Four A2 presentation panels (suggested, not mandatory) submitted in English via the Buildner platform",
-    "status": "open",
+    "status": "expired",
     "studentTag": true,
     "longDescription": "Now in its 11th edition, Kingspan MICROHOME challenges architects, designers, and creative thinkers to develop a modular, self-sufficient, energy-efficient microhome with a maximum footprint of 25 square meters for a hypothetical young professional couple. The competition is open to entrants of any professional background and includes dedicated Buildner Student and Sustainability Awards alongside the main placings and the sponsor-funded Kingspan Award. All submissions must be in English."
   },
@@ -770,7 +770,7 @@
     "title": "31st Annual Webby Awards",
     "organizer": "International Academy of Digital Arts and Sciences (IADAS)",
     "seriesId": "webby-awards",
-    "deadline": "2026-10-17",
+    "deadline": "2026-10-30",
     "categories": [
       "UX/UI Design"
     ],
@@ -784,14 +784,17 @@
     "submissionFormat": "Online submission via webbyawards.com: a live URL or app link plus a written project description, per category-specific entry guidelines",
     "status": "closing-soon",
     "studentTag": false,
-    "longDescription": "Founded in 1998, the Webby Awards are presented by the International Academy of Digital Arts and Sciences (IADAS), a 3,000+ member judging body of internet and digital-media professionals. Entries span eight media types including Websites & Mobile Sites and Apps, Software & Immersive, evaluated on criteria that include usability and user experience alongside content and creativity. The competition is open globally to individuals, brands, and organizations, with an early-bird pricing window and a final entry deadline each fall; winners are announced the following spring and celebrated at a ceremony in New York."
+    "longDescription": "Founded in 1998, the Webby Awards are presented by the International Academy of Digital Arts and Sciences (IADAS), a 3,000+ member judging body of internet and digital-media professionals. Entries span eight media types including Websites & Mobile Sites and Apps, Software & Immersive, evaluated on criteria that include usability and user experience alongside content and creativity. The competition is open globally to individuals, brands, and organizations, with an early-bird pricing window and a final entry deadline each fall; winners are announced the following spring and celebrated at a ceremony in New York.",
+    "sourcingNotes": {
+      "deadline": "webbyawards.com lists only the Early Entry Deadline (30 Oct 2026) so far; standard/final deadlines for the 31st Webbys were not yet published as of 2 Oct 2026. Recheck and move the deadline to the final date once announced."
+    }
   },
   {
     "slug": "lamp-lighting-design-competition-2026",
     "title": "L.A.M.P International Lighting Design Competition 2026",
     "organizer": "L.A.M.P (independent lighting-design competition organization)",
     "seriesId": "l-a-m-p-international-lighting-design-competition",
-    "deadline": "2026-10-01",
+    "deadline": "2026-10-15",
     "categories": [
       "Product/Industrial Design"
     ],
@@ -876,7 +879,7 @@
     "title": "International Sustainable Building Competition 2026",
     "organizer": "UNEP, Global Alliance for Buildings and Construction (GlobalABC), and Türkiye Ministry of Environment, Urbanization and Climate Change",
     "seriesId": "international-sustainable-building-competition",
-    "deadline": "2026-10-15",
+    "deadline": "2026-10-01",
     "categories": [
       "Architecture",
       "Sustainable Design"
@@ -889,7 +892,7 @@
     "resultDate": "2026-11-20",
     "shortDescription": "A UN- and Türkiye-backed international competition recognizing energy-efficient, low-carbon, climate-resilient buildings, with winners honored at COP31 in Antalya.",
     "submissionFormat": "Online application via yesint.csb.gov.tr with 3–4 project photographs uploaded directly through the site",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": false,
     "longDescription": "Organized by UNEP, the Global Alliance for Buildings and Construction (GlobalABC), and Türkiye's Ministry of Environment, Urbanization and Climate Change, the International Sustainable Building Competition invites architects and building professionals worldwide to submit built projects and masterplans that demonstrate energy-efficient, low-carbon, and climate-resilient design. The competition is free to enter and is timed to coincide with COP31, the UN Climate Change Conference hosted in Antalya, Türkiye in November 2026, where winning projects will be honored."
   },
@@ -919,7 +922,7 @@
     "title": "Spark Design Awards 2026 (Fall/Winter Cycle)",
     "organizer": "Spark Awards (International Design Competition)",
     "seriesId": "spark-design-awards-fall-winter-cycle",
-    "deadline": "2026-11-25",
+    "deadline": "2026-11-16",
     "categories": [
       "Product/Industrial Design",
       "Architecture",
@@ -937,7 +940,7 @@
     "submissionFormat": "Online submission via the Spark Awards registration portal: project images and a written description, per category-specific requirements; shortlisted finalists undergo an additional live jury review",
     "status": "open",
     "studentTag": true,
-    "longDescription": "Founded in 2001 by producer Peter Kuchnicki, the Spark Awards (International Design Competition) is a multidisciplinary program spanning Product & Industrial Design, Spaces Design (architecture, interiors, landscape, and urban planning), Graphic Design, Digital Design (UX/UI, apps, motion), Packaging, Transport & Mobility, Health/Medical/Universal Design, and a dedicated Student Design track. Judging uses a two-phase process: an initial registration and jury round determines shortlisted Finalist Candidates, who then pay a second fee ahead of a live jury session that selects Platinum, Gold, Silver, and Bronze winners. The current cycle's final deadline runs through November 19, 2026 for professionals and November 25, 2026 for students."
+    "longDescription": "Founded in 2001 by producer Peter Kuchnicki, the Spark Awards (International Design Competition) is a multidisciplinary program spanning Product & Industrial Design, Spaces Design (architecture, interiors, landscape, and urban planning), Graphic Design, Digital Design (UX/UI, apps, motion), Packaging, Transport & Mobility, Health/Medical/Universal Design, and a dedicated Student Design track. Judging uses a two-phase process: an initial registration and jury round determines shortlisted Finalist Candidates, who then pay a second fee ahead of a live jury session that selects Platinum, Gold, Silver, and Bronze winners. The current Fall cycle has a Standard deadline on October 15 and a Late and Final deadline on November 16, 2026."
   },
   {
     "slug": "lit-lighting-design-awards-2026",
@@ -958,7 +961,10 @@
     "submissionFormat": "Online submission via the LIT Awards entry portal: project images/renders and a written description, per category-specific requirements",
     "status": "closing-soon",
     "studentTag": true,
-    "longDescription": "Organized by Farmani Group (the same organization behind the International Design Awards, Architecture MasterPrize, and European Product Design Award), the LIT Lighting Design Awards recognize excellence in Lighting Product Design, Entertainment Lighting Design, and Architectural Lighting Design, alongside special Lifetime Achievement and Spotlight prizes. Now marking its 10th anniversary, the 2025 edition drew entries from 62 countries. Winners are celebrated at an in-person gala (Paris hosted the 2024 and 2025 ceremonies) and featured in the annual LIT catalogue."
+    "longDescription": "Organized by Farmani Group (the same organization behind the International Design Awards, Architecture MasterPrize, and European Product Design Award), the LIT Lighting Design Awards recognize excellence in Lighting Product Design, Entertainment Lighting Design, and Architectural Lighting Design, alongside special Lifetime Achievement and Spotlight prizes. Now marking its 10th anniversary, the 2025 edition drew entries from 62 countries. Winners are celebrated at an in-person gala (Paris hosted the 2024 and 2025 ceremonies) and featured in the annual LIT catalogue.",
+    "sourcingNotes": {
+      "deadline": "litawards.com contradicts itself: the page text says the 2026 awards close on 18 October, while an embedded Instagram post says Final Deadline 30 September 2026. Kept 18 October (the page text). Recheck with the organizer."
+    }
   },
   {
     "slug": "indigo-design-award-2026",
@@ -1256,7 +1262,7 @@
     "resultDate": "2027-04-15",
     "shortDescription": "Annual international architecture prize from Germany's DETAIL magazine recognizing completed building projects for the quality of their overall design concept, alongside a dedicated Students & Schools award and an Affordable Housing special prize.",
     "submissionFormat": "Online submission via detail.de including project drawings, photographs, and a written project description; a separate submission track exists for the Students & Schools award",
-    "status": "open",
+    "status": "closing-soon",
     "studentTag": true,
     "longDescription": "The DETAIL Architecture Award, presented by the respected German architecture publication DETAIL, honors completed building projects worldwide whose architecture stands out for the quality and consistency of its overall concept, independent of project size or budget. The 2027 edition comprises the main DETAIL Architecture Award, a Special Prize for Affordable Housing, the DETAIL Architecture Award for Students & Schools, and a DETAIL Readers' Award, all judged by an independent international expert jury."
   },
@@ -1308,7 +1314,7 @@
     "title": "Living Places – Simon Architecture Prize 2026 (6th Edition)",
     "organizer": "Simon, in collaboration with Fundació Mies van der Rohe",
     "seriesId": "simon-architecture-prize",
-    "deadline": "2026-10-05",
+    "deadline": "2026-09-14",
     "categories": [
       "Architecture",
       "Interior/Furniture Design"
@@ -1321,7 +1327,7 @@
     "resultDate": "2027-02-15",
     "shortDescription": "The 6th edition of the Living Places – Simon Architecture Prize, organized by Simon with the Fundació Mies van der Rohe, recognizing built projects by architects, city planners, and landscapers across Europe, Mexico, Brazil, and Morocco.",
     "submissionFormat": "Online submission via simonprize.org following pre-registration, per the official rules (published in English and Spanish)",
-    "status": "closing-soon",
+    "status": "expired",
     "studentTag": false,
     "longDescription": "Organized by the Simon brand in collaboration with the Fundació Mies van der Rohe, the Living Places – Simon Architecture Prize recognizes built projects, including interiors, public spaces, and landscaping, completed between January 2024 and December 2025. Now in its 6th edition, the prize is open to qualified architects, city planners, and landscapers from all European countries as well as Mexico, Brazil, and, new this year, Morocco. The competition distinctively incorporates video as a core tool for communicating the architectural work. Two winning projects each receive €10,000 and an exclusive piece designed by Andreu Carulla; finalists are announced in December, with the award ceremony in February."
   },
@@ -1730,7 +1736,7 @@
     "prizeMoney": "Gold, Silver, and Bronze trophies plus merit awards across the Graphic Design, Illustration, and Design Fiction categories; the Design Fiction category also awards a combined €10,000 in cash prizes across five projects, and the Henry Steiner Prize honors a project connecting East and West",
     "shortDescription": "A prestigious Austrian international competition for graphic design and illustration, run by designaustria since 1996, themed 'Under Pressure' for its 17th edition.",
     "submissionFormat": "Online registration form per entry: a short description (max. 1,000 characters) plus printable images and/or videos (mp4/flv/mov), max. 10 files; students add a confirmation of studies. Entries nominated by the jury are notified in December 2026 and then submitted physically for the second round.",
-    "status": "open",
+    "status": "closing-soon",
     "deadline": "2026-10-31",
     "resultDate": "2027-04-29",
     "slug": "joseph-binder-award-2027",
@@ -2059,7 +2065,7 @@
     "prizeMoney": "No cash prize confirmed: Grand Prix and category winners are recognized at an in-person jury session in Brussels.",
     "shortDescription": "Founded in 1987, Epica is judged entirely by journalists from marketing and design trade publications worldwide, with a dedicated Design category.",
     "submissionFormat": "Online entry of work published or used between July 1, 2024 and November 15, 2026.",
-    "status": "open",
+    "status": "closing-soon",
     "deadline": "2026-10-30",
     "resultDate": "2026-12-16",
     "slug": "epica-awards-2026",
