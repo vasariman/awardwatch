@@ -6,7 +6,7 @@ import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
 import { SearchBar } from "@/components/SearchBar";
 import { ScrollPositionMemory } from "@/components/ScrollPositionMemory";
-import { TimelineRail } from "@/components/TimelineRail";
+import { TimelineRail, type RailItem } from "@/components/TimelineRail";
 import { CompetitionGrid } from "@/components/CompetitionGrid";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
@@ -50,11 +50,18 @@ export default async function HomePage({
 
   items = [...items].sort(compareByUrgency);
 
-  // Dated, non-expired tiles in display order, keyed by the date the list is
-  // sorted by (deadline). TBA/expired tiles get no marker.
-  const railMonths = items
-    .filter((c) => c.deadline !== null && c.status !== "expired" && c.status !== "pending")
-    .map((c) => ({ slug: c.slug, month: (c.deadline as string).slice(0, 7) }));
+  // Every visible tile in display order for the timeline rail. The list is
+  // three consecutive blocks (dated and still running, "Dates TBA", expired);
+  // months come from the date the list is sorted by (deadline).
+  const railItems: RailItem[] = items.map((c) =>
+    c.status === "pending"
+      ? { slug: c.slug, block: "tba" }
+      : {
+          slug: c.slug,
+          block: c.status === "expired" ? "expired" : "active",
+          month: (c.deadline as string).slice(0, 7),
+        },
+  );
 
   return (
     <>
@@ -95,7 +102,7 @@ export default async function HomePage({
           <div data-timeline-grid>
             <CompetitionGrid items={items} insert={<NewsletterSignup />} insertAfter={6} />
           </div>
-          <TimelineRail months={railMonths} />
+          <TimelineRail items={railItems} />
         </div>
       </section>
     </>
