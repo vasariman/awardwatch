@@ -12,6 +12,10 @@ type Marker = {
   kind: "today" | "month";
   label: string;
   year?: string;
+  /** Month markers only: how far this month's stretch of the list runs (down
+   *  to the next month marker, or the end of the line). The marker sticks to
+   *  the top of the viewport inside this span and is pushed out by the next. */
+  sectionHeight?: number;
 };
 
 type RailLayout = {
@@ -94,14 +98,25 @@ function measureRail(aside: HTMLElement, gridEl: HTMLElement, months: RailMonth[
     }
   });
 
-  return {
-    markers,
-    line: { top: rows[0].top, height: rows[rows.length - 1].bottom - rows[0].top },
-  };
+  const line = { top: rows[0].top, height: rows[rows.length - 1].bottom - rows[0].top };
+
+  const monthMarkers = markers.filter((m) => m.kind === "month");
+  monthMarkers.forEach((marker, index) => {
+    // Stop the span MIN_GAP short of the next marker so the one being pushed
+    // out of the way never touches the one arriving.
+    const next = monthMarkers[index + 1];
+    const end = next ? next.y - MIN_GAP : line.top + line.height;
+    marker.sectionHeight = Math.max(end - marker.y, MONTH_HEIGHT);
+  });
+
+  return { markers, line };
 }
 
 // Decorative orientation aid next to the homepage grid: shows which month a
-// stretch of tiles belongs to while scrolling. Not sticky, not interactive.
+// stretch of tiles belongs to while scrolling. Not interactive. The current
+// month's marker follows along at the top of the viewport and is pushed out
+// by the next one -- plain CSS `position: sticky` inside a per-month span,
+// no scroll listener. TODAY is not sticky; it scrolls away like the list.
 // Expects to be a sibling of an element carrying `data-timeline-grid`.
 export function TimelineRail({ months }: { months: RailMonth[] }) {
   const asideRef = useRef<HTMLElement>(null);
@@ -141,26 +156,41 @@ export function TimelineRail({ months }: { months: RailMonth[] }) {
           style={{ top: layout.line.top, height: layout.line.height }}
         />
       )}
-      {layout.markers.map((marker) => {
-        const isToday = marker.kind === "today";
-        return (
+      {layout.markers.map((marker) =>
+        marker.kind === "today" ? (
+          <div key={marker.key} className="absolute left-0" style={{ top: marker.y }}>
+            <MarkerContent marker={marker} />
+          </div>
+        ) : (
+          // The span is as tall as this month's stretch of the list; the
+          // marker inside sticks at top-6 until the span ends and the next
+          // month's span pushes it up and out.
           <div
             key={marker.key}
-            className="absolute left-0 flex items-start gap-[10px]"
-            style={{ top: marker.y }}
+            className="absolute inset-x-0"
+            style={{ top: marker.y, height: marker.sectionHeight }}
           >
-            <span className={`mt-[6px] block h-1 w-[22px] shrink-0 ${isToday ? "bg-ink" : "bg-black/30"}`} />
-            <span className="flex flex-col font-sans font-bold uppercase tracking-[.06em]">
-              <span className={`text-[15px] leading-[15px] ${isToday ? "text-ink" : "text-black/60"}`}>
-                {marker.label}
-              </span>
-              {marker.year && (
-                <span className="mt-1 text-[13px] leading-[13px] text-black/45">{marker.year}</span>
-              )}
-            </span>
+            <div className="sticky top-6">
+              <MarkerContent marker={marker} />
+            </div>
           </div>
-        );
-      })}
+        ),
+      )}
     </aside>
+  );
+}
+
+function MarkerContent({ marker }: { marker: Marker }) {
+  const isToday = marker.kind === "today";
+  return (
+    <div className="flex items-start gap-[10px]">
+      <span className={`mt-[6px] block h-1 w-[22px] shrink-0 ${isToday ? "bg-ink" : "bg-black/30"}`} />
+      <span className="flex flex-col font-sans font-bold uppercase tracking-[.06em]">
+        <span className={`text-[15px] leading-[15px] ${isToday ? "text-ink" : "text-black/60"}`}>
+          {marker.label}
+        </span>
+        {marker.year && <span className="mt-1 text-[13px] leading-[13px] text-black/45">{marker.year}</span>}
+      </span>
+    </div>
   );
 }
