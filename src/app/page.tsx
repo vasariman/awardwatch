@@ -6,6 +6,7 @@ import { HeroSlider } from "@/components/HeroSlider";
 import { FilterBar } from "@/components/FilterBar";
 import { SearchBar } from "@/components/SearchBar";
 import { ScrollPositionMemory } from "@/components/ScrollPositionMemory";
+import { TimelineRail, type RailItem } from "@/components/TimelineRail";
 import { CompetitionGrid } from "@/components/CompetitionGrid";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
@@ -49,6 +50,19 @@ export default async function HomePage({
 
   items = [...items].sort(compareByUrgency);
 
+  // Every visible tile in display order for the timeline rail. The list is
+  // three consecutive blocks (dated and still running, "Dates TBA", expired);
+  // months come from the date the list is sorted by (deadline).
+  const railItems: RailItem[] = items.map((c) =>
+    c.status === "pending"
+      ? { slug: c.slug, block: "tba" }
+      : {
+          slug: c.slug,
+          block: c.status === "expired" ? "expired" : "active",
+          month: (c.deadline as string).slice(0, 7),
+        },
+  );
+
   return (
     <>
       <Suspense fallback={null}>
@@ -81,7 +95,15 @@ export default async function HomePage({
           <FilterBar sp={sp} />
         </div>
 
-        <CompetitionGrid items={items} insert={<NewsletterSignup />} insertAfter={6} />
+        {/* From md up a fixed 84px column is reserved for the timeline rail
+            (no layout shift when it mounts); below md this is a plain block
+            and the grid lays out exactly as before. */}
+        <div className="md:grid md:grid-cols-[minmax(0,1fr)_84px] md:gap-6">
+          <div data-timeline-grid>
+            <CompetitionGrid items={items} insert={<NewsletterSignup />} insertAfter={6} />
+          </div>
+          <TimelineRail items={railItems} />
+        </div>
       </section>
     </>
   );

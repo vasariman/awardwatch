@@ -51,7 +51,9 @@ function withLiveStatus(competitions: Competition[]): Competition[] {
 // deadline (open/closing-soon/upcoming) first by deadline ascending, then
 // pending ones (no deadline to compare by, so they keep their existing
 // order relative to each other) — still worth watching, unlike expired —
-// then expired ones (also dated, so still comparable) last.
+// then expired ones (also dated, so still comparable) last. Expired runs
+// the other way round: most recently expired first, then further back into
+// the past, so the list reads away from "now" in both directions.
 function urgencyRank(c: Competition): 0 | 1 | 2 {
   if (c.status === "expired") return 2;
   if (c.status === "pending") return 1;
@@ -63,6 +65,7 @@ export function compareByUrgency(a: Competition, b: Competition): number {
   const rb = urgencyRank(b);
   if (ra !== rb) return ra - rb;
   if (ra === 1) return 0;
+  if (ra === 2) return (b.deadline as string).localeCompare(a.deadline as string);
   return (a.deadline as string).localeCompare(b.deadline as string);
 }
 
